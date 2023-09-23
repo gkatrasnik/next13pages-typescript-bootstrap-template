@@ -4,7 +4,6 @@ import {Montserrat} from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: '400' })
 
-
 export default function PricingCard(props) {
   return (
     <Card className="h-100">

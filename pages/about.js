@@ -2,11 +2,6 @@ import Head from 'next/head'
 //import Image from 'next/image'
 //import styles from '../styles/Home.module.scss'
 import {Container, Button, Row, Col} from 'react-bootstrap'
-import {Montserrat, Open_Sans} from "next/font/google"
-
-
-const montserrat = Montserrat({ subsets: ['latin'], weight: '400' })
-
 
 export default function About() {
     return (
@@ -15,7 +10,7 @@ export default function About() {
         <title>About Fiziap</title>
       </Head>
       <Container className="my-5 d-flex flex-column ">
-        <h1 className={montserrat.className + ' text-center mb-5'}>About Fiziap</h1>
+        <h1 className='text-center mb-5'>About Ab bike</h1>
           <Row className='h-100'>
             <Col xs={12} md={6} className="mb-4">
               <p>Are you a physiotherapist looking for a better way to manage your patient information and appointments? Look no further than Fiziap!</p>
@@ -38,7 +33,6 @@ export default function About() {
           </Row>
        
         <Button variant="primary" size="lg" href="/pricing" className='mx-auto my-4' >Pricing</Button>
-
       </Container>
     </>
   )

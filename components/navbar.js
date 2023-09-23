@@ -1,19 +1,15 @@
 import { Navbar, Nav } from 'react-bootstrap'
 import { useState } from 'react'
 import Link from 'next/link'
-import {Lobster} from "next/font/google"
-
-const lobster = Lobster({ subsets: ['latin'], weight: ['400'] })
-
 
 export default function MyNavbar() {
   const [expanded, setExpanded] = useState(false);
 
   return (
     <Navbar bg="light" expand="md" className="px-3" expanded={expanded}>
-      <Navbar.Brand  className={lobster.className}>
+      <Navbar.Brand>
         <Link href="/" passHref onClick={() => setExpanded(false)} >
-            Fiziap
+            Ab Bike
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded => !expanded)}/>
@@ -27,10 +23,7 @@ export default function MyNavbar() {
           </Link>
           <Link  className='nav-link navbar-nav' href="/pricing" passHref onClick={() => setExpanded(false)}>
             Pricing
-          </Link>
-          <a href="https://www.google.com" className='nav-link navbar-nav' onClick={() => setExpanded(false)}>
-            App
-          </a>         
+          </Link>              
         </Nav>
       </Navbar.Collapse>
     </Navbar>

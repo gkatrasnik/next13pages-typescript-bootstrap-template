@@ -3,10 +3,6 @@ import Head from 'next/head'
 //import styles from '../styles/Home.module.scss'
 import { Container, Card, Button, Row, Col } from 'react-bootstrap'
 import PricingCard from '../components/pricingCard'
-import {Montserrat, Open_Sans} from "next/font/google"
-
-const montserrat = Montserrat({ subsets: ['latin'], weight: '400' })
-
 
 export default function Pricing() {
      return (
@@ -15,7 +11,7 @@ export default function Pricing() {
         <title>Pricing</title>
       </Head>
       <Container className="my-5">
-        <h1 className={montserrat.className + ' text-center mb-5'}>Pricing</h1>
+        <h1 className=' text-center mb-5'>Pricing</h1>
         <Row>
           <Col xs={12} md={4} className="mb-4">
             <PricingCard
