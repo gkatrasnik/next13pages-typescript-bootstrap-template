@@ -1,0 +1,47 @@
+/*! `Custom` Bootstrap 5 theme */
+
+/*
+$primary: #008f64;
+$secondary: #00c086;
+*/
+$primary: #003c7c;
+$secondary: #0272EC;
+
+/*! Import Bootstrap 5 variables */
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#__next {  
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
