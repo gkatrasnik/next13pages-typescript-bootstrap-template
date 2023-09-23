@@ -4,8 +4,11 @@ import phone from '../public/phone-issue.png'
 //import Image from 'next/image'
 //import styles from '../styles/Home.module.scss'
 import {Container, Button, Row, Col} from 'react-bootstrap'
+import {useTranslations} from 'next-intl';
 
 export default function Home() {
+    const t = useTranslations('Index');
+
     return (
     <>
       <Head>
@@ -15,8 +18,8 @@ export default function Home() {
         <Row className='h-100'>
           <Col xs={12} md={6} className="mb-4">
             <div className="h-100 text-center my-4 d-flex flex-column alling-items-center justify-content-center">
-             <h1 className=' mb-4'>Welcome to Ab bike</h1>
-             <p className='mb-4'>“bla bla”</p>
+             <h1 className=' mb-4'>{t('title')}</h1>
+             <p className='mb-4'>{t('description')}</p>
              <Button variant="primary" size="lg" href="/about" className='mx-auto mt-4 ' >Learn more</Button>
             </div>
           </Col>
@@ -40,3 +43,13 @@ export default function Home() {
   )
 }
 
+export async function getStaticProps(context) {
+  return {
+    props: {
+      // You can get the messages from anywhere you like. The recommended
+      // pattern is to put them in JSON files separated by locale and read
+      // the desired one based on the `locale` received from Next.js.
+      messages: (await import(`../messages/${context.locale}.json`)).default
+    }
+  };
+}
