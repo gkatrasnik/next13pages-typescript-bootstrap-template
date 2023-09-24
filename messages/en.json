@@ -26,5 +26,15 @@
     "articleChildTrailer": "Child Trailer",
     "articleDogTrailer" : "Dog Trailer",
     "articleSup" : "Sup"
+  },
+  "Navbar": {
+    "home": "Home",
+    "rentABike": "Rent a bike",
+    "rentASup": "Rent a sup",
+    "cyclingTrips": "Cycling trips",
+    "bikeServis": "Bike servis",
+    "eBikeUpgrade": "E-Bike upgrade",
+    "aboutUs": "About us",
+    "contact": "Contact"
   }
 }

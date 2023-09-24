@@ -26,5 +26,15 @@
     "articleChildTrailer": "Prikolica za otroka",
     "articleDogTrailer" : "Prikolica za psa",
     "articleSup" : "Sup"
+  },
+  "Navbar": {
+    "home": "Domov",
+    "rentABike": "Izposoja kolesa",
+    "rentASup": "Izposoja supa",
+    "cyclingTrips": "Kolesarski izleti",
+    "bikeServis": "Servis koles",
+    "eBikeUpgrade": "Električna predelava",
+    "aboutUs": "O nas",
+    "contact": "Kontakt"
   }
 }
