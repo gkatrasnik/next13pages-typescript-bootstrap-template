@@ -49,3 +49,7 @@ a {
 .custom-nav-link {
   font-weight: bold;
 }
+
+.custom-nav-link.active {
+  border-bottom: 4px solid $secondary
+}
