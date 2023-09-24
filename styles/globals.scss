@@ -50,8 +50,13 @@ a {
   font-weight: bold;
 }
 
-.custom-nav-link.active {
+.custom-nav-link-text {
+  padding-bottom: .3rem;
+}
+
+.custom-nav-link-text.active {
   border-bottom: 4px solid $secondary;
+  width:fit-content;
 }
 
 .footer-link {
