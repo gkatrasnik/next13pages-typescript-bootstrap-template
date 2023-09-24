@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import {Button, Modal, Form} from 'react-bootstrap';
 import {useTranslations} from 'next-intl';
 
-
 function FormModal({formIsForRent, formIsForTransform, handleClose}) {
     const t = useTranslations('FormModal');
 
@@ -36,9 +35,6 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // create sendMail params
-        // call sendMail
-
         await postSendEmail();
         handleClose();
     }
@@ -77,7 +73,6 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
 
     const postSendEmail = async (data) => {
         try {
-            //const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/sendInquiry", {
             const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/sendInquiry", {
             method: "POST", 
             headers: {
@@ -103,24 +98,27 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                 
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                        <Form.Label>{t('labelName')}</Form.Label>
-                        <Form.Control                    
+                        <Form.Label>{t('labelName')} *</Form.Label>
+                        <Form.Control     
+                            required               
                             type="text"
                             ref={name}
                         />                
                     </Form.Group>
 
                     <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                        <Form.Label>{t('labelPhone')}</Form.Label>
-                        <Form.Control                    
-                            type="phone"
+                        <Form.Label>{t('labelPhone')} *</Form.Label>
+                        <Form.Control 
+                            required                   
+                            type="tel"
                             ref={phone}
                         />                
                     </Form.Group>
 
                     <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                        <Form.Label>{t('labelEmail')}</Form.Label>
-                        <Form.Control                    
+                        <Form.Label>{t('labelEmail')} *</Form.Label>
+                        <Form.Control    
+                            required   
                             type="email"
                             ref={email}
                         />                
@@ -137,26 +135,26 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                         </Form.Group>
 
                         <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
-                            <Form.Label>{t('labelDateTime')}</Form.Label>
+                            <Form.Label>{t('labelDateTime')} *</Form.Label>
                             <Form.Control                    
+                                required
                                 type="datetime-local"  
                                 ref={dateTime}             
                             />                
                         </Form.Group>
 
                         <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                            <Form.Label>{t('labelRentLength')}</Form.Label>
-                            <Form.Control                    
+                            <Form.Label>{t('labelRentLength')} *</Form.Label>
+                            <Form.Control       
+                                required             
                                 type="text"
                                 ref={rentLength}
                             />                
                         </Form.Group>
 
                         <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
-                            <Form.Label>{t('labelArticle')}</Form.Label>      
-                            <div className='d-flex flex-column'>
-                                <Form.Check
-                                inline
+                            <Form.Label>{t('labelArticle')}</Form.Label> 
+                            <Form.Check                                
                                 label={t('articleEbike')}
                                 name="E Bike"
                                 type="checkbox"
@@ -164,38 +162,33 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                                 id="1"                                
                             />
                             <Form.Check
-                                inline
                                 label={t('articleRegularbike')}
                                 name="Navadno kolo"
                                 type="checkbox"
                                 ref={articleRegularBike}
                                 id="2"
                             />
-                            <Form.Check
-                                inline
+                            <Form.Check                                
                                 label={t('articleChildTrailer')}
                                 name="Otroška prikolica"
                                 type="checkbox"
                                 ref={articleChildTrailer}
                                 id="3"
                             />
-                            <Form.Check
-                                inline
+                            <Form.Check                                
                                 label={t('articleDogTrailer')}
                                 name="Prikolica za psa"
                                 type="checkbox"
                                 ref={articleDogTrailer}
                                 id="4"                                
                             />
-                            <Form.Check
-                                inline
+                            <Form.Check                                
                                 label={t('articleSup')}
                                 name="Sup"
                                 type="checkbox"
                                 ref={articleSup}
                                 id="5"
-                            />
-                            </div>                      
+                            />                                                  
                         </Form.Group>                    
                     </>
                     }

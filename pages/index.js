@@ -25,7 +25,7 @@ export default function Home() {
         <title>AB Bike</title>
       </Head>
 
-      {showFormModal && <FormModal formIsForRent handleClose={closeFormModal}/>}
+      {showFormModal && <FormModal  handleClose={closeFormModal}/>}
       <Container >
         <Row className='h-100'>
           <Col xs={12} md={6} className="mb-4">
