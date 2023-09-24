@@ -36,5 +36,13 @@
     "eBikeUpgrade": "E-Bike upgrade",
     "aboutUs": "About us",
     "contact": "Contact"
+  },
+  "Footer": {
+    "contact" : "Contact",
+    "tel": "Phone: ",
+    "email": "E-mail: ",
+    "address": "Address: Cesta svobode 22, 4260 Bled, Slovenija",
+    "company": "A&B KOLO D.O.O. Cankarjeva cesta 16, 4260 Bled, Slovenija SI 77094611",
+    "partners": "Partners"
   }
 }
