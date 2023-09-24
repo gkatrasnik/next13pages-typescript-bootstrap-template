@@ -11,13 +11,28 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
     const email = useRef();
     const address = useRef();
     const dateTime = useRef();
+    const message = useRef();
+
     const rentLength = useRef();
     const articleEbike = useRef();
     const articleRegularBike = useRef();
     const articleChildTrailer = useRef();
     const articleDogTrailer = useRef();
-    const message = useRef();
+    const articleSup = useRef();
+    
     const batteryCapacity = useRef();
+
+    const getSelectedArticles = () => {
+        // loop over select articles and return string of names
+        const options = [articleEbike, articleRegularBike, articleChildTrailer, articleDogTrailer, articleSup];
+        const selectedArticles = [];
+        options.forEach(option => {
+            if (option.current.checked) {
+                selectedArticles.push(option.current.name)
+            }
+        });
+        return selectedArticles.toString();
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -30,12 +45,34 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
 
     const createEmail = () => 
     {
-        //create a email text from form data
-
-        return {
-            "subject": "Novo povpraševanje! ",
-            "text": "real test mail text"
+        const requestedService = formIsForRent ? "izposoja" : formIsForTransform ? "predelava kolesa" : "drugo";
+        const emailData = {
+            subject: "",
+            text: ""
         }
+
+        emailData.subject = `Povpraševanje ${requestedService} ${dateTime.current?.value || ""}`
+
+        emailData.text = 
+`Novo povpraševanje za storitev: ${requestedService},
+
+- Ime: ${name.current.value}, 
+- Telefon: ${phone.current.value}, 
+- Email: ${email.current.value}, 
+- Naslov: ${address.current?.value || "/"}, 
+- Dodatno sporočilo: ${message.current.value}\n`
+
+        if (formIsForRent) {
+            emailData.text +=  
+`- Željen datum izposoje: ${dateTime.current.value},
+- Trajanje izposoje: ${rentLength.current.value},
+- Željeni artikli: ${getSelectedArticles()}\n`           
+
+        } else if (formIsForTransform) {
+            emailData.text += `- Željena kapaciteta baterije: ${batteryCapacity.current.value}\n`
+        } 
+
+        return emailData
     }
 
     const postSendEmail = async (data) => {
@@ -121,7 +158,7 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                                 <Form.Check
                                 inline
                                 label={t('articleEbike')}
-                                name="eBike"
+                                name="E Bike"
                                 type="checkbox"
                                 ref={articleEbike}
                                 id="1"                                
@@ -129,7 +166,7 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                             <Form.Check
                                 inline
                                 label={t('articleRegularbike')}
-                                name="regularBike"
+                                name="Navadno kolo"
                                 type="checkbox"
                                 ref={articleRegularBike}
                                 id="2"
@@ -137,7 +174,7 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                             <Form.Check
                                 inline
                                 label={t('articleChildTrailer')}
-                                name="childTrailer"
+                                name="Otroška prikolica"
                                 type="checkbox"
                                 ref={articleChildTrailer}
                                 id="3"
@@ -145,13 +182,20 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                             <Form.Check
                                 inline
                                 label={t('articleDogTrailer')}
-                                name="dogTrailer"
+                                name="Prikolica za psa"
                                 type="checkbox"
                                 ref={articleDogTrailer}
-                                id="4"
+                                id="4"                                
                             />
-                            </div>                                 
-                            
+                            <Form.Check
+                                inline
+                                label={t('articleSup')}
+                                name="Sup"
+                                type="checkbox"
+                                ref={articleSup}
+                                id="5"
+                            />
+                            </div>                      
                         </Form.Group>                    
                     </>
                     }
@@ -164,9 +208,9 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                                 aria-label="Default select example"
                                 ref={batteryCapacity}
                             >                                
-                                <option value="522">{t('batteryCapacity522')}</option>
-                                <option value="630">{t('batteryCapacity630')}</option>
-                                <option value="700">{t('batteryCapacity700')}</option>
+                                <option value="522Wh">{t('batteryCapacity522')}</option>
+                                <option value="630Wh">{t('batteryCapacity630')}</option>
+                                <option value="700Wh">{t('batteryCapacity700')}</option>
                             </Form.Select>
                         </Form.Group>                        
                     </>

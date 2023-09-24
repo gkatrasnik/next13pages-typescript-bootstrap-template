@@ -22,8 +22,9 @@
     "batteryCapacity630": "630Wh (Do 140km)",
     "batteryCapacity700": "700Wh (Do 165km)",
     "articleEbike": "E-Kolo",
-    "articleRegularbike": "Običajno kolo",
+    "articleRegularbike": "Navadno kolo",
     "articleChildTrailer": "Prikolica za otroka",
-    "articleDogTrailer" : "Prikolica za psa"
+    "articleDogTrailer" : "Prikolica za psa",
+    "articleSup" : "Sup"
   }
 }
