@@ -5,5 +5,25 @@
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"
+  },
+  "FormModal": {
+    "title": "Send Inquiry",
+    "sendInquiry": "Send",
+    "labelName": "Name",    
+    "labelPhone": "Phone",
+    "labelEmail": "Email",
+    "labelAddress": "Address",
+    "labelDateTime": "Date of rent",
+    "labelRentLength": "Length of rent",
+    "labelArticle": "Articles for rent",
+    "labelMessage": "Something else you want to ask?",
+    "labelBatteryCapacity": "Battery capacity",
+    "batteryCapacity522": "522Wh (Up to 100km)",
+    "batteryCapacity630": "630Wh (Up to 140km)",
+    "batteryCapacity700": "700Wh (Up to 165km)",
+    "articleEbike": "E-Bike",
+    "articleRegularbike": "Regular Bike",
+    "articleChildTrailer": "Child Trailer",
+    "articleDogTrailer" : "Dog Trailer"
   }
 }

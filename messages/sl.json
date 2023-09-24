@@ -5,5 +5,25 @@
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"
+  },
+  "FormModal": {
+    "title": "Pošlji Povpraševanje",
+    "sendInquiry": "Pošlji",
+    "labelName": "Ime in priimek",    
+    "labelPhone": "Telefon",
+    "labelEmail": "Email",
+    "labelAddress": "Naslov",
+    "labelDateTime": "Datum izposoje",
+    "labelRentLength": "Trajanje izposoje",
+    "labelArticle": "Izdelki za izposojo",
+    "labelMessage": "Bi radi vprašali še kaj?",
+    "labelBatteryCapacity": "Željena kapaciteta baterije",
+    "batteryCapacity522": "522Wh (Do 100km)",
+    "batteryCapacity630": "630Wh (Do 140km)",
+    "batteryCapacity700": "700Wh (Do 165km)",
+    "articleEbike": "E-Kolo",
+    "articleRegularbike": "Običajno kolo",
+    "articleChildTrailer": "Prikolica za otroka",
+    "articleDogTrailer" : "Prikolica za psa"
   }
 }
