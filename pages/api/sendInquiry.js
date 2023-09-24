@@ -2,34 +2,14 @@
 import { sendMail } from "../../service/mailService";
 
 const handler = async (req, res) => {
-    try {
-        //Do some thing
-        await sendMail(
-            process.env.NODEMAILER_EMAIL,
-            "Test subject",
-            "This is test text content. "
-        );
-        res.status(200).send("Success");
-    }
-    catch (err) {
-        res.status(400).json({
-        error_code: "api_one",
-        message: err.message,
-        });
-    };
-}
-
-/*
-const handler = async (req, res) => {
   try {
     const { method } = req;
     switch (method) {
       case "POST": {
-        //Do some thing
         await sendMail(
           process.env.NODEMAILER_EMAIL,
-          "Test subject",
-          "This is test text content. "
+          req.body.subject,
+          req.body.text
         );
         res.status(200).send("Success");
         break;
@@ -50,6 +30,6 @@ const handler = async (req, res) => {
       message: err.message,
     });
   }
-};*/
+};
 
 export default handler;

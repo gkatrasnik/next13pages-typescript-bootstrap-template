@@ -19,17 +19,46 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
     const message = useRef();
     const batteryCapacity = useRef();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         // create sendMail params
         // call sendMail
 
+        await postSendEmail();
         handleClose();
+    }
+
+    const createEmail = () => 
+    {
+        //create a email text from form data
+
+        return {
+            "subject": "Novo povpraševanje! ",
+            "text": "real test mail text"
+        }
+    }
+
+    const postSendEmail = async (data) => {
+        try {
+            //const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/sendInquiry", {
+            const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/sendInquiry", {
+            method: "POST", 
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(createEmail()),
+            });
+
+            const result = await response;
+            console.log("Success:", result.statusText);
+        } catch (error) {
+            console.error("Error:", error);
+        }
     }
     
     return (
        <>  
-            <Modal centered backdrop="static" show={true} onHide={handleClose}>
+            <Modal centered show={true} onHide={handleClose}>
                 <Modal.Header className="py-3" closeButton>
                 <Modal.Title as="h5">{t('title')}</Modal.Title>
                 </Modal.Header>
