@@ -3,6 +3,7 @@ import {Container, Button, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
 
 import RentCard from '../components/rentCard';
+import BasicImage from '../components/basicImage';
 
 export default function Home() {
     const t = useTranslations('Index');
@@ -22,6 +23,8 @@ export default function Home() {
              <h1 className=' mb-4'>{t('title')}</h1>
              <p className='mb-4'>{t('description')}</p>
              <Button variant="primary" size="lg"  className='mx-auto mt-4 ' onClick={()=>{setShowFormModal(!formModalShowed)}}>Povpraševanje</Button>
+             <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
+            
             </div>
           </Col>
           <Col xs={12} md={6} className="mb-4"> 
