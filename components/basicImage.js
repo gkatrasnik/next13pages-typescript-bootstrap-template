@@ -24,7 +24,7 @@ function BasicImage({imageSrc}) {
                 height={200}
                 width={200}        
                 placeholder="blur"
-                blurDataURL="/blur-image-png"   
+                blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                 style={{
                     margin: "1rem",
                     borderRadius: "inherit",   

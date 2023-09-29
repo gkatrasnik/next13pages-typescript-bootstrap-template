@@ -15,7 +15,7 @@ function ImageModal({imageSrc, title, handleClose}) {
                     alt={title}
                     src={imageSrc}  
                     placeholder="blur"
-                    blurDataURL="/blur-image-png"   
+                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                     height={500}
                     width={500}          
                     style={{

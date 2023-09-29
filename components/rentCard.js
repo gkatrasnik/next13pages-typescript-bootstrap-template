@@ -40,7 +40,7 @@ function RentCard({title, bullets, price, imageSrc}) {
                     height={200}
                     width={250}        
                     placeholder="blur"
-                    blurDataURL="/blur-image-png"   
+                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                     style={{
                         margin: "auto",
                         borderRadius: "inherit",   
