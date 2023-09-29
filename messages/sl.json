@@ -44,5 +44,15 @@
     "address": "Naslov: Cesta svobode 22, 4260 Bled, Slovenija",
     "company": "A&B KOLO D.O.O. Cankarjeva cesta 16, 4260 Bled, Slovenija SI 77094611",
     "partners": "Partnerji"
+  },  
+  "RentCard": {
+    "sendInquiry": "Pošlji povpraševanje",
+    "motor": "Motor",
+    "battery": "Baterija",
+    "derailleur": "Zadjni menjalnik",
+    "suspension": "Vzmetenje",
+    "brakes": "Zavore",
+    "wheelSize": "Velikost koles",
+    "maxWeight": "Maksimalna obremenitev"
   }
 }
