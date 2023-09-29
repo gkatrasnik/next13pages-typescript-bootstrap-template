@@ -62,3 +62,38 @@ a {
 .footer-link {
   color: $primary;
 }
+
+.image-gallery {
+  position: relative;
+  overflow-x: scroll;  
+  max-width: 100%; 
+}
+
+.image-gallery::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+.image-gallery {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.image-galery-nav-button {
+  background-color: rgb(0, 0, blue);
+  position: absolute;
+  height:100%;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.image-galery-nav-button.left {
+  left: 0;
+  top: 0;
+}
+
+.image-galery-nav-button.right {
+  right: 0;
+  top: 0;
+}

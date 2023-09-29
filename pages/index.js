@@ -4,6 +4,7 @@ import {useTranslations} from 'next-intl';
 
 import RentCard from '../components/rentCard';
 import BasicImage from '../components/basicImage';
+import ImageGallery from '../components/imageGallery';
 
 export default function Home() {
     const t = useTranslations('Index');
@@ -17,13 +18,12 @@ export default function Home() {
 
       
       <Container >
-        <Row className='h-100'>
+        <Row >
           <Col xs={12} md={6} className="mb-4">
             <div className="h-100 text-center my-4 d-flex flex-column alling-items-center justify-content-center">
              <h1 className=' mb-4'>{t('title')}</h1>
              <p className='mb-4'>{t('description')}</p>
              <Button variant="primary" size="lg"  className='mx-auto mt-4 ' onClick={()=>{setShowFormModal(!formModalShowed)}}>Povpraševanje</Button>
-             <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
             
             </div>
           </Col>
@@ -38,6 +38,16 @@ export default function Home() {
             </div>
           </Col>
         </Row>     
+        <Row >
+          <Col className="mb-4">
+            <ImageGallery>
+              <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
+              <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
+              <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
+
+            </ImageGallery>
+          </Col>
+        </Row>
       </Container>
     </>
   )
