@@ -38,7 +38,9 @@ function RentCard({title, bullets, price, imageSrc}) {
                     alt={title}
                     src={imageSrc}      
                     height={200}
-                    width={250}          
+                    width={250}        
+                    placeholder="blur"
+                    blurDataURL="/blur-image-png"   
                     style={{
                         margin: "auto",
                         borderRadius: "inherit",   

@@ -22,7 +22,9 @@ function BasicImage({imageSrc}) {
                 alt={imageSrc}
                 src={imageSrc}      
                 height={200}
-                width={200}          
+                width={200}        
+                placeholder="blur"
+                blurDataURL="/blur-image-png"   
                 style={{
                     margin: "1rem",
                     borderRadius: "inherit",   

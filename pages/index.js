@@ -15,7 +15,6 @@ export default function Home() {
       <Head>
         <title>AB Bike</title>
       </Head>
-
       
       <Container >
         <Row >
@@ -40,14 +39,17 @@ export default function Home() {
         </Row>     
         <Row >
           <Col className="mb-4">
-            <ImageGallery>
+          <ImageGallery>
               <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
-              <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
-              <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
+              <BasicImage imageSrc="/rent-items/torpado-viper-24.jpg"/>
+              <BasicImage imageSrc="/rent-items/dog-cart.jpg"/>
+              <BasicImage imageSrc="/rent-items/torpado-puma-20.jpg"/>
+              <BasicImage imageSrc="/rent-items/sup.jpg"/>
 
             </ImageGallery>
           </Col>
         </Row>
+       
       </Container>
     </>
   )

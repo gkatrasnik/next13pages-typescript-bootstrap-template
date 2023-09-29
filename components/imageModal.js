@@ -13,7 +13,9 @@ function ImageModal({imageSrc, title, handleClose}) {
                 <Modal.Body className="d-flex align-items-center justify-content-center">
                 <Image
                     alt={title}
-                    src={imageSrc}      
+                    src={imageSrc}  
+                    placeholder="blur"
+                    blurDataURL="/blur-image-png"   
                     height={500}
                     width={500}          
                     style={{
