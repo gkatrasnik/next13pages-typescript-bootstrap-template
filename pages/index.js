@@ -1,28 +1,12 @@
 import Head from 'next/head'
-
-//import Image from 'next/image'
-//import styles from '../styles/Home.module.scss'
 import {Container, Button, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
-import FormModal from '../components/formModal'
-import {useState} from 'react'
+
 import RentCard from '../components/rentCard';
 
 export default function Home() {
     const t = useTranslations('Index');
     const trc = useTranslations('RentCard');
-    const [formModalShowed, setFormModalShowed] = useState(false);//TODO move to pages with form modal!!!
-
-    // -------------------------------------------------------------------
-    //TODO move to pages with form modal!!!
-    const closeFormModal = () => {
-      setFormModalShowed(false);
-    }
-
-    const showFormModal = () => {
-      setFormModalShowed(true);
-    }
-    // -------------------------------------------------------------------
 
     return (
     <>
@@ -30,7 +14,7 @@ export default function Home() {
         <title>AB Bike</title>
       </Head>
 
-      {formModalShowed && <FormModal  handleClose={closeFormModal}/>}
+      
       <Container >
         <Row className='h-100'>
           <Col xs={12} md={6} className="mb-4">
@@ -46,8 +30,7 @@ export default function Home() {
                 title="Very nice bike"
                 bullets={[ `${trc("derailleur")}: Shimano ultegra`, `${trc("brakes")}: Shimano ultegra`, `${trc("suspension")}: RockShox reba rl`]}
                 price="40€"
-                imageSrc="/rent-items/haibike-hardnine-7.jpg"
-                actionCallback={showFormModal}
+                imageSrc="/rent-items/haibike-hardnine-2-0.jpg"
               />
             </div>
           </Col>
