@@ -21,9 +21,7 @@ export default function Home() {
           <Col xs={12} md={6} className="mb-4">
             <div className="h-100 text-center my-4 d-flex flex-column alling-items-center justify-content-center">
              <h1 className=' mb-4'>{t('title')}</h1>
-             <p className='mb-4'>{t('description')}</p>
-             <Button variant="primary" size="lg"  className='mx-auto mt-4 ' onClick={()=>{setShowFormModal(!formModalShowed)}}>Povpraševanje</Button>
-            
+             <p className='mb-4'>{t('description')}</p>            
             </div>
           </Col>
           <Col xs={12} md={6} className="mb-4"> 
