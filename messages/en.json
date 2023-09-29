@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Home1",
-    "description": "This is the home page.1"
+    "description": "This is the home page"
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"
