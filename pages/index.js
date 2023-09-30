@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import {Container, Button, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
-
 import RentCard from '../components/rentCard';
 import BasicImage from '../components/basicImage';
 import ImageGallery from '../components/imageGallery';
+
 
 export default function Home() {
     const t = useTranslations('Index');
@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>AB Bike</title>
-      </Head>
+      </Head>     
       
       <Container >
         <Row >

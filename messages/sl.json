@@ -1,7 +1,8 @@
 {
   "Index": {
     "title": "Domov",
-    "description": "To je domača stran"
+    "description": "To je domača stran",
+    "whatsapp": "Whatsapp"
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"

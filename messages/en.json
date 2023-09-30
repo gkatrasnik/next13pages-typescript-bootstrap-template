@@ -1,7 +1,8 @@
 {
   "Index": {
     "title": "Home1",
-    "description": "This is the home page"
+    "description": "This is the home page",
+    "whatsapp": "Whatsapp"
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"

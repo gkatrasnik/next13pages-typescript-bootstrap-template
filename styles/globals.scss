@@ -106,3 +106,11 @@ a {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 }
+
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 3;
+  color: white;
+}
