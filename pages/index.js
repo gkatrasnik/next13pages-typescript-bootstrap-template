@@ -4,6 +4,8 @@ import {useTranslations} from 'next-intl';
 import RentCard from '../components/rentCard';
 import BasicImage from '../components/basicImage';
 import ImageGallery from '../components/imageGallery';
+import GoogleMap from '../components/googleMap';
+import { Google } from 'react-bootstrap-icons';
 
 
 export default function Home() {
@@ -45,6 +47,11 @@ export default function Home() {
               <BasicImage imageSrc="/rent-items/sup.jpg"/>
 
             </ImageGallery>
+          </Col>
+        </Row>
+        <Row >
+          <Col className="mb-4">
+            <GoogleMap/>
           </Col>
         </Row>
        

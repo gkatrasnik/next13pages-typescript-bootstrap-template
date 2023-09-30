@@ -9,7 +9,7 @@ function FloatingWhatsappBtn() {
             <Button 
                 className='d-flex align-items-center justify-space-evenly rounded-pill' 
                 style={{backgroundColor:"#25D366", color:"white", borderColor:"white"}} 
-                href={`https://wa.me/${process.env.WHATSAPP_NUMBER}`}
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
             >
                 <Whatsapp className='me-2'  size={20}/> 
                 {t("whatsapp")}
