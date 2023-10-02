@@ -55,5 +55,9 @@
     "brakes": "Zavore",
     "wheelSize": "Velikost koles",
     "maxWeight": "Maksimalna obremenitev"
+  },
+  "BikeService": {
+    "service": "Storitev",
+    "price": "Cena (DDV vključen)"
   }
 }

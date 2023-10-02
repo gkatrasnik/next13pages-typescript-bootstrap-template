@@ -55,5 +55,9 @@
     "brakes": "Brakes",
     "wheelSize": "Wheel size",
     "maxWeight": "Maximum weight"
+  },
+  "BikeService": {
+    "service": "Service",
+    "price": "Price (tax included)"
   }
 }
