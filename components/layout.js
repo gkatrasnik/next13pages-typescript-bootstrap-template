@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <MyNavbar />
         <div className='content'>{children}</div>
-        <FloatingWhatsappBtn/>
+        <FloatingWhatsappBtn size="lg" />
       <MyFooter />
     </>
   )

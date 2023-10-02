@@ -102,10 +102,6 @@ a {
   display: none;  /* Safari and Chrome */
 }
 
-.image-gallery-scroller {
-  
-}
-
 .image-gallery-content {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
@@ -115,8 +111,8 @@ a {
 
 .floating-whatsapp-btn {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 1.2rem;
+  right: 1.2rem;
   z-index: 3;
   color: white;
 }
@@ -127,4 +123,13 @@ a {
   height: 100vw;
   max-width: 600px;
   max-height: 450px;
+}
+
+.social-media-icon {
+  color: $primary;
+  cursor: pointer;
+}
+
+.social-media-icon:hover {
+  color: $secondary;
 }

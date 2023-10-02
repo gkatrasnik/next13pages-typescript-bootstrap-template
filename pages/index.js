@@ -6,6 +6,7 @@ import BasicImage from '../components/basicImage';
 import ImageGallery from '../components/imageGallery';
 import GoogleMap from '../components/googleMap';
 import { Google } from 'react-bootstrap-icons';
+import SocialMediaLinks from '../components/socialMediaLinks';
 
 
 export default function Home() {
@@ -51,6 +52,10 @@ export default function Home() {
         <Row >
           <Col className="mb-4">
             <GoogleMap/>
+          </Col>
+        </Row>
+        <Row >
+          <Col className="mb-4">
           </Col>
         </Row>
        
