@@ -17,8 +17,8 @@ function ImageGallery({imageSrcs}) {
     <div className="image-gallery"  >
       <Button className='image-galery-nav-button left' variant="secondary" onClick={scrollLeft}><ChevronLeft/></Button>      
       <Stack direction="horizontal" ref={gallery} className="image-gallery-content">          
-        {imageSrcs.map(imageSrc => { 
-          return <BasicImage imageSrc={imageSrc}/>         
+        {imageSrcs.map((imageSrc,  index) => { 
+          return <BasicImage imageSrc={imageSrc} key={index}/>         
         })}    
       </Stack>
       <Button className='image-galery-nav-button right' variant="secondary" onClick={scrollRight}><ChevronRight/></Button>
