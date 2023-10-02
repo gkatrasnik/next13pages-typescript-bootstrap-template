@@ -1,6 +1,6 @@
 {
     "services": [
-      {"name": "SERVICE HOUR", "price": "33,00 €"},
+      {"name": "Service hour", "price": "33,00 €"},
       {"name": "Inner tube replacement", "price": "from 8,00 €"},
       {"name": "Tire replacement (with tube)", "price": "from 8,00 €"},
       {"name": "Tubular gluing (glue included in price)", "price": "20,00 €"},
@@ -29,7 +29,7 @@
       {"name": "Bike cleaning", "price": "50,00 €"},
       {"name": "Complete bike cleaning with drivetrain degreasing", "price": "by work hours"},
       {"name": "All other repairs", "price": null},
-      {"name": "SERVICE HOUR OUT OF QUEUE", "price": "45,00 €"},
-      {"name": "ALL REPAIRS OUT OF QUEUE", "price": "base service price + 50 %"}
+      {"name": "Service hour - priority", "price": "45,00 €"},
+      {"name": "All repairs - priority", "price": "base service price + 50 %"}
     ]
   }
