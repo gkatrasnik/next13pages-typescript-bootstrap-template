@@ -102,9 +102,15 @@ a {
   display: none;  /* Safari and Chrome */
 }
 
+.image-gallery-scroller {
+  
+}
+
 .image-gallery-content {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
+  width: fit-content;
+  margin: auto;
 }
 
 .floating-whatsapp-btn {

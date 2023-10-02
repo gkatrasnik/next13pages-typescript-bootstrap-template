@@ -39,14 +39,13 @@ export default function Home() {
         </Row>     
         <Row >
           <Col className="mb-4">
-          <ImageGallery>
-              <BasicImage imageSrc="/rent-items/haibike-hardnine-2-0.jpg"/>
-              <BasicImage imageSrc="/rent-items/torpado-viper-24.jpg"/>
-              <BasicImage imageSrc="/rent-items/dog-cart.jpg"/>
-              <BasicImage imageSrc="/rent-items/torpado-puma-20.jpg"/>
-              <BasicImage imageSrc="/rent-items/sup.jpg"/>
-
-            </ImageGallery>
+            <ImageGallery 
+              imageSrcs={["/rent-items/haibike-hardnine-2-0.jpg",
+                          "/rent-items/torpado-viper-24.jpg", 
+                          "/rent-items/dog-cart.jpg", 
+                          "/rent-items/torpado-puma-20.jpg", 
+                          "/rent-items/sup.jpg"]}
+            />        
           </Col>
         </Row>
         <Row >

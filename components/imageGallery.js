@@ -1,8 +1,9 @@
 import {useRef} from 'react'
 import {Stack, Button} from 'react-bootstrap';
 import { ChevronRight, ChevronLeft } from 'react-bootstrap-icons';
+import BasicImage from './basicImage';
 
-function ImageGallery({children}) {
+function ImageGallery({imageSrcs}) {
   const gallery = useRef()
   const scrollLeft = () => {
     gallery.current.scrollLeft -= 232;
@@ -14,10 +15,11 @@ function ImageGallery({children}) {
 
   return (
     <div className="image-gallery"  >
-      <Button className='image-galery-nav-button left' variant="secondary" onClick={scrollLeft}><ChevronLeft/></Button>
-      
+      <Button className='image-galery-nav-button left' variant="secondary" onClick={scrollLeft}><ChevronLeft/></Button>      
       <Stack direction="horizontal" ref={gallery} className="image-gallery-content">          
-          {children}          
+        {imageSrcs.map(imageSrc => { 
+          return <BasicImage imageSrc={imageSrc}/>         
+        })}    
       </Stack>
       <Button className='image-galery-nav-button right' variant="secondary" onClick={scrollRight}><ChevronRight/></Button>
     </div>
