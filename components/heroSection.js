@@ -28,8 +28,8 @@ function HeroSection({heroImageSrc}) {
                                 <h1 className='text-white mb-4'>{t('title')}</h1>                                
                                 <p className='text-white mb-4'>{t('description')}</p>
                                 <div>
-                                    <Button className='text-white m-2' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    
-                                    <Button className='text-white m-2' onClick={() => router.push('/bike-servis')}>{t('serviceButton')}</Button>  
+                                    <Button variant="secondary" className='m-2' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    
+                                    <Button variant="secondary" className='m-2' onClick={() => router.push('/bike-servis')}>{t('serviceButton')}</Button>  
                                 </div>            
                             </div>
                         </Col>

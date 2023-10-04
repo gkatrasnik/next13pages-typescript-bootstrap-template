@@ -7,11 +7,11 @@ function ImageGallery({imageSrcs}) {
   const [isScrollable, setIsScrollable] = useState(false);
   const gallery = useRef()
   const scrollLeft = () => {
-    gallery.current.scrollLeft -= 232;
+    gallery.current.scrollLeft -= 300;
   }
 
   const scrollRight = () => {
-    gallery.current.scrollLeft += 232;
+    gallery.current.scrollLeft += 300;
   }
 
      
@@ -22,13 +22,13 @@ function ImageGallery({imageSrcs}) {
   }, [])
 
   return (
-    <div className="image-gallery"  >
+    <div className="image-gallery">
       {isScrollable && 
         <Button className='image-galery-nav-button left' variant="secondary" onClick={scrollLeft}><ChevronLeft size={28}/></Button>      
       }
       <Stack direction="horizontal" ref={gallery} className="image-gallery-content">          
         {imageSrcs.map((imageSrc,  index) => { 
-          return <BasicImage imageSrc={imageSrc} key={index}/>         
+          return <BasicImage imageSrc={imageSrc} objectFit="cover" key={index}/>         
         })}    
       </Stack>
       {isScrollable && 

@@ -3,7 +3,7 @@ import { useState } from "react";
 import ImageModal from "./imageModal";
 import Image from "next/image";
 
-function BasicImage({imageSrc}) {
+function BasicImage({imageSrc, objectFit}) {
     const [imageModalShowed, setImageModalShowed] = useState(false);
 
     const closeImageModal = () => {
@@ -28,7 +28,7 @@ function BasicImage({imageSrc}) {
                 style={{
                     margin: "1rem",
                     borderRadius: "inherit",   
-                    objectFit: "contain",    
+                    objectFit: objectFit,    
                     cursor: "pointer"         
                 }}      
                 onClick={showImageModal}          

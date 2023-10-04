@@ -23,19 +23,26 @@ export default function Home() {
       
       <HeroSection heroImageSrc="/hero.jpg"/>
       <IndexPageBasicCards/>
-      <Container >   
-        <Row >
+      <Container >    
+        <Row className='mb-5'>
           <Col className="mb-4">
             <ImageGallery 
-              imageSrcs={["/rent-items/haibike-hardnine-2-0.jpg",
-                          "/rent-items/torpado-viper-24.jpg", 
-                          "/rent-items/dog-cart.jpg", 
-                          "/rent-items/torpado-puma-20.jpg", 
-                          "/rent-items/sup.jpg"]}
+              imageSrcs={["/index-images/image1.jpg",
+                          "/index-images/image2.jpg", 
+                          "/index-images/image3.jpg", 
+                          "/index-images/image4.jpg", 
+                          "/index-images/image5.jpg",
+                          "/index-images/image6.jpg",
+                          "/index-images/image7.jpg",
+                          "/index-images/image8.jpg",
+                          "/index-images/image9.jpg",
+                          "/index-images/image10.jpg",
+                          "/index-images/image11.jpg"
+                        ]}
             />        
           </Col>
         </Row>
-        <Row >
+        <Row className='my-5'>
           <Col className="mb-4">
             <GoogleMap/>
           </Col>
