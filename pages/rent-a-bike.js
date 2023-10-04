@@ -2,7 +2,7 @@ import Head from 'next/head'
 //import Image from 'next/image'
 //import styles from '../styles/Home.module.scss'
 import { Container, Card, Button, Row, Col } from 'react-bootstrap'
-import PricingCard from '../components/pricingCard'
+import GeneralCard from '../components/generalCard'
 
 export default function Pricing() {
      return (
@@ -14,7 +14,7 @@ export default function Pricing() {
         <h1 className=' text-center mb-5'>Pricing</h1>
         <Row>
           <Col xs={12} md={4} className="mb-4">
-            <PricingCard
+            <GeneralCard
               title="Small Plan"
               subtitle="Up to 3 employees"
               mainText="Get access to all of our features at an affordable price. Perfect for small businesses just starting out."
@@ -23,7 +23,7 @@ export default function Pricing() {
             />            
           </Col>
           <Col xs={12} md={4} className="mb-4">
-            <PricingCard
+            <GeneralCard
               title="Medium Plan"
               subtitle="Up to 10 employees"
               mainText="Get access to all of our features and priority support. Ideal for growing businesses with expanding needs."
@@ -32,7 +32,7 @@ export default function Pricing() {
             />    
           </Col>
           <Col xs={12} md={4} className="mb-4">
-            <PricingCard
+            <GeneralCard
               title="Custom Plan"
               subtitle="For larger businesses"
               mainText="We will work with you to create a custom plan that meets your needs."

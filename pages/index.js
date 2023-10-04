@@ -2,11 +2,10 @@ import Head from 'next/head'
 import {Container, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
 import RentCard from '../components/rentCard';
-import BasicImage from '../components/basicImage';
 import ImageGallery from '../components/imageGallery';
 import GoogleMap from '../components/googleMap';
-import { Google } from 'react-bootstrap-icons';
-import SocialMediaLinks from '../components/socialMediaLinks';
+import GeneralCardCard from '../components/generalCard';
+import HeroSection from '../components/heroSection';
 
 
 export default function Home() {
@@ -19,25 +18,8 @@ export default function Home() {
         <title>AB Bike</title>
       </Head>     
       
-      <Container >
-        <Row >
-          <Col xs={12} md={6} className="mb-4">
-            <div className="h-100 text-center my-4 d-flex flex-column alling-items-center justify-content-center">
-             <h1 className=' mb-4'>{t('title')}</h1>
-             <p className='mb-4'>{t('description')}</p>            
-            </div>
-          </Col>
-          <Col xs={12} md={6} className="mb-4"> 
-            <div className=' h-100 my-4 d-flex justify-content-center align-items-center'>
-              <RentCard 
-                title="Very nice bike"
-                bullets={[ `${trc("derailleur")}: Shimano ultegra`, `${trc("brakes")}: Shimano ultegra`, `${trc("suspension")}: RockShox reba rl`]}
-                price="40€"
-                imageSrc="/rent-items/haibike-hardnine-2-0.jpg"
-              />
-            </div>
-          </Col>
-        </Row>     
+      <HeroSection heroImageSrc="/hero.jpg"/>
+      <Container >        
         <Row >
           <Col className="mb-4">
             <ImageGallery 
@@ -56,6 +38,14 @@ export default function Home() {
         </Row>
         <Row >
           <Col className="mb-4">
+            <GeneralCardCard 
+              title="Medium Plan"
+              subtitle="Up to 10 employees"
+              mainText="Get access to all of our features and priority support. Ideal for growing businesses with expanding needs."
+              bullets={["Unlimited patients","Appointment scheduling","Priority email and phone support", "Custom branding"]}
+              bottomText="Comming Soon"
+              buttonText="Comming Soon"
+            />
           </Col>
         </Row>
        
