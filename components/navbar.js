@@ -4,6 +4,7 @@ import Link from 'next/link'
 import LocaleSwitcher from './localeSwitcher';
 import {useTranslations} from 'next-intl';
 import {useRouter} from 'next/router';
+import Image from 'next/image';
 
 export default function MyNavbar() {
   const router = useRouter()
@@ -27,7 +28,18 @@ export default function MyNavbar() {
               <div className='d-flex'>
         <Navbar.Brand>
           <Link href="/" passHref onClick={() => setExpanded(false)} >
-              Ab Bike
+            <Image
+              alt="logo"
+              src="/logo-small.png"  
+              placeholder="blur"
+              blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+              height={50}
+              width={50}   
+              style={{
+                marginInline: "1rem"                  
+              }}        
+                          
+            />
           </Link>
         </Navbar.Brand>
         <LocaleSwitcher/>

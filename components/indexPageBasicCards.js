@@ -1,9 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import GeneralCard from "./generalCard";
 import { useTranslations } from "next-intl";
+import { useRouter } from 'next/navigation'
 
 function IndexPageBasicCards() {
     const t = useTranslations("Index");
+    const router = useRouter();
 
     return (
     <Container>
@@ -12,28 +14,28 @@ function IndexPageBasicCards() {
                 <GeneralCard
                 title={t("rentaBike")} 
                 bottomText={t("priceFrom", {price: "13"})}
-                OnClick={()=>{console.log("SDHAIJSDHIAKSDH")}}
+                onCardClick={()=>{router.push('/rent-a-bike')}}
             />           
             </Col>
             <Col className="d-flex mb-4 justify-content-center">
                 <GeneralCard 
                     title={t("bikeServis")} 
                     bottomText={t("priceFrom", {price: "33"})}
-                    OnClick={()=>{router.push('/bike-servis')}}
+                    onCardClick={()=>{router.push('/bike-servis')}}
                 />
-            </Col>
-            <Col className="d-flex mb-4 justify-content-center">
-                <GeneralCard 
-                    title={t("econoBikesSale")} 
-                    OnClick={()=>{}}
-                />
-            </Col>
+            </Col>            
             <Col className="d-flex mb-4 justify-content-center">
                 <GeneralCard 
                     title={t("eBikeUpgrade")}
-                    OnClick={()=>{router.push('/ebike-upgrade')}} 
+                    onCardClick={()=>{router.push('/ebike-upgrade')}} 
                 />
-            </Col>           
+            </Col>    
+            <Col className="d-flex mb-4 justify-content-center">
+                <GeneralCard 
+                    title={t("econoBikesSale")} 
+                    onCardClick={()=>{}}
+                />
+            </Col>       
         </Row>   
     </Container> 
     );

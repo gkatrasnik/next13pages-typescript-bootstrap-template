@@ -1,8 +1,8 @@
 import { Card, Button} from 'react-bootstrap';
 
-export default function GeneralCard({title, subtitle, mainText, bullets, bottomText, buttonText}) {
+export default function GeneralCard({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick}) {
   return (
-    <Card className="h-100 shadow-sm">
+    <Card className="h-100 shadow-sm" onClick={onCardClick}>
         <Card.Body className="d-flex flex-column justify-content-between">
         <div>
             <Card.Title >{title}</Card.Title>

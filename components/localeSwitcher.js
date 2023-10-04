@@ -14,8 +14,8 @@ export default function LocaleSwitcher() {
   }
   
   return (   
-     <Dropdown show={dropdownShowed}>
-      <Dropdown.Toggle variant="" id="dropdown-basic" onClick={toggleDropdown}>
+     <Dropdown show={dropdownShowed} className='d-flex'>
+      <Dropdown.Toggle variant="" id="dropdown-basic" onClick={toggleDropdown} className="text-uppercase">
         {locale}
       </Dropdown.Toggle>      
 

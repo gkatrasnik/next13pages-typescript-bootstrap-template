@@ -24,7 +24,7 @@ function ImageGallery({imageSrcs}) {
   return (
     <div className="image-gallery">
       {isScrollable && 
-        <Button className='image-galery-nav-button left' variant="secondary" onClick={scrollLeft}><ChevronLeft size={28}/></Button>      
+        <Button className='image-galery-nav-button left text-white' variant="secondary" onClick={scrollLeft}><ChevronLeft size={28}/></Button>      
       }
       <Stack direction="horizontal" ref={gallery} className="image-gallery-content">          
         {imageSrcs.map((imageSrc,  index) => { 
@@ -32,7 +32,7 @@ function ImageGallery({imageSrcs}) {
         })}    
       </Stack>
       {isScrollable && 
-        <Button className='image-galery-nav-button right' variant="secondary" onClick={scrollRight}><ChevronRight size={28}/></Button>
+        <Button className='image-galery-nav-button right text-white' variant="secondary" onClick={scrollRight}><ChevronRight size={28}/></Button>
       }
       </div>
   );
