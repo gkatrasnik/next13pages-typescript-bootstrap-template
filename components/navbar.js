@@ -30,13 +30,14 @@ export default function MyNavbar() {
           <Link href="/" passHref onClick={() => setExpanded(false)} >
             <Image
               alt="logo"
-              src="/logo-small.png"  
+              src="/logo-big.png"  
               placeholder="blur"
               blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
               height={50}
               width={50}   
               style={{
-                marginInline: "1rem"                  
+                marginInline: "1rem",  
+                objectFit:"cover"                
               }}        
                           
             />

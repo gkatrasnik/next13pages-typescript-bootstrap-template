@@ -27,17 +27,17 @@ export default function Home() {
         <Row className='mb-5'>
           <Col className="mb-4">
             <ImageGallery 
-              imageSrcs={["/index-images/image1.jpg",
-                          "/index-images/image2.jpg", 
-                          "/index-images/image3.jpg", 
-                          "/index-images/image4.jpg", 
-                          "/index-images/image5.jpg",
-                          "/index-images/image6.jpg",
-                          "/index-images/image7.jpg",
-                          "/index-images/image8.jpg",
-                          "/index-images/image9.jpg",
-                          "/index-images/image10.jpg",
-                          "/index-images/image11.jpg"
+              imageSrcs={["/index-gallery-images/image1.jpg",
+                          "/index-gallery-images/image2.jpg", 
+                          "/index-gallery-images/image3.jpg", 
+                          "/index-gallery-images/image4.jpg", 
+                          "/index-gallery-images/image5.jpg",
+                          "/index-gallery-images/image6.jpg",
+                          "/index-gallery-images/image7.jpg",
+                          "/index-gallery-images/image8.jpg",
+                          "/index-gallery-images/image9.jpg",
+                          "/index-gallery-images/image10.jpg",
+                          "/index-gallery-images/image11.jpg"
                         ]}
             />        
           </Col>

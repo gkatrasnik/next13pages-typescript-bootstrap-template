@@ -6,6 +6,8 @@ $secondary: #00c086;
 $primary: #718a68;
 $secondary: #fed46a;
 
+$enable-shadows: true;
+
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -151,29 +153,31 @@ a {
 }
 
 /*BASIC CARD - INDEX PAGE*/
-.index-page-cards .card{
-  height: 15rem !important;
-  width: 10rem !important;
+.index-page-cards .card{  
   cursor: pointer;
-  border: 2px solid $primary;  
+  width: min-content;  
+  border: 2px solid var(--bs-border-color-translucent);
 }
 
 .index-page-cards .card .card-body {
-  padding: 1rem;
+  display: flex;
   flex-direction: column !important;
-  justify-content: center !important;;
-  align-self: center;
+  align-items: center !important;
 }
 
 .index-page-cards .card .card-body h5 {
   font-size: large;
   color: $primary;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .index-page-cards .card .card-body .card-title {
   font-size: x-large !important;
   font-weight: bold;
+}
+
+.general-card {
+  overflow: hidden;
 }
 

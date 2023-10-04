@@ -26,11 +26,13 @@ export default function MyFooter() {
           </Col>
 
           <Col xs={12} md={{span:6, order:1}} className='py-4'>
-          <SocialMediaLinks iconSize={48} />
-            <h5 className="fw-bold pb-1 pt-2">{t("partners")}</h5>
-            <div className="fw-bold pb-1">LOGO</div> 
-            <div className="fw-bold pb-1">LOGO</div> 
-            <div className="fw-bold pb-1">LOGO</div>            
+            <div className='d-flex flex-column justify-content-center align-items-center'>
+              <SocialMediaLinks iconSize={48} />
+              <h5 className="fw-bold pb-1 pt-2">{t("partners")}</h5>
+              <div className="fw-bold pb-1">LOGO</div> 
+              <div className="fw-bold pb-1">LOGO</div> 
+              <div className="fw-bold pb-1">LOGO</div> 
+            </div>                     
           </Col>
         </Row>      
     </Container>

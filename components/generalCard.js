@@ -1,8 +1,24 @@
 import { Card, Button} from 'react-bootstrap';
+import Image from 'next/image';
 
-export default function GeneralCard({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick}) {
+export default function GeneralCard({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick, imageSrc}) {
   return (
-    <Card className="h-100 shadow-sm" onClick={onCardClick}>
+    <Card className="h-100 general-card shadow" onClick={onCardClick}>
+        {imageSrc &&
+            <Image
+                alt={title}
+                src={imageSrc}      
+                width={200}
+                height={150}   
+                placeholder="blur"
+                blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+                style={{
+                    margin: "auto",   
+                    objectFit: "cover",           
+                }}             
+            />               
+        }
+        
         <Card.Body className="d-flex flex-column justify-content-between">
         <div>
             <Card.Title >{title}</Card.Title>

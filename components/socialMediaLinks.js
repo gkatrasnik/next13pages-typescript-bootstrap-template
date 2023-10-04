@@ -3,7 +3,7 @@ import { Facebook, Instagram } from 'react-bootstrap-icons';
 
 function SocialMediaLinks({iconSize}) {
   return (
-    <Stack direction="horizontal" gap={2}>
+    <Stack direction="horizontal" gap={2} className='justify-content-center'>
         <a href={process.env.NEXT_PUBLIC_FACEBOOK_URL}>
             <Facebook size={iconSize} className='social-media-icon' />
         </a>
