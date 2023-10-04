@@ -1,9 +1,11 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import {Button, Modal, Form} from 'react-bootstrap';
 import {useTranslations} from 'next-intl';
+import { ArrowRepeat } from 'react-bootstrap-icons';
 
 function FormModal({formIsForRent, formIsForTransform, handleClose}) {
     const t = useTranslations('FormModal');
+    const [isSending, setIsSending] = useState(false);
 
     const name = useRef();
     const phone = useRef();
@@ -71,8 +73,10 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
         return emailData
     }
 
-    const postSendEmail = async (data) => {
+    const postSendEmail = async () => {
         try {
+            setIsSending(true);
+
             const response = await fetch(process.env.NEXT_PUBLIC_BASE_URL + "/api/sendInquiry", {
             method: "POST", 
             headers: {
@@ -82,8 +86,11 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
             });
 
             const result = await response;
+
+            setIsSending(false);
             console.log("Success:", result.statusText);
         } catch (error) {
+            setIsSending(false);
             console.error("Error:", error);
         }
     }
@@ -221,7 +228,10 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
 
                     <div className='d-flex flex-column'>                        
                         <Button className="mt-2" variant="secondary" type="submit">
-                            {t('sendInquiry')}
+                        {isSending ?
+                            <ArrowRepeat size={20} className='icon-spin'/>:
+                            t('sendInquiry')                                
+                        }                  
                         </Button>
                     </div>
                 </Form>

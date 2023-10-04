@@ -30,7 +30,7 @@ function RentCard({title, bullets, price, imageSrc}) {
 
     return (
         <>
-            {formModalShowed && <FormModal  handleClose={closeFormModal}/>}
+            {formModalShowed && <FormModal  formIsForRent handleClose={closeFormModal}/>}
             {imageModalShowed && <ImageModal imageSrc={imageSrc} title={title} handleClose={closeImageModal}/>}
 
             <Card style={{ width: '300px' }}>
