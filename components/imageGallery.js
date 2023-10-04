@@ -1,9 +1,10 @@
-import {useRef} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import {Stack, Button} from 'react-bootstrap';
 import { ChevronRight, ChevronLeft } from 'react-bootstrap-icons';
 import BasicImage from './basicImage';
 
 function ImageGallery({imageSrcs}) {
+  const [isScrollable, setIsScrollable] = useState(false);
   const gallery = useRef()
   const scrollLeft = () => {
     gallery.current.scrollLeft -= 232;
@@ -13,16 +14,27 @@ function ImageGallery({imageSrcs}) {
     gallery.current.scrollLeft += 232;
   }
 
+     
+
+
+  useEffect(()=>{
+    setIsScrollable(gallery?.current?.scrollWidth > gallery?.current?.clientWidth);
+  }, [])
+
   return (
     <div className="image-gallery"  >
-      <Button className='image-galery-nav-button left' variant="secondary" onClick={scrollLeft}><ChevronLeft/></Button>      
+      {isScrollable && 
+        <Button className='image-galery-nav-button left' variant="secondary" onClick={scrollLeft}><ChevronLeft size={28}/></Button>      
+      }
       <Stack direction="horizontal" ref={gallery} className="image-gallery-content">          
         {imageSrcs.map((imageSrc,  index) => { 
           return <BasicImage imageSrc={imageSrc} key={index}/>         
         })}    
       </Stack>
-      <Button className='image-galery-nav-button right' variant="secondary" onClick={scrollRight}><ChevronRight/></Button>
-    </div>
+      {isScrollable && 
+        <Button className='image-galery-nav-button right' variant="secondary" onClick={scrollRight}><ChevronRight size={28}/></Button>
+      }
+      </div>
   );
 }
 

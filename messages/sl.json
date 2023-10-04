@@ -5,7 +5,12 @@
     "description": "Odkrijte lepote Bleda v svojem ritmu. Če iščete nove avanture ali potrebujete hitro popravilo, smo tukaj za vas.",
     "rentButton": "Izposoja koles",
     "serviceButton": "Servis koles",
-    "whatsapp": "Whatsapp"
+    "whatsapp": "Whatsapp",
+    "rentaBike": "Izposoja koles in supov",
+    "bikeServis": "Servis koles vseh vrst",
+    "econoBikesSale": "Prodaja električnih koles ECONO",
+    "eBikeUpgrade": "Električna predelava koelsa",
+    "priceFrom":"Od {price} €"
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"

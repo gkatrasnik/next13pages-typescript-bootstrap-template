@@ -6,11 +6,14 @@ import ImageGallery from '../components/imageGallery';
 import GoogleMap from '../components/googleMap';
 import GeneralCardCard from '../components/generalCard';
 import HeroSection from '../components/heroSection';
+import GeneralCard from '../components/generalCard';
+import { useRouter } from 'next/router';
+import IndexPageBasicCards from '../components/indexPageBasicCards';
 
 
 export default function Home() {
     const t = useTranslations('Index');
-    const trc = useTranslations('RentCard');
+    const router = useRouter();
 
     return (
     <>
@@ -19,7 +22,8 @@ export default function Home() {
       </Head>     
       
       <HeroSection heroImageSrc="/hero.jpg"/>
-      <Container >        
+      <IndexPageBasicCards/>
+      <Container >   
         <Row >
           <Col className="mb-4">
             <ImageGallery 
@@ -35,20 +39,7 @@ export default function Home() {
           <Col className="mb-4">
             <GoogleMap/>
           </Col>
-        </Row>
-        <Row >
-          <Col className="mb-4">
-            <GeneralCardCard 
-              title="Medium Plan"
-              subtitle="Up to 10 employees"
-              mainText="Get access to all of our features and priority support. Ideal for growing businesses with expanding needs."
-              bullets={["Unlimited patients","Appointment scheduling","Priority email and phone support", "Custom branding"]}
-              bottomText="Comming Soon"
-              buttonText="Comming Soon"
-            />
-          </Col>
-        </Row>
-       
+        </Row>        
       </Container>
     </>
   )

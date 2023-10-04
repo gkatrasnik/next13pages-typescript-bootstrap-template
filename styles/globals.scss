@@ -1,5 +1,4 @@
 /*! `Custom` Bootstrap 5 theme */
-
 /*
 $primary: #008f64;
 $secondary: #00c086;
@@ -7,11 +6,11 @@ $secondary: #00c086;
 $primary: #718a68;
 $secondary: #fed46a;
 
-/*! Import Bootstrap 5 variables */
+// Include any default variable overrides here (though functions won't be available)
 
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
 
 
 html,
@@ -42,7 +41,7 @@ main {
 .hero {
   position: relative;
   width: 100vw;
-  height: 60vh;
+  height: 600px;
 }
 
 .hero-content {
@@ -131,12 +130,14 @@ a {
   color: white;
 }
 
+.google-map-container {
+  height: 500px;
+}
+
 .google-map {
   border: 0;
-  width: 100vw;
-  height: 100vw;
-  max-width: 600px;
-  max-height: 450px;
+  width: 100%;
+  height: 100%;  
 }
 
 .social-media-icon {
@@ -147,3 +148,30 @@ a {
 .social-media-icon:hover {
   color: $secondary;
 }
+
+/*BASIC CARD - INDEX PAGE*/
+.index-page-cards .card{
+  height: 15rem !important;
+  width: 12rem !important;
+  cursor: pointer;
+}
+
+.index-page-cards .card .card-body {
+  padding: 2rem;
+  flex-direction: column !important;
+  justify-content: center !important;;
+  align-self: center;
+}
+
+.index-page-cards .card .card-body h5 {
+  font-size: large;
+  color: $primary;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.index-page-cards .card .card-body .card-title {
+  font-size: x-large !important;
+  font-weight: bold;
+}
+

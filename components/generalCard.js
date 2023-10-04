@@ -2,7 +2,7 @@ import { Card, Button} from 'react-bootstrap';
 
 export default function GeneralCard({title, subtitle, mainText, bullets, bottomText, buttonText}) {
   return (
-    <Card className="h-100">
+    <Card className="h-100 shadow-sm">
         <Card.Body className="d-flex flex-column justify-content-between">
         <div>
             <Card.Title >{title}</Card.Title>
@@ -10,18 +10,26 @@ export default function GeneralCard({title, subtitle, mainText, bullets, bottomT
             <Card.Text>
             {mainText}
             </Card.Text>
-            <ul className="list-unstyled">
+            {bullets &&
+                <ul className="list-unstyled">
                 {bullets.map(bullet => {
                     return <li key={bullet}>- {bullet}</li>
                 })}
             </ul>
+            }
+            
         </div>
+        {bottomText && 
         <div className='d-flex flex-column'>
             <div className='h5 mb-2 text-center'>{bottomText}</div>
         </div>
-        <div className='d-flex flex-column'>
-            <Button variant="primary">{buttonText}</Button>
-        </div>
+}
+        {buttonText && 
+            <div className='d-flex flex-column'>
+                <Button variant="primary">{buttonText}</Button>
+            </div>
+        }
+        
         </Card.Body>
     </Card>
   )

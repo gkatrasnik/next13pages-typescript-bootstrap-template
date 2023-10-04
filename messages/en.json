@@ -5,7 +5,12 @@
     "description": "Discover the beauty of Bled at your own pace. Whether you're here for the scenic adventure or just need a quick repair, we've got you covered.",
     "rentButton": "Rent a bike",
     "serviceButton": "Bike service",
-    "whatsapp": "Whatsapp"
+    "whatsapp": "Whatsapp",
+    "rentaBike": "Rent a bike or SUP",
+    "bikeServis": "Bike service",
+    "econoBikesSale": "ECONO bike shop",
+    "eBikeUpgrade": "Upgrade your bike to E-Bike",
+    "priceFrom":"From {price} €"
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"
