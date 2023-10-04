@@ -13,7 +13,7 @@ export default function Pricing() {
       <Container className="my-5">
         <h1 className=' text-center mb-5'>Pricing</h1>
         <Row>
-          <Col xs={12} md={4} className="mb-4">
+          <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
             <RentCard
               title="Very nice bike"           
               bullets={["blablablas","blablablas","blablablas"]}
@@ -21,7 +21,7 @@ export default function Pricing() {
               imageSrc="/index-card-images/econo-bike.jpg"
             />            
           </Col>
-          <Col xs={12} md={4} className="mb-4">
+          <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
             <RentCard
               title="Very nice bike2"           
               bullets={["blablablas","blablablas","blablablas"]}
@@ -29,7 +29,7 @@ export default function Pricing() {
               imageSrc="/index-card-images/econo-bike.jpg"
             />            
           </Col>
-          <Col xs={12} md={4} className="mb-4">
+          <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
             <RentCard
               title="Very nice bike3"           
               bullets={["blablablas","blablablas","blablablas"]}
@@ -37,7 +37,7 @@ export default function Pricing() {
               imageSrc="/index-card-images/econo-bike.jpg"
             />            
           </Col>
-          <Col xs={12} md={4} className="mb-4">
+          <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
             <RentCard
               title="Very nice bike4"           
               bullets={["blablablas","blablablas","blablablas"]}
