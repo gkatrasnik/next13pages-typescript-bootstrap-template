@@ -46,7 +46,7 @@ export default function RentABike(props) {
         </Row>
         <Row className='mb-5'>
           <h2 className='text-center'>{t("regularBikes")}</h2>
-          {props?.rentItems?.regularBikes?.map(rentItem => {
+          {props?.rentItems?.regularBikes?.map((rentItem, index) => {
               return (
                 <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
                   <RentCard 
@@ -62,7 +62,7 @@ export default function RentABike(props) {
         </Row>
         <Row className='mb-5'>
           <h2 className='text-center'>{t("accessories")}</h2>
-            {props?.rentItems?.other?.map(rentItem => {
+            {props?.rentItems?.other?.map((rentItem, index) => {
                 return (
                   <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
                       <RentCard 
