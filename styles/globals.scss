@@ -118,6 +118,10 @@ a {
   border-radius: 0;
 }
 
+.image-galery-nav-button:hover {
+  background-color: rgb(0, 0, 0, .2);
+}
+
 .image-galery-nav-button.left {
   z-index: 1;
   left: 0;

@@ -1,11 +1,12 @@
 import Head from 'next/head'
-//import Image from 'next/image'
-//import styles from '../styles/Home.module.scss'
-import { Container, Card, Button, Row, Col } from 'react-bootstrap'
+import {useTranslations} from 'next-intl';
+import { Container, Row, Col } from 'react-bootstrap'
 import RentCard from '../components/rentCard'
 
 export default function Pricing() {
-     return (
+  const trc = useTranslations('RentCard');
+
+  return (
     <>
       <Head>
         <title>Pricing</title>
@@ -14,36 +15,36 @@ export default function Pricing() {
         <h1 className=' text-center mb-5'>Pricing</h1>
         <Row>
           <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
-            <RentCard
-              title="Very nice bike"           
-              bullets={["blablablas","blablablas","blablablas"]}
-              price="45€/dan"
-              imageSrc="/index-card-images/econo-bike.jpg"
-            />            
+            <RentCard 
+              title="Very nice bike"
+              bullets={[ `${trc("derailleur")}: Shimano ultegra`, `${trc("brakes")}: Shimano ultegra`, `${trc("suspension")}: RockShox reba rl`]}
+              price="40€"
+              imageSrc="/rent-items/haibike-hardnine-2-0.jpg"
+            />      
           </Col>
           <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
-            <RentCard
-              title="Very nice bike2"           
-              bullets={["blablablas","blablablas","blablablas"]}
-              price="45€/dan"
-              imageSrc="/index-card-images/econo-bike.jpg"
-            />            
+            <RentCard 
+              title="Very nice bike"
+              bullets={[ `${trc("derailleur")}: Shimano ultegra`, `${trc("brakes")}: Shimano ultegra`, `${trc("suspension")}: RockShox reba rl`]}
+              price="40€"
+              imageSrc="/rent-items/haibike-hardnine-2-0.jpg"
+            />               
           </Col>
           <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
-            <RentCard
-              title="Very nice bike3"           
-              bullets={["blablablas","blablablas","blablablas"]}
-              price="45€/dan"
-              imageSrc="/index-card-images/econo-bike.jpg"
-            />            
+            <RentCard 
+              title="Very nice bike"
+              bullets={[ `${trc("derailleur")}: Shimano ultegra`, `${trc("brakes")}: Shimano ultegra`, `${trc("suspension")}: RockShox reba rl`]}
+              price="40€"
+              imageSrc="/rent-items/haibike-hardnine-2-0.jpg"
+            />               
           </Col>
           <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
-            <RentCard
-              title="Very nice bike4"           
-              bullets={["blablablas","blablablas","blablablas"]}
-              price="45€/dan"
-              imageSrc="/index-card-images/econo-bike.jpg"
-            />            
+            <RentCard 
+              title="Very nice bike"
+              bullets={[ `${trc("derailleur")}: Shimano ultegra`, `${trc("brakes")}: Shimano ultegra`, `${trc("suspension")}: RockShox reba rl`]}
+              price="40€"
+              imageSrc="/rent-items/haibike-hardnine-2-0.jpg"
+            />              
           </Col>
           
         </Row>
@@ -55,7 +56,8 @@ export default function Pricing() {
 export async function getStaticProps(context) {
   return {
     props: {
-      messages: (await import(`../messages/${context.locale}.json`)).default
+      messages: (await import(`../messages/${context.locale}.json`)).default,
+      rentItems: (await import(`../assets/rent-items-${context.locale}.json`)).default
     }
   };
 }

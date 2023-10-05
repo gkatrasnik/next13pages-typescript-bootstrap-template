@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
 import SocialMediaLinks from './socialMediaLinks';
+import PartnerLogos from './partnerLogos';
 
 export default function MyFooter() {
   const t = useTranslations('Footer');
@@ -25,13 +26,10 @@ export default function MyFooter() {
             </div>
           </Col>
 
-          <Col xs={12} md={{span:6, order:1}} className='py-4'>
-            <div className='d-flex flex-column justify-content-center align-items-center'>
+          <Col xs={12} md={{span:6, order:1}} className='py-4 d-flex justify-content-center align-items-center'>
+            <div className='d-flex flex-column justify-content-center align-items-center gap-2'>
               <SocialMediaLinks iconSize={48} />
-              <h5 className="fw-bold pb-1 pt-2">{t("partners")}</h5>
-              <div className="fw-bold pb-1">LOGO</div> 
-              <div className="fw-bold pb-1">LOGO</div> 
-              <div className="fw-bold pb-1">LOGO</div> 
+              <PartnerLogos imageSrcs={["/alpina.png", "/ziener.png", "/asa.png"]}/>
             </div>                     
           </Col>
         </Row>      
