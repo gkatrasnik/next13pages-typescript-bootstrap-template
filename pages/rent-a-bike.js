@@ -30,11 +30,10 @@ export default function RentABike(props) {
 
         <Row className='mb-5'>
           <h2 className='text-center'>{t("eBikes")}</h2>
-            {props?.rentItems?.eBikes?.map(rentItem => {
+            {props?.rentItems?.eBikes?.map((rentItem, index) => {
                 return (
-                  <Col sm={4} className='d-flex justify-content-center my-3'>
+                  <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
                     <RentCard 
-                      key={rentItem.title}
                       title={rentItem.title}
                       bullets={rentItem.bullets}
                       price={rentItem.price}
@@ -49,9 +48,8 @@ export default function RentABike(props) {
           <h2 className='text-center'>{t("regularBikes")}</h2>
           {props?.rentItems?.regularBikes?.map(rentItem => {
               return (
-                <Col sm={4} className='d-flex justify-content-center my-3'>
+                <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
                   <RentCard 
-                    key={rentItem.title}
                     title={rentItem.title}
                     bullets={rentItem.bullets}
                     price={rentItem.price}
@@ -66,9 +64,8 @@ export default function RentABike(props) {
           <h2 className='text-center'>{t("accessories")}</h2>
             {props?.rentItems?.other?.map(rentItem => {
                 return (
-                  <Col sm={4} className='d-flex justify-content-center my-3'>
+                  <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
                       <RentCard 
-                        key={rentItem.title}
                         title={rentItem.title}
                         bullets={rentItem.bullets}
                         price={rentItem.price}

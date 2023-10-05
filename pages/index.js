@@ -1,12 +1,9 @@
 import Head from 'next/head'
 import {Container, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
-import RentCard from '../components/rentCard';
 import ImageGallery from '../components/imageGallery';
 import GoogleMap from '../components/googleMap';
-import GeneralCardCard from '../components/generalCard';
 import HeroSection from '../components/heroSection';
-import GeneralCard from '../components/generalCard';
 import { useRouter } from 'next/router';
 import IndexPageBasicCards from '../components/indexPageBasicCards';
 
