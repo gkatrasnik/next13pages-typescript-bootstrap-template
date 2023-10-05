@@ -5,6 +5,7 @@ function PartnerLogos({imageSrcs}) {
         <div className="d-flex flex-column justify-content-center align-items-center">
             {imageSrcs.map(imageSrc => {
                 return <Image
+                    key={imageSrc}
                     alt={imageSrc}
                     src={imageSrc}      
                     height={40}
