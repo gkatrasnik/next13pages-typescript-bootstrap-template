@@ -1,1 +1,161 @@
-{}
+{
+    "items": [
+      {
+        "title": "CUBE Reaction Hybrid Performance",
+        "imageSrc": "/rent-items/CUBE-Reaction-Hybrid-Performance.jpg",
+        "bullets": [
+          "MOTOR: Bosch Performance Gen. 3, 250W, 65 Nm",
+          "BATERIJA: Bosch Powertube 500Wh",
+          "DISPLAY: Bosch Purion",
+          "MENJALNIK: Shimano RD-M3100-SGS, 9 speed",
+          "ZADNJI VERIŽNIK: Shimano CS-HG201, 11-36T",
+          "PREDNJE VZMETENJE: SR Suntour NVX30 Coil, 100mm",
+          "ZAVORE: Shimano BR-MT200 (180/180)"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "CUBE Reaction Hybrid EX",
+        "imageSrc": "/rent-items/CUBE-Reaction-Hybrid-EX.jpg",
+        "bullets": [
+          "MOTOR: Bosch Performance CX Gen. 4, 250W, 75 Nm",
+          "BATERIJA: Bosch Powertube 500Wh",
+          "DISPLAY: Bosch Purion",
+          "MENJALNIK: Sram SX Eagle, 12 speed",
+          "ZADNJI VERIŽNIK: Sram PG-1210 Eagle, 11-50",
+          "PREDNJE VZMETENJE: SR Suntour XCM34, 120mm",
+          "ZAVORE: hidravlične Shimano MT420/MT400 203/180)"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "CUBE Reaction Hybrid PRO",
+        "imageSrc": "/rent-items/CUBE-Reaction-Hybrid-PRO.jpg",
+        "bullets": [
+          "MOTOR: Bosch Performance CX Gen. 4, 250W, 75 Nm",
+          "BATERIJA: Bosch Powertube 625Wh",
+          "DISPLAY: Bosch Purion",
+          "MENJALNIK: Sram SX Eagle, 12 speed",
+          "ZADNJI VERIŽNIK: Sram PG-1210 Eagle, 11-50",
+          "PREDNJE VZMETENJE: SR Suntour XCM34, 120mm",
+          "ZAVORE: hidravlične Shimano BR-MT200 (180/180)"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "HAIBIKE Hardnine 2.0",
+        "imageSrc": "/rent-items/HAIBIKE-Hardnine-2.0.jpg",
+        "bullets": [
+          "MOTOR: YAMAHA PW-SE System 250W, 70 Nm",
+          "BATERIJA: Yamaha 400Wh",
+          "DISPLAY: Yamaha Side Switch",
+          "MENJALNIK: Shimano RD-M6000, 10 speed",
+          "ZADNJI VERIŽNIK: Shimano CS-M4100, 11-42T",
+          "PREDNJE VZMETENJE: SR Suntour XCR Air Lockout, 100mm",
+          "ZAVORE: Tektro M275 (180/180)"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "HAIBIKE Hardnine 7",
+        "imageSrc": "/rent-items/HAIBIKE-Hardnine-7.jpg",
+        "bullets": [
+          "MOTOR: YAMAHA PW-ST System, 250W, 70 Nm",
+          "BATERIJA: Yamaha InTube 630Wh",
+          "DISPLAY: Yamaha Side Switch",
+          "MENJALNIK: Shimano RD-M7100-SGS, 12 speed",
+          "ZADNJI VERIŽNIK: Shimano CS-M6100, 10-51T",
+          "PREDNJE VZMETENJE: RockShox 35 Silver, 120mm",
+          "ZAVORE: Shimano BR-MT420/MT410 (203/180)"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "HAIBIKE Seet 7",
+        "imageSrc": "/rent-items/HAIBIKE-Seet-7.jpg",
+        "bullets": [
+          "OKVIR: Haibike Seet 7, Aluminium 6061",
+          "VILICA: SR Suntour, XCT HLO-DS, 100mm",
+          "PRENJI MENJALNIK: Shimano FD-M310, Altus",
+          "ZADNJI MENJALNIK: Shimano RD-M360, Acera",
+          "GONILKA: Shimano FC-TY301, 24-32-42",
+          "ZADNJI VERIŽNIK: SunRace, CSM40, 12-32T",
+          "ZAVORE: Shimano BR-MT200 (160/160)"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "TORPADO Mercury 29",
+        "imageSrc": "/rent-items/TORPADO-Mercury-29.jpg",
+        "bullets": [
+          "OKVIR: Torpado Mercury, Aluminium 6061",
+          "VILICA: Torpado 330 HL 29, 100mm",
+          "PRENJI MENJALNIK: Shimano Altus FD-M2000",
+          "ZADNJI MENJALNIK: Shimano Alivio RD-M3100, 9 prestav",
+          "GONILKA: Shimano FC-MT210-3",
+          "ZADNJI VERIŽNIK: Shimano CS-HG200-9",
+          "ZAVORE: Shimano BR-MT200 (160/160)"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "TORPADO Navigator Lux",
+        "imageSrc": "/rent-items/TORPADO-Navigator-Lux.jpg",
+        "bullets": [
+          "OKVIR: Torpado Navigator T411, Aluminium 6061",
+          "VILICA: Torpado G.W. 690",
+          "PRENJI MENJALNIK: Shimano FD-TY600, 3p",
+          "ZADNJI MENJALNIK: Shimano Acera RD-M3020, 8 prestav",
+          "GONILKA: Shimano FC-TY301, 3 prestave",
+          "ZADNJI VERIŽNIK: Shimano CS-HG31-8",
+          "ZAVORE: Shimano V-Brake"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "TORPADO Viper 24",
+        "imageSrc": "/rent-items/TORPADO-Viper-24.jpg",
+        "bullets": [
+          "OKVIR: Torpado Viper, jeklo",
+          "PRENJI MENJALNIK: Shimano FD-TY300, 3 prestave",
+          "ZADNJI MENJALNIK: Shimano RD-TY300, 7 prestav",
+          "GONILKA: N-N, steel",
+          "ZAVORE: V-Brake",
+          "VELIKOST KOLES: 24″"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "TORPADO Puma 20",
+        "imageSrc": "/rent-items/TORPADO-Puma-20.jpg",
+        "bullets": [
+          "OKVIR: Torpado Puma, jeklo",
+          "ZADNJI MENJALNIK: Shimano RD-TY300, 7 prestav",
+          "GONILKA: N-N, steel",
+          "ZAVORE: V-Brake",
+          "VELIKOST KOLES: 20″"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "THULE prikolica za 2 otroka",
+        "imageSrc": "/rent-items/THULE-prikolica-za-2-otroka.jpg",
+        "bullets": [
+          "Primerna Za prevoz 1 ali 2 otroka",
+          "VELIKOST KOLES: 20″",
+          "MAKSIMALNA OBREMENITEV: 45 kg"
+        ],
+        "price": "50€"
+      },
+      {
+        "title": "XLC prikolica za psa",
+        "imageSrc": "/rent-items/XLC-prikolica-za-psa.jpg",
+        "bullets": [
+          "DIMENZIJE: 77x56x52cm",
+          "VELIKOST KOLES: 16″",
+          "MAKSIMALNA OBREMENITEV: 30 kg"
+        ],
+        "price": "50€"
+      }      
+    ]
+  }

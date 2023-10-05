@@ -74,13 +74,13 @@
         "title": "HAIBIKE Seet 7",
         "imageSrc": "/rent-items/HAIBIKE-Seet-7.jpg",
         "bullets": [
-          "Okvir: Haibike Seet 7, Aluminium 6061",
-          "Vilica: SR Suntour, XCT HLO-DS, 100mm",
-          "Prednji menjalnik: Shimano FD-M310, Altus",
-          "Zadnji menjalnik: Shimano RD-M360, Acera",
-          "Gonilka: Shimano FC-TY301, 24-32-42",
-          "Zadnji verižnik: SunRace, CSM40, 12-32T",
-          "Zavore: Shimano BR-MT200 (160/160)"
+          "OKVIR: Haibike Seet 7, Aluminium 6061",
+          "VILICA: SR Suntour, XCT HLO-DS, 100mm",
+          "PRENJI MENJALNIK: Shimano FD-M310, Altus",
+          "ZADNJI MENJALNIK: Shimano RD-M360, Acera",
+          "GONILKA: Shimano FC-TY301, 24-32-42",
+          "ZADNJI VERIŽNIK: SunRace, CSM40, 12-32T",
+          "ZAVORE: Shimano BR-MT200 (160/160)"
         ],
         "price": "50€"
       },
@@ -88,13 +88,13 @@
         "title": "TORPADO Mercury 29",
         "imageSrc": "/rent-items/TORPADO-Mercury-29.jpg",
         "bullets": [
-          "Okvir: Torpado Mercury, Aluminium 6061",
-          "Vilica: Torpado 330 HL 29, 100mm",
-          "Prednji menjalnik: Shimano Altus FD-M2000",
-          "Zadnji menjalnik: Shimano Alivio RD-M3100, 9 prestav",
-          "Gonilka: Shimano FC-MT210-3",
-          "Zadnji verižnik: Shimano CS-HG200-9",
-          "Zavore: Shimano BR-MT200 (160/160)"
+          "OKVIR: Torpado Mercury, Aluminium 6061",
+          "VILICA: Torpado 330 HL 29, 100mm",
+          "PRENJI MENJALNIK: Shimano Altus FD-M2000",
+          "ZADNJI MENJALNIK: Shimano Alivio RD-M3100, 9 prestav",
+          "GONILKA: Shimano FC-MT210-3",
+          "ZADNJI VERIŽNIK: Shimano CS-HG200-9",
+          "ZAVORE: Shimano BR-MT200 (160/160)"
         ],
         "price": "50€"
       },
@@ -102,13 +102,13 @@
         "title": "TORPADO Navigator Lux",
         "imageSrc": "/rent-items/TORPADO-Navigator-Lux.jpg",
         "bullets": [
-          "Okvir: Torpado Navigator T411, Aluminium 6061",
-          "Vilica: Torpado G.W. 690",
-          "Prednji menjalnik: Shimano FD-TY600, 3p",
-          "Zadnji menjalnik: Shimano Acera RD-M3020, 8 prestav",
-          "Gonilka: Shimano FC-TY301, 3 prestave",
-          "Zadnji verižnik: Shimano CS-HG31-8",
-          "Zavore: Shimano V-Brake"
+          "OKVIR: Torpado Navigator T411, Aluminium 6061",
+          "VILICA: Torpado G.W. 690",
+          "PRENJI MENJALNIK: Shimano FD-TY600, 3p",
+          "ZADNJI MENJALNIK: Shimano Acera RD-M3020, 8 prestav",
+          "GONILKA: Shimano FC-TY301, 3 prestave",
+          "ZADNJI VERIŽNIK: Shimano CS-HG31-8",
+          "ZAVORE: Shimano V-Brake"
         ],
         "price": "50€"
       },
@@ -116,12 +116,12 @@
         "title": "TORPADO Viper 24",
         "imageSrc": "/rent-items/TORPADO-Viper-24.jpg",
         "bullets": [
-          "Okvir: Torpado Viper, jeklo",
-          "Prednji menjalnik: Shimano FD-TY300, 3 prestave",
-          "Zadnji menjalnik: Shimano RD-TY300, 7 prestav",
-          "Gonilka: N-N, steel",
-          "Zavore: V-Brake",
-          "Velikost koles: 24″"
+          "OKVIR: Torpado Viper, jeklo",
+          "PRENJI MENJALNIK: Shimano FD-TY300, 3 prestave",
+          "ZADNJI MENJALNIK: Shimano RD-TY300, 7 prestav",
+          "GONILKA: N-N, steel",
+          "ZAVORE: V-Brake",
+          "VELIKOST KOLES: 24″"
         ],
         "price": "50€"
       },
@@ -129,11 +129,11 @@
         "title": "TORPADO Puma 20",
         "imageSrc": "/rent-items/TORPADO-Puma-20.jpg",
         "bullets": [
-          "Okvir: Torpado Puma, jeklo",
-          "Zadnji menjalnik: Shimano RD-TY300, 7 prestav",
-          "Gonilka: N-N, steel",
-          "Zavore: V-Brake",
-          "Velikost koles: 20″"
+          "OKVIR: Torpado Puma, jeklo",
+          "ZADNJI MENJALNIK: Shimano RD-TY300, 7 prestav",
+          "GONILKA: N-N, steel",
+          "ZAVORE: V-Brake",
+          "VELIKOST KOLES: 20″"
         ],
         "price": "50€"
       },
@@ -141,9 +141,9 @@
         "title": "THULE prikolica za 2 otroka",
         "imageSrc": "/rent-items/THULE-prikolica-za-2-otroka.jpg",
         "bullets": [
-          "Za prevoz 1 ali 2 otroka",
-          "Velikost koles: 20″",
-          "Maksimalna obremenitev: 45 kg"
+          "Primerna Za prevoz 1 ali 2 otroka",
+          "VELIKOST KOLES: 20″",
+          "MAKSIMALNA OBREMENITEV: 45 kg"
         ],
         "price": "50€"
       },
@@ -151,9 +151,9 @@
         "title": "XLC prikolica za psa",
         "imageSrc": "/rent-items/XLC-prikolica-za-psa.jpg",
         "bullets": [
-          "Dimenzije: 77x56x52cm",
-          "Velikost koles: 16″",
-          "Maksimalna obremenitev: 30 kg"
+          "DIMENZIJE: 77x56x52cm",
+          "VELIKOST KOLES: 16″",
+          "MAKSIMALNA OBREMENITEV: 30 kg"
         ],
         "price": "50€"
       }      
