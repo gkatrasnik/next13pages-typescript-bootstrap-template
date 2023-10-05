@@ -207,3 +207,17 @@ a {
 .rent-card li{
   font-size: .8rem;
 }
+
+/*CARDS - BIKE SERVICE PAGE*/
+.bike-service-cards .card-title {
+  font-size: x-large;
+  text-align: center;
+  color: $primary;
+}
+
+.bike-service-cards ul {
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  list-style-type: circle;
+}
+

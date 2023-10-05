@@ -7,7 +7,7 @@
     "serviceButton": "Servis koles",
     "whatsapp": "Whatsapp",
     "rentaBike": "Izposoja koles in supov",
-    "bikeServis": "Servis koles vseh vrst",
+    "bikeService": "Servis koles vseh vrst",
     "econoBikesSale": "Prodaja električnih koles ECONO",
     "eBikeUpgrade": "Električna predelava koelsa",
     "priceFrom":"Od {price} €"
@@ -41,7 +41,7 @@
     "rentABike": "Izposoja kolesa",
     "rentASup": "Izposoja supa",
     "cyclingTrips": "Kolesarski izleti",
-    "bikeServis": "Servis koles",
+    "bikeService": "Servis koles",
     "eBikeUpgrade": "Električna predelava",
     "aboutUs": "O nas",
     "contact": "Kontakt"
@@ -65,8 +65,41 @@
     "maxWeight": "Maksimalna obremenitev"
   },
   "BikeService": {
+    "bikeService": "Kolesarski servis",
     "service": "Storitev",
-    "price": "Cena (DDV vključen)"
+    "price": "Cena (DDV vključen)",
+    "pricelist": "Cenik servisnih storitev",
+    "paragraph1": "Za brezhibno delovanje kolesa je zelo pomembno redno vzdrževanje in servisiranje. Z rednimi obiski servisov poskrbite, da je vaše kolo izpravno in varno za uporabo, preprečujete pa tudi morebitne okvare kolesa na terenu, ki bi vam otežile dan.",
+    "paragraph2": "Naša servisna ekipa z večletnimi izkušnjami in rednimi strokovnimi izobraževanji skrbi za najvišjo kakovost storitve. Servis je polno opremljen z vrhunsko in sodobno delovno opremo slovenskega proizvajalca UNIOR. Z obiskom našega kolesarskega servisa vam zagotavljamo, da je vaše kolo v dobrih rokah!",
+    "paragraph3": "V sklopu servisa izvajamo tudi nadgradnjo, električno predelavo in sestavo kolesa po lastnih željah.",
+    "paragraph4": "Dobrodošli v naš kolesarski servis s katerim koli tipom in znamko kolesa!",
+    "generalServiceTitle": "Splošni servis",    
+    "generalServiceBullet1": "Pregled celotnega kolesa",
+    "generalServiceBullet2": "Pregled pogonskega sklopa (meritev obrabljenosti in mazanje verige)",
+    "generalServiceBullet3": "Centriranje obročnikov",
+    "generalServiceBullet4": "Pregled obrabljenosti in nastavitev zavor",
+    "generalServiceBullet5": "Pregled in nastavitev menjalnikov",
+    "generalServiceBullet6": "Preverjanje tlaka v pnevmatikah",
+    "generalServiceBottomText": "35.00€",
+
+    "yearlyServiceTitle": "Redni servis",
+    "yearlyServiceBullet1": "Pregled celotnega kolesa",
+    "yearlyServiceBullet2": "Pregled pogonskega sklopa (po potrebi menjava verige in verižnikov)",
+    "yearlyServiceBullet3": "Pregled in nastavitev zavornega sistema (menjava zavornih oblog, pletenice in bovdna po potrebi)",
+    "yearlyServiceBullet4": "Pregled in nastavitev menjalnikov (menjava pletenic in bovdna po potrebi)",
+    "yearlyServiceBullet5": "Čiščenje in mazanje gonilnega ležaja",
+    "yearlyServiceBullet6": "Centriranje obročnikov",
+    "yearlyServiceBullet7": "Preverjanje tlaka v pnevmatikah",
+    "yearlyServiceBottomText": "65.00€",
+
+    "largeServiceTitle": "Generalni servis",
+    "largeServiceBullet1": "redni servis",
+    "largeServiceBullet2": "Čiščenje in mazanje ali menjava ležajev pest",
+    "largeServiceBullet3": "Čiščenje in mazanje krmilnega ležaja",
+    "largeServiceBullet4": "Menjava plaščev, zračnic, ventilov, traku obroča, tubeless sistem, lepljenje tubularjev",
+    "largeServiceBullet5": "Menjava ročajev/traku krmila",
+    "largeServiceBottomText": "od 95.00€"
+
   },
   "RentABike": {
     "rentABike": "Izposoja koles",

@@ -7,7 +7,7 @@
     "serviceButton": "Bike service",
     "whatsapp": "Whatsapp",
     "rentaBike": "Rent a bike or SUP",
-    "bikeServis": "Bike service",
+    "bikeService": "Bike service",
     "econoBikesSale": "ECONO bike shop",
     "eBikeUpgrade": "Upgrade your bike to E-Bike",
     "priceFrom":"From {price} €"
@@ -41,7 +41,7 @@
     "rentABike": "Rent a bike",
     "rentASup": "Rent a sup",
     "cyclingTrips": "Cycling trips",
-    "bikeServis": "Bike servis",
+    "bikeService": "Bike service",
     "eBikeUpgrade": "E-Bike upgrade",
     "aboutUs": "About us",
     "contact": "Contact"
@@ -65,8 +65,40 @@
     "maxWeight": "Maximum weight"
   },
   "BikeService": {
+    "bikeService": "Bike service",
     "service": "Service",
-    "price": "Price (tax included)"
+    "price": "Price (tax included)",
+    "pricelist": "Service price list",
+    "paragraph1": "For the flawless operation of a bicycle, regular maintenance and servicing are very important. With regular service visits, you ensure that your bicycle is in proper and safe condition for use, and you also prevent potential bicycle malfunctions in the field that could make your day difficult.",
+    "paragraph2": "Our service team, with years of experience and regular professional training, ensures the highest quality of service. The service center is fully equipped with top-notch and modern work equipment from the Slovenian manufacturer UNIOR. By visiting our bicycle service, we guarantee that your bicycle is in good hands!",
+    "paragraph3": "As part of the service, we also offer upgrades, electric conversions, and custom bicycle assembly according to individual preferences.",
+    "paragraph4": "Welcome to our bicycle service with any type and brand of bicycle!",
+    "generalServiceTitle": "General Service",
+    "generalServiceBullet1": "Full bicycle inspection",
+    "generalServiceBullet2": "Drivetrain check (wear measurement and chain lubrication)",
+    "generalServiceBullet3": "Wheel truing",
+    "generalServiceBullet4": "Brake wear inspection and adjustment",
+    "generalServiceBullet5": "Gear inspection and adjustment",
+    "generalServiceBullet6": "Tire pressure check",
+    "generalServiceBottomText": "35.00€",
+
+    "yearlyServiceTitle": "Regular Service",
+    "yearlyServiceBullet1": "Full bicycle inspection",
+    "yearlyServiceBullet2": "Drivetrain check (chain and sprockets replacement if needed)",
+    "yearlyServiceBullet3": "Brake system inspection and adjustment (replacement of brake pads, cables, and housing if needed)",
+    "yearlyServiceBullet4": "Gear inspection and adjustment (replacement of cables and housing if needed)",
+    "yearlyServiceBullet5": "Cleaning and lubrication of the bottom bracket",
+    "yearlyServiceBullet6": "Wheel truing",
+    "yearlyServiceBullet7": "Tire pressure check",
+    "yearlyServiceBottomText": "65.00€",
+
+    "largeServiceTitle": "Large Service",
+    "largeServiceBullet1": "Regular service",
+    "largeServiceBullet2": "Cleaning, lubrication, or replacement of hub bearings",
+    "largeServiceBullet3": "Cleaning and lubrication of the headset",
+    "largeServiceBullet4": "Replacement of tires, inner tubes, valves, rim tape, tubeless system, and tubular tire bonding",
+    "largeServiceBullet5": "Replacement of handlebar grips/tape",
+    "largeServiceBottomText": "from 95.00€"
   },
   "RentABike": {
     "rentABike": "Bike Rental",

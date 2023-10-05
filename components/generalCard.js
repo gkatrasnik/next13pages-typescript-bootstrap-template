@@ -29,7 +29,7 @@ export default function GeneralCard({title, subtitle, mainText, bullets, bottomT
             {bullets &&
                 <ul className="list-unstyled">
                 {bullets.map(bullet => {
-                    return <li key={bullet}>- {bullet}</li>
+                    return <li key={bullet}>{bullet}</li>
                 })}
             </ul>
             }

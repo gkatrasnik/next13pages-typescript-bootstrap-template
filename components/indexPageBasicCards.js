@@ -20,16 +20,16 @@ function IndexPageBasicCards() {
             </Col>
             <Col className="d-flex mb-4 justify-content-center">
                 <GeneralCard 
-                    title={t("bikeServis")} 
+                    title={t("bikeService")} 
                     bottomText={t("priceFrom", {price: "33"})}
-                    imageSrc="/index-card-images/servis.jpg"
-                    onCardClick={()=>{router.push('/bike-servis')}}
+                    imageSrc="/index-card-images/service.jpg"
+                    onCardClick={()=>{router.push('/bike-service')}}
                 />
             </Col>            
             <Col className="d-flex mb-4 justify-content-center">
                 <GeneralCard 
                     title={t("eBikeUpgrade")}
-                    imageSrc="/index-card-images/komplet-za-predelavo.jpg"
+                    imageSrc="/index-card-images/ebike-upgrade.jpg"
                     onCardClick={()=>{router.push('/ebike-upgrade')}} 
                 />
             </Col>    

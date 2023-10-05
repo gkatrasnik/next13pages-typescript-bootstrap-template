@@ -60,8 +60,8 @@ export default function MyNavbar() {
           <Link  className='nav-link navbar-nav custom-nav-link' href="/cycling-trips" passHref onClick={collapseNavbar}>
             <div className={'custom-nav-link-text' + getSelectedCls("/cycling-trips")}>{t('cyclingTrips')}</div>
           </Link>
-          <Link  className='nav-link navbar-nav custom-nav-link' href="/bike-servis" passHref onClick={collapseNavbar}>
-            <div className={'custom-nav-link-text' + getSelectedCls("/bike-servis")}>{t('bikeServis')}</div>
+          <Link  className='nav-link navbar-nav custom-nav-link' href="/bike-service" passHref onClick={collapseNavbar}>
+            <div className={'custom-nav-link-text' + getSelectedCls("/bike-service")}>{t('bikeService')}</div>
           </Link>
           <Link  className='nav-link navbar-nav custom-nav-link' href="/ebike-upgrade" passHref onClick={collapseNavbar}>
             <div className={'custom-nav-link-text' + getSelectedCls("/ebike-upgrade")}>{t('eBikeUpgrade')}</div>
