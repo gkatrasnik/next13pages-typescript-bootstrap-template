@@ -4,19 +4,35 @@ import { Container, Row, Col } from 'react-bootstrap'
 import RentCard from '../components/rentCard'
 
 export default function RentABike(props) {
-  const trc = useTranslations('RentCard');
+  const t = useTranslations('RentABike');
 
   return (
     <>
       <Head>
-        <title>Pricing</title>
+        <title>{t("rentABike")}</title>
       </Head>
       <Container className="my-5">
-        <h1 className=' text-center mb-5'>Pricing</h1>
-        
-          <div className='d-flex flex-wrap justify-content-evenly'>
-            {props?.rentItems?.items?.map(rentItem => {
+        <h1 className=' text-center mb-5'>{t("rentABike")}</h1>
+        <div className='mb-5'>
+          <h5>{t("exploreBled")}</h5>
+          <p>{t("exploreBledText")}</p>
+        </div>
+        <div className='mb-5'>
+          <h5>{t("priceIncludes")}</h5>
+          <ul>
+            <li>{t("parking")}</li>
+            <li>{t("helmet")}</li>
+            <li>{t("lock")}</li>
+            <li>{t("suggestions")}</li>
+            <li>{t("delivery")}</li>
+          </ul>        
+        </div>
+
+        <Row className='mb-5'>
+          <h2 className='text-center'>{t("eBikes")}</h2>
+            {props?.rentItems?.eBikes?.map(rentItem => {
                 return (
+                  <Col sm={4} className='d-flex justify-content-center my-3'>
                     <RentCard 
                       key={rentItem.title}
                       title={rentItem.title}
@@ -24,11 +40,45 @@ export default function RentABike(props) {
                       price={rentItem.price}
                       imageSrc={rentItem.imageSrc}
                     />
+                  </Col>                      
                 );              
               }
             )}    
-          </div>               
-        
+        </Row>
+        <Row className='mb-5'>
+          <h2 className='text-center'>{t("regularBikes")}</h2>
+          {props?.rentItems?.regularBikes?.map(rentItem => {
+              return (
+                <Col sm={4} className='d-flex justify-content-center my-3'>
+                  <RentCard 
+                    key={rentItem.title}
+                    title={rentItem.title}
+                    bullets={rentItem.bullets}
+                    price={rentItem.price}
+                    imageSrc={rentItem.imageSrc}
+                  />
+                </Col>
+              );              
+            }
+          )}          
+        </Row>
+        <Row className='mb-5'>
+          <h2 className='text-center'>{t("accessories")}</h2>
+            {props?.rentItems?.other?.map(rentItem => {
+                return (
+                  <Col sm={4} className='d-flex justify-content-center my-3'>
+                      <RentCard 
+                        key={rentItem.title}
+                        title={rentItem.title}
+                        bullets={rentItem.bullets}
+                        price={rentItem.price}
+                        imageSrc={rentItem.imageSrc}
+                      />
+                  </Col>
+                );              
+              }
+            )}    
+        </Row>
       </Container>
     </>
   )

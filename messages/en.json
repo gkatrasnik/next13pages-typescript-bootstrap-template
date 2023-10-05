@@ -67,5 +67,19 @@
   "BikeService": {
     "service": "Service",
     "price": "Price (tax included)"
+  },
+  "RentABike": {
+    "rentABike": "Bike Rental",
+    "eBikes": "E-bikes",
+    "regularBikes": "Regular Bikes",
+    "accessories": "Accessories",
+    "exploreBled": "Explore Bled by bike!",
+    "exploreBledText": "A bike allows for faster and easier movement, especially during the summer when the roads around Bled are heavily trafficked. With a bike, you can visit all the major attractions in one day or go for a proper bike ride and even go further (Bohinj Lake, Triglav National Park, Peričnik waterfall,...). We are the only bike rental provider in the immediate Bled area that offers free parking for your vehicle near the rental shop. We invite you to visit our store where, with our local knowledge, we will be happy to advise you on the best cycling routes.",
+    "priceIncludes": "Price includes:",
+    "parking": "Free parking during bike rental",
+    "helmet": "Helmet",
+    "lock": "Lock",
+    "suggestions": "Suggestions for choosing a bike trip",
+    "delivery": "Delivery and pick-up of bikes at a location of your choice (free delivery in case of renting at least 2 bikes)"    
   }
 }

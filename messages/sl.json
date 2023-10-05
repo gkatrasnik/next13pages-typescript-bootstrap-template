@@ -67,5 +67,19 @@
   "BikeService": {
     "service": "Storitev",
     "price": "Cena (DDV vključen)"
+  },
+  "RentABike": {
+    "rentABike": "Izposoja koles",
+    "eBikes": "E-kolesa",
+    "regularBikes": "Navadna kolesa",
+    "accessories": "Dodatki",
+    "exploreBled": "Raziskujte Bled s kolesom!",
+    "exploreBledText":"Kolo vam omogoča hitrejše in lažje gibanje, predvsem v poletnem času, ko so ceste v okolici Bleda prometno zelo obremenjene. S kolesom lahko v enem dnevu obiščete vse pomembnejše znamenitosti ali pa naredite pošten kolesarski izlet in se zapeljete tudi kam dlje (Bohinjsko jezero, Triglavski narodni park, slap Peričnik,…) Smo edini ponudnik izposoje koles na ožjem območju Bleda, ki vam zagotovi brezplačno parkiranje vašega vozila v neposredni bližini izposojevalnice. Vabimo vas na obisk naše poslovalnice, kjer vam bomo z lokalnim poznavanjem z veseljem svetovali pri izbiri najboljših kolesarskih poti.",
+    "priceIncludes": "Cena vključuje:",
+    "parking":"Brezplačno parkiranje za čas izposoje kolesa",
+    "helmet": "Čelado",
+    "lock":"Ključavnica",
+    "suggestions": "Predlogi za izbiro kolesarskega izleta",
+    "delivery": "Dostava in prevzem koles na lokacijo po vaši izbiri (brezplačna dostava v primeru izposoje vsaj 2 koles)"
   }
 }
