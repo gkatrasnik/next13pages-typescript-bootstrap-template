@@ -33,7 +33,7 @@ function RentCard({title, bullets, price, imageSrc}) {
             {formModalShowed && <FormModal  formIsForRent handleClose={closeFormModal}/>}
             {imageModalShowed && <ImageModal imageSrc={imageSrc} title={title} handleClose={closeImageModal}/>}
 
-            <Card style={{ width: '300px' }}>
+            <Card className='rent-card'>
                 <Image
                     alt={title}
                     src={imageSrc}      
@@ -59,10 +59,11 @@ function RentCard({title, bullets, price, imageSrc}) {
                     <Card.Text>
                         {price}
                     </Card.Text>
-                    <div className='d-flex flex-column'>
-                        <Button variant="secondary" className="text-uppercase" onClick={showFormModal} >{t("sendInquiry")}</Button>
-                    </div>
+                    
                 </Card.Body>
+                <div className='d-flex flex-column m-3'>
+                    <Button variant="secondary" className="text-uppercase" onClick={showFormModal} >{t("sendInquiry")}</Button>
+                </div>
             </Card>
         </>
     );
