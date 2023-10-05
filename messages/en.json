@@ -98,7 +98,11 @@
     "largeServiceBullet3": "Cleaning and lubrication of the headset",
     "largeServiceBullet4": "Replacement of tires, inner tubes, valves, rim tape, tubeless system, and tubular tire bonding",
     "largeServiceBullet5": "Replacement of handlebar grips/tape",
-    "largeServiceBottomText": "from 95.00€"
+    "largeServiceBottomText": "from 95.00€",
+
+    "bottomText1": "* Materials used in servicing are not included in the price (unless stated otherwise)",
+    "bottomText2": "* All prices include VAT",
+    "bottomText3": "The price list is valid from 15.04.2023"
   },
   "RentABike": {
     "rentABike": "Bike Rental",

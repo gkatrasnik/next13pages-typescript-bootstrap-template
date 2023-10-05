@@ -98,7 +98,11 @@
     "largeServiceBullet3": "Čiščenje in mazanje krmilnega ležaja",
     "largeServiceBullet4": "Menjava plaščev, zračnic, ventilov, traku obroča, tubeless sistem, lepljenje tubularjev",
     "largeServiceBullet5": "Menjava ročajev/traku krmila",
-    "largeServiceBottomText": "od 95.00€"
+    "largeServiceBottomText": "od 95.00€",
+
+    "bottomText1": "* Material uporabljen pri servisiranju ni vključen v ceno (razen kjer je navedeno drugače)",
+    "bottomText2": "* Vse cene vključujejo DDV",
+    "bottomText3": "Cenik velja od 15.04.2023"
 
   },
   "RentABike": {

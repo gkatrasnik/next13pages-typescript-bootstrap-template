@@ -49,6 +49,11 @@ export default function BikeService(props) {
         <Col className="mb-4">
           <h2 className='text-center mb-3'>{t("pricelist")}</h2>
           <ServicePriceList pricelistJson={props.pricelist}/>
+          <div className='mt-5'>
+            <p>{t("bottomText1")}</p>
+            <p>{t("bottomText2")}</p>
+            <p>{t("bottomText3")}</p>
+          </div>
         </Col>
       </Row>
     </Container>
