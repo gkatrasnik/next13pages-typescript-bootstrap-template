@@ -1,27 +1,61 @@
-import Head from 'next/head'
-//import Image from 'next/image'
-//import styles from '../styles/Home.module.scss'
-import {Container, Button, Row, Col} from 'react-bootstrap'
+import {useState} from 'react';
+import Head from 'next/head';
+import {Container, Button, Row, Col} from 'react-bootstrap';
+import {useTranslations} from 'next-intl';
+import FormModal from '../components/formModal';
+import Image from 'next/image';
 
-export default function About() {
+export default function CyclingTrips() {
+    const [formModalShowed, setFormModalShowed] = useState(false);
+    const t = useTranslations('CyclingTrips');
+
+    const closeFormModal = () => {
+      setFormModalShowed(false);
+      }
+  
+      const showFormModal = () => {
+      setFormModalShowed(true);
+      }
+
     return (
     <>
+      {formModalShowed && <FormModal handleClose={closeFormModal}/>}
+
       <Head>
-        <title>About Fiziap</title>
+        <title>{t("cyclingTrips")}</title>
       </Head>
-      <Container className="my-5 d-flex flex-column ">
-        <h1 className='text-center mb-5'>About Ab bike</h1>
-          <Row className='h-100'>
-            <Col xs={12} md={6} className="mb-4">
-              <p>Are you a physiotherapist looking for a better way to manage your patient information and appointments? Look no further than Fiziap!</p>
+      <Container className="my-5 d-flex flex-column cycling-trips">
+        <h1 className='text-center mb-5'>{t("cyclingTrips")}</h1>
+          <Row >
+            <Col xs={12} md={6} className=" d-flex justify-content-center mb-4"> 
+              <div className='overflow-hidden image-border-radius'>           
+                <Image 
+                    src="/cycling-trips-images/cycling-trips.jpg"
+                    alt="cycling trips"
+                    height={300}
+                    width={400}  
+                    objectFit="contain"                                                                  
+                    placeholder="blur"
+                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+                    priority    
+                    className='image-border-radius'                        
+                />
+              </div>
+             </Col>
+             <Col xs={12} md={6} className="d-flex flex-column justify-content-center align-items-center mb-4">
+              <div className='d-flex flex-column justify-content-center align-items-center'>
+                <div className='text-wrapper'>
+                  <h5 className='mb-4'>{t("weOffer")}</h5>
+                <h5 className='mb-4'>{t("sendInquiryMsg")}</h5>
+                </div>
+                
+              </div>
+              
+              <div className='d-flex justify-content-center'>
+                <Button className='text-white' onClick={showFormModal}>{t("sendInquiry")}</Button>
+              </div>
             </Col>
-          </Row>
-          <Row className='h-100'>
-            <Col xs={12} md={{ span: 6, offset: 6}} className="mb-4">
-              <p>Fiziap is an innovative application designed specifically for physiotherapists. With Fiziap, you can easily keep track of your patients issues and symptoms, monitor their progress, and schedule appointments. Our user-friendly interface makes it easy to manage all of your patient information in one convenient location.</p>
-            </Col>
-          </Row>       
-        <Button variant="primary" size="lg" href="/pricing" className='mx-auto my-4' >Pricing</Button>
+          </Row>               
       </Container>
     </>
   )

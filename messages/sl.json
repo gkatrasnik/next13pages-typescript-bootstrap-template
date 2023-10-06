@@ -144,5 +144,12 @@
     "weOfferBullet4": "Električna predelava koles",
     "weOfferBullet5": "Prodaja električnih koles ECONO in druge kolesarske opreme",
     "comeToOurShop": "Vljudno vas vabimo v našo poslovalnico na Bledu na Pristavi (Cesta svobode 22, Bled), kjer vam ob koriščenju naših storitev zagotovimo tudi brezplačno parkirno mesto."
+  },
+  "CyclingTrips": {
+    "cyclingTrips": "Kolesarski izleti",
+    "weOffer": "Ponujamo vam tudi kolesarske izlete",
+    "sendInquiryMsg": "Če ste zainteresirani, nam pošljite povpraševanje",
+    "sendInquiry": "Pošlji povpraševanje"
   }
+
 }

@@ -23,7 +23,8 @@ export default function About() {
                     objectFit="cover"                                                                  
                     placeholder="blur"
                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
-                    priority        
+                    priority      
+                    className='image-border-radius'  
                 />
               </div>              
             </Col>
@@ -49,6 +50,7 @@ export default function About() {
                     objectFit="contain"                                                                  
                     placeholder="blur"
                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+                    className='image-border-radius'
                 />
               </div>
               
