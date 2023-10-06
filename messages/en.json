@@ -127,5 +127,21 @@
     "weekdays": "Monday - Friday",
     "weekends": "Saturday - Sunday, Holidays",
     "byAppointment": "By appointment"
+  },
+  "AboutUs": {
+    "aboutUs": "About Us",
+    "weAre": "We are Ana and Blaž,",
+    "partners": "partners in both personal and business journeys.",
+    "partnersText": "Our passion for cycling and meeting new people and their stories brought us together. We expand and realize our vision with the company A&B KOLO, d.o.o., where we strive to provide the best and most memorable cycling experience in Bled.",
+    "quote1": "A perfectly functioning bicycle for a better cycling experience!",
+    "quote2": "“I'm a former road cyclist,",
+    "paragraph2": "who, after concluding my career, became a bike mechanic. I've been professionally servicing bicycles since 2014. In the initial years, I gained experience as a mechanic in Slovenian and foreign cycling teams. Last year, Ana and I decided to embark on an entrepreneurial journey. Being a bicycle mechanic brings me immense joy and allows me to stay connected with the sport that has given me many life directions and which I deeply love.” – Blaž",
+    "weOffer": "In our company, we offer the following services:",
+    "weOfferBullet1": "Bicycle and SUP rentals",
+    "weOfferBullet2": "Rental of electric and regular bicycles",
+    "weOfferBullet3": "Guided cycling tours and team buildings",
+    "weOfferBullet4": "Electric bike conversion",
+    "weOfferBullet5": "Sale of ECONO electric bicycles and other cycling equipment",
+    "comeToOurShop": "We invite you to our shop in Bled (Cesta svobode 22, Bled), where we also offer a free parking space when you use our services."
   }
 }

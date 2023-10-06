@@ -221,14 +221,12 @@ a {
   list-style-type: circle;
 }
 
-///////CONTACT PAGE - CARDS////////
+///////CONTACT PAGE////////
 .contact-cards .card {
   display: flex;
   align-items: center;
   border: none;
 }
-
-
 
 .contact-cards .card-body {
   display: flex;
@@ -238,4 +236,18 @@ a {
 .contact-cards .card-title {
   margin-bottom: 1rem;
   font-size: x-large;
+}
+
+///////ABOUTR US PAGE////////
+.about-us-hero-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.about-us-image-conainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }

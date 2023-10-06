@@ -128,5 +128,21 @@
     "weekdays": "Ponedeljek - Petek",
     "weekends": "Sobota - Nedelja, Prazniki",
     "byAppointment": "Po dogovoru"
+  },
+  "AboutUs": {
+    "aboutUs": "O nas",
+    "weAre":"Sva Ana in Blaž,",
+    "partners": "partnerja na osebni in poslovni poti.",
+    "partnersText": "Združila naju je strast do kolesarstva, spoznavanja novih ljudi in njihovih zgodb. Svojo vizijo širiva in uresničujeva s podjetjem A&B KOLO, d.o.o., kjer se potrudimo za najboljšo in nepozabno kolesarsko izkušnjo na Bledu..",
+    "quote1": "Brezhibno delujoče kolo za boljšo kolesarsko izkušnjo!",
+    "quote2": "“Sem nekdanji cestni kolesar,",
+    "paragraph2": "ki se je po zaključku kariere znašel v vlogi kolesarskega mehanika. S servisiranjem koles se profesionalno ukvarjam od leta 2014. V prvih letih sem si izkušnje nabiral kot serviser v slovenskih in tujih kolesarskih ekipah, z lanskim letom pa sva se z Ano odločila za samostojno podjetniško pot. Delo kolesarskega mehanika me neizmerno veseli in mi omogoča stik s športom, ki mi je dal ogromno življenjskih smernic in ga imam srčno rad.” – Blaž",
+    "weOffer": "V našem podjetju vam nudimo naslednje storitve:",
+    "weOfferBullet1": "Izposoja koles in supov",
+    "weOfferBullet2": "Izposoja električnih in običajnih koles",
+    "weOfferBullet3": "Vodeni kolesarski izleti in team buildingi",
+    "weOfferBullet4": "Električna predelava koles",
+    "weOfferBullet5": "Prodaja električnih koles ECONO in druge kolesarske opreme",
+    "comeToOurShop": "Vljudno vas vabimo v našo poslovalnico na Bledu na Pristavi (Cesta svobode 22, Bled), kjer vam ob koriščenju naših storitev zagotovimo tudi brezplačno parkirno mesto."
   }
 }

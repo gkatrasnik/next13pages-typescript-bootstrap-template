@@ -1,27 +1,77 @@
 import Head from 'next/head'
-//import Image from 'next/image'
-//import styles from '../styles/Home.module.scss'
-import {Container, Button, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
+import {useTranslations} from 'next-intl';
+import Image from 'next/image';
 
 export default function About() {
+    const t = useTranslations('AboutUs');
+
     return (
     <>
       <Head>
-        <title>About Fiziap</title>
+        <title>{t("aboutUs")}</title>
       </Head>
       <Container className="my-5 d-flex flex-column ">
-        <h1 className='text-center mb-5'>About Ab bike</h1>
-          <Row className='h-100'>
-            <Col xs={12} md={6} className="mb-4">
-              <p>Are you a physiotherapist looking for a better way to manage your patient information and appointments? Look no further than Fiziap!</p>
+        <h1 className='text-center mb-5'>{t("aboutUs")}</h1>
+          <Row className='mb-5'>
+            <Col className="mb-4">
+              <div className="about-us-hero-container">
+                <Image 
+                    src="/about-us-images/about-us-1.jpg"
+                    alt="Ana in Blaž"
+                    layout="fill"  
+                    objectFit="cover"                                                                  
+                    placeholder="blur"
+                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+                    priority        
+                />
+              </div>              
             </Col>
           </Row>
-          <Row className='h-100'>
-            <Col xs={12} md={{ span: 6, offset: 6}} className="mb-4">
-              <p>Fiziap is an innovative application designed specifically for physiotherapists. With Fiziap, you can easily keep track of your patients issues and symptoms, monitor their progress, and schedule appointments. Our user-friendly interface makes it easy to manage all of your patient information in one convenient location.</p>
+          <Row className='mb-5'>
+            <Col className="mb-4">
+              <h2 className='fw-bold mb-4'>{t("weAre")}</h2>
+              <h3 className='text-secondary fw-bold mb-4'>{t("partners")}</h3>
+              <p className='mb-5'>{t("partnersText")}</p>
+
+              <h4 className='fw-bold fst-italic text-primary display-5'>{t("quote1")}</h4>
             </Col>
-          </Row>       
-        <Button variant="primary" size="lg" href="/pricing" className='mx-auto my-4' >Pricing</Button>
+          </Row>   
+
+          <Row className='mb-5'>
+            <Col xs={12} md={6}>
+              <div className='about-us-image-conainer mb-3'>
+                <Image 
+                    src="/about-us-images/about-us-2.jpg"
+                    alt="Ana in Blaž na kolesih"
+                    height={300}
+                    width={400}
+                    objectFit="contain"                                                                  
+                    placeholder="blur"
+                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+                />
+              </div>
+              
+            </Col>
+            <Col xs={12} md={6}>
+              <h5 className='text-muted fw-bold fst-italic display-6 mb-3'>{t("quote2")}</h5>
+              <p className='text-muted'>{t("paragraph2")}</p>            
+            </Col>
+          </Row>  
+          <Row className='mb-5'>
+            <Col>
+              <h5 className='text-muted fw-bold display-6 mb-3'>{t("weOffer")}</h5>
+              <ul className='bg-light mb-5'>
+                <li>{t("weOfferBullet1")}</li>
+                <li>{t("weOfferBullet2")}</li>
+                <li>{t("weOfferBullet3")}</li>
+                <li>{t("weOfferBullet4")}</li>
+                <li>{t("weOfferBullet5")}</li>
+              </ul>
+
+              <p>{t("comeToOurShop")}</p>               
+            </Col>
+          </Row>         
       </Container>
     </>
   )
