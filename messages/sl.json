@@ -118,5 +118,15 @@
     "lock":"Ključavnica",
     "suggestions": "Predlogi za izbiro kolesarskega izleta",
     "delivery": "Dostava in prevzem koles na lokacijo po vaši izbiri (brezplačna dostava v primeru izposoje vsaj 2 koles)"
+  },
+  "Contact": {
+    "contact": "Kontakt",
+    "address": "Naslov",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "schedule": "Delovni čas",
+    "weekdays": "Ponedeljek - Petek",
+    "weekends": "Sobota - Nedelja, Prazniki",
+    "byAppointment": "Po dogovoru"
   }
 }

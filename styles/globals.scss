@@ -221,3 +221,21 @@ a {
   list-style-type: circle;
 }
 
+///////CONTACT PAGE - CARDS////////
+.contact-cards .card {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+
+
+.contact-cards .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-cards .card-title {
+  margin-bottom: 1rem;
+  font-size: x-large;
+}

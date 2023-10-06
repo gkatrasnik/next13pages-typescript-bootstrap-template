@@ -117,5 +117,15 @@
     "lock": "Lock",
     "suggestions": "Suggestions for choosing a bike trip",
     "delivery": "Delivery and pick-up of bikes at a location of your choice (free delivery in case of renting at least 2 bikes)"    
+  },
+  "Contact": {
+    "contact": "Contact",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "E-mail",
+    "schedule": "Working hours",
+    "weekdays": "Monday - Friday",
+    "weekends": "Saturday - Sunday, Holidays",
+    "byAppointment": "By appointment"
   }
 }

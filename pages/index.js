@@ -41,7 +41,6 @@ export default function Home() {
         </Row>
         <Row className='my-5'>
           <Col className="mb-4">
-            <GoogleMap/>
           </Col>
         </Row>        
       </Container>
