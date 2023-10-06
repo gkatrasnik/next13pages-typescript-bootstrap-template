@@ -150,6 +150,12 @@
     "weOffer": "Ponujamo vam tudi kolesarske izlete",
     "sendInquiryMsg": "Če ste zainteresirani, nam pošljite povpraševanje",
     "sendInquiry": "Pošlji povpraševanje"
+  },
+  "EbikeUpgrade" : {
+    "ebikeUpgrade" : "Električna predelava koles"
+  },
+  "RentASup" : {
+    "rentASup" : "Izposoja Supa"
   }
 
 }
