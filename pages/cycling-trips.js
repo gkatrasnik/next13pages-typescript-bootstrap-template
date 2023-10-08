@@ -26,36 +26,36 @@ export default function CyclingTrips() {
       </Head>
       <Container className="my-5 d-flex flex-column cycling-trips">
         <h1 className='text-center mb-5'>{t("cyclingTrips")}</h1>
-          <Row >
-            <Col md={6} className=" d-flex justify-content-center mb-4"> 
-              <div className='overflow-hidden image-border-radius'>           
-                <Image 
-                    src="/cycling-trips-images/cycling-trips.jpg"
-                    alt="cycling trips"
-                    height={300}
-                    width={400}  
-                    objectFit="contain"                                                                  
-                    placeholder="blur"
-                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
-                    priority    
-                    className='image-border-radius'                        
-                />
-              </div>
-             </Col>
-             <Col md={6} className="d-flex flex-column justify-content-center align-items-center mb-4">
-              <div className='d-flex flex-column justify-content-center align-items-center'>
-                <div className='text-wrapper mb-4'>
-                  <h5>{t("weOffer")}</h5>
-                  <h5>{t("sendInquiryMsg")}</h5>
-                </div>
-                
+        <Row >
+          <Col md={6} className=" d-flex justify-content-center mb-4"> 
+            <div className='overflow-hidden image-border-radius'>           
+              <Image 
+                  src="/cycling-trips-images/cycling-trips.jpg"
+                  alt="cycling trips"
+                  height={300}
+                  width={400}  
+                  objectFit="contain"                                                                  
+                  placeholder="blur"
+                  blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+                  priority    
+                  className='image-border-radius'                        
+              />
+            </div>
+            </Col>
+            <Col md={6} className="d-flex flex-column justify-content-center align-items-center mb-4">
+            <div className='d-flex flex-column justify-content-center align-items-center'>
+              <div className='text-wrapper mb-4'>
+                <h5>{t("weOffer")}</h5>
+                <h5>{t("sendInquiryMsg")}</h5>
               </div>
               
-              <div className='d-flex justify-content-center'>
-                <Button className='text-white' onClick={showFormModal}>{t("sendInquiry")}</Button>
-              </div>
-            </Col>
-          </Row>               
+            </div>
+            
+            <div className='d-flex justify-content-center'>
+              <Button className='text-white' onClick={showFormModal}>{t("sendInquiry")}</Button>
+            </div>
+          </Col>
+        </Row>               
       </Container>
     </>
   )

@@ -16,8 +16,7 @@ export default function Home() {
     <>
       <Head>
         <title>AB Bike</title>
-      </Head>     
-      
+      </Head>           
       <HeroSection heroImageSrc="/hero.jpg"/>
       <IndexPageBasicCards/>
       <Container >    

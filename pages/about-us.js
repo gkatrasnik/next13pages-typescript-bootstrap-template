@@ -13,8 +13,8 @@ export default function About() {
       </Head>
       <Container className="my-5 d-flex flex-column ">
         <h1 className='text-center mb-5'>{t("aboutUs")}</h1>
-          <Row className='mb-5'>
-            <Col className="mb-4">
+          <Row>
+            <Col className="mb-5">
               <div className="about-us-hero-container">
                 <Image 
                     src="/about-us-images/about-us-1.jpg"
@@ -29,19 +29,20 @@ export default function About() {
               </div>              
             </Col>
           </Row>
-          <Row className='mb-5'>
-            <Col className="mb-4">
-              <h2 className='fw-bold mb-4'>{t("weAre")}</h2>
-              <h3 className='text-secondary fw-bold mb-4'>{t("partners")}</h3>
-              <p className='mb-5'>{t("partnersText")}</p>
-
-              <h4 className='fw-bold fst-italic text-primary display-5'>{t("quote1")}</h4>
+          <Row >
+            <Col className="mb-5">
+              <div className='mb-3'>
+                <h3 className='fw-bold'>{t("weAre")}</h3>
+                <h3 className='fw-bold '>{t("partners")}</h3>
+              </div>
+              <p className='mb-4'>{t("partnersText")}</p>
+              <h4 className='fw-bold text-primary'>{t("quote1")}</h4>
             </Col>
           </Row>   
 
           <Row className='mb-5'>
-            <Col xs={12} md={6}>
-              <div className='about-us-image-conainer mb-3'>
+            <Col md={6} className='d-flex justify-content-center align-items-center '>
+              <div className='about-us-image-conainer'>
                 <Image 
                     src="/about-us-images/about-us-2.jpg"
                     alt="Ana in Blaž na kolesih"
@@ -55,22 +56,23 @@ export default function About() {
               </div>
               
             </Col>
-            <Col xs={12} md={6}>
-              <h5 className='text-muted fw-bold fst-italic display-6 mb-3'>{t("quote2")}</h5>
-              <p className='text-muted'>{t("paragraph2")}</p>            
+            <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
+              <div>
+                <h5 className='text-muted fw-bold fst-italic mb-3'>{t("quote2")}</h5>
+                <p className='text-muted'>{t("paragraph2")}</p>  
+              </div>          
             </Col>
           </Row>  
           <Row className='mb-5'>
             <Col>
-              <h5 className='text-muted fw-bold display-6 mb-3'>{t("weOffer")}</h5>
-              <ul className='bg-light mb-5'>
+              <h5 className='text-primary fw-bold mb-3'>{t("weOffer")}</h5>
+              <ul className='mb-5'>
                 <li>{t("weOfferBullet1")}</li>
                 <li>{t("weOfferBullet2")}</li>
                 <li>{t("weOfferBullet3")}</li>
                 <li>{t("weOfferBullet4")}</li>
                 <li>{t("weOfferBullet5")}</li>
               </ul>
-
               <p>{t("comeToOurShop")}</p>               
             </Col>
           </Row>         

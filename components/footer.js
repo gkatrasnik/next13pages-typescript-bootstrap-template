@@ -10,7 +10,7 @@ export default function MyFooter() {
     <footer className='bg-light pb-5'>
       <Container  className='px-4'>
         <Row className='h-100'>         
-          <Col xs={12} md={{span:6, order:2}} className='py-4'>
+          <Col md={{span:6, order:2}} className='py-4'>
             <h5 className="fw-bold pb-1">{t("contact")}</h5>
             <div className='d-flex flex-column'>              
               <div className="fw-bold pb-1">
@@ -26,7 +26,7 @@ export default function MyFooter() {
             </div>
           </Col>
 
-          <Col xs={12} md={{span:6, order:1}} className='py-4 d-flex justify-content-center align-items-center'>
+          <Col md={{span:6, order:1}} className='py-4 d-flex justify-content-center align-items-center'>
             <div className='d-flex flex-column justify-content-center align-items-center gap-2'>
               <SocialMediaLinks iconSize={48} />
               <PartnerLogos imageSrcs={["/alpina.png", "/ziener.png", "/asa.png"]}/>

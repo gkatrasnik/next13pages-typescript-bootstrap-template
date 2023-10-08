@@ -13,10 +13,15 @@ export default function About() {
       </Head>
       <Container className="my-5 d-flex flex-column ">
         <h1 className='text-center mb-5'>{t("ebikeUpgrade")}</h1>
-        <div className='mb-3'>
-         <h2 className='fw-bold mb-4'>{t("upgradeYourOldBike")}</h2>
-         <p>{t("upgradeYourOldBikeText")}</p>
-        </div>       
+        <Row>
+          <Col>
+            <div className='mb-3'>
+              <h2 className='fw-bold mb-4'>{t("upgradeYourOldBike")}</h2>
+              <p>{t("upgradeYourOldBikeText")}</p>
+            </div> 
+          </Col>
+        </Row>
+              
         <Row >
           <Col md={6} className="d-flex flex-column justify-content-center align-items-center mb-4">
             <h5 className='mb-3 text-primary fw-bold'>{t("upgradeDetailsTitle")}</h5>

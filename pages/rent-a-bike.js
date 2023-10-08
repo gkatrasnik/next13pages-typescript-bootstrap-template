@@ -13,20 +13,25 @@ export default function RentABike(props) {
       </Head>
       <Container className="my-5">
         <h1 className=' text-center mb-5'>{t("rentABike")}</h1>
-        <div className='mb-5'>
-          <h2 className='fw-bold mb-4'>{t("exploreBled")}</h2>
-          <p>{t("exploreBledText")}</p>
-        </div>
-        <div className='mb-5'>
-          <h5 className='fw-bold text-primary'>{t("priceIncludes")}</h5>
-          <ul>
-            <li>{t("parking")}</li>
-            <li>{t("helmet")}</li>
-            <li>{t("lock")}</li>
-            <li>{t("suggestions")}</li>
-            <li>{t("delivery")}</li>
-          </ul>        
-        </div>
+        <Row>
+          <Col>
+            <div className='mb-5'>
+              <h2 className='fw-bold mb-4'>{t("exploreBled")}</h2>
+              <p>{t("exploreBledText")}</p>
+            </div>
+            <div className='mb-5'>
+              <h5 className='fw-bold text-primary'>{t("priceIncludes")}</h5>
+              <ul>
+                <li>{t("parking")}</li>
+                <li>{t("helmet")}</li>
+                <li>{t("lock")}</li>
+                <li>{t("suggestions")}</li>
+                <li>{t("delivery")}</li>
+              </ul>        
+            </div>
+          </Col>
+        </Row>
+        
 
         <Row className='mb-5'>
           <h2 className='text-center'>{t("eBikes")}</h2>

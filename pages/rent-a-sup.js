@@ -13,24 +13,29 @@ export default function RentASup(props) {
       </Head>
       <Container className="my-5 d-flex flex-column ">
         <h1 className=' text-center mb-5'>{t("rentASup")}</h1>
-        <div className='mb-3'>
-          <div className='mb-5'>
-            <h2 className='fw-bold mb-4'>{t("exploreBledSup")}</h2>
-            <p>{t("exploreBledSupText")}</p>
-          </div>
-          <h5 className='fw-bold text-primary'>{t("priceIncludes")}</h5>
-          <ul>
-            <li>{t("freeParking")}</li>
-            <li>{t("lifeVest")}</li>           
-          </ul>  
-          <div>
-            <h5 className='fw-bold text-primary'>{t("Accessories")}</h5>
-            <ul>
-              <li>{t("waterproofBag")}</li>
-              <li>{t("waterproofPhoneCase")}</li>
-            </ul>        
-          </div>         
-        </div>
+        <Row>
+          <Col>
+            <div className='mb-3'>
+              <div className='mb-5'>
+                <h2 className='fw-bold mb-4'>{t("exploreBledSup")}</h2>
+                <p>{t("exploreBledSupText")}</p>
+              </div>
+              <h5 className='fw-bold text-primary'>{t("priceIncludes")}</h5>
+              <ul>
+                <li>{t("freeParking")}</li>
+                <li>{t("lifeVest")}</li>           
+              </ul>  
+              <div>
+                <h5 className='fw-bold text-primary'>{t("Accessories")}</h5>
+                <ul>
+                  <li>{t("waterproofBag")}</li>
+                  <li>{t("waterproofPhoneCase")}</li>
+                </ul>        
+              </div>         
+            </div>
+          </Col>
+        </Row>
+        
                  
         <Row className='mb-5'>
             {props?.rentaSups?.sups?.map((sup, index) => {

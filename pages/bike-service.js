@@ -14,16 +14,19 @@ export default function BikeService(props) {
     </Head>
     <Container className="my-5 d-flex flex-column ">
       <h1 className='text-center mb-5'>{t("bikeService")}</h1>
-      <div className='mb-3'>
-        <h2 className='fw-bold mb-4'>{t("bikeRepairs")}</h2>
-        <div className='mb-3'>
-          <p>{t("paragraph1")}</p>
-          <p>{t("paragraph2")}</p>
-          <p>{t("paragraph3")}</p>
-        </div> 
-        <h5 className='text-primary fw-bold mb-5'>{t("paragraph4")}</h5>
-               
-      </div>
+      <Row>
+        <Col>
+          <div className='mb-3'>
+            <h2 className='fw-bold mb-4'>{t("bikeRepairs")}</h2>
+            <div className='mb-3'>
+              <p>{t("paragraph1")}</p>
+              <p>{t("paragraph2")}</p>
+              <p>{t("paragraph3")}</p>
+            </div> 
+            <h5 className='text-primary fw-bold mb-5'>{t("paragraph4")}</h5>                  
+          </div>
+        </Col>
+      </Row>     
       <Row className='mb-5 bike-service-cards'>
           <Col sm={4} className='d-flex justify-content-center my-3'>
             <GeneralCard
