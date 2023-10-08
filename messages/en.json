@@ -1,6 +1,6 @@
 {
   "Index": {
-    "title": "Explore Bled on Two Wheels!",
+    "title": "Explore Bled on Two Wheels",
     "subTitle": "Quality bike rentals and expert repairs to keep your adventure moving",
     "description": "Discover the beauty of Bled at your own pace. Whether you're here for the scenic adventure or just need a quick repair, we've got you covered.",
     "rentButton": "Rent a bike",
@@ -66,6 +66,7 @@
   },
   "BikeService": {
     "bikeService": "Bike service",
+    "bikeRepairs": "Expert bike repairs in Bled!",
     "service": "Service",
     "price": "Price (tax included)",
     "pricelist": "Service price list",

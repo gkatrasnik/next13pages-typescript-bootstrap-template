@@ -15,7 +15,7 @@ export default function RentASup(props) {
         <h1 className=' text-center mb-5'>{t("rentASup")}</h1>
         <div className='mb-3'>
           <div className='mb-5'>
-            <h2 className='fw-bold'>{t("exploreBledSup")}</h2>
+            <h2 className='fw-bold mb-4'>{t("exploreBledSup")}</h2>
             <p>{t("exploreBledSupText")}</p>
           </div>
           <h5 className='fw-bold text-primary'>{t("priceIncludes")}</h5>

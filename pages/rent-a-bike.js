@@ -14,7 +14,7 @@ export default function RentABike(props) {
       <Container className="my-5">
         <h1 className=' text-center mb-5'>{t("rentABike")}</h1>
         <div className='mb-5'>
-          <h2 className='fw-bold'>{t("exploreBled")}</h2>
+          <h2 className='fw-bold mb-4'>{t("exploreBled")}</h2>
           <p>{t("exploreBledText")}</p>
         </div>
         <div className='mb-5'>

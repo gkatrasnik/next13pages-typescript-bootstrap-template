@@ -24,10 +24,12 @@ function HeroSection({heroImageSrc}) {
                 <Container className="h-100 d-flex">
                     <Row className='d-flex flex-grow-1'>
                         <Col md={true} className="mb-4 d-flex flex-column alling-items-center justify-content-center">
-                            <div className="h-100 text-center my-4 d-flex flex-column alling-items-center justify-content-center">
-                                <h1 className='text-white mb-4'>{t('title')}</h1>                                
-                                <p className='text-white mb-4'>{t('description')}</p>
+                            <div className="h-100 my-4 d-flex flex-column alling-items-center justify-content-center">
                                 <div>
+                                    <h1 className=' text-center text-white mb-4 fw-bold display-4'>{t('title')}</h1>                                
+                                    <p className='text-white mb-4'>{t('description')}</p>
+                                </div>                                
+                                <div className='d-flex justify-content-center'>
                                     <Button size="lg" variant="secondary" className='m-2' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    
                                     <Button size="lg" variant="secondary" className='m-2' onClick={() => router.push('/bike-service')}>{t('serviceButton')}</Button>  
                                 </div>            

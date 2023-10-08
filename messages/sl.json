@@ -1,6 +1,6 @@
 {
   "Index": {
-    "title": "Raziščite Bled na dveh kolesih! ",
+    "title": "Raziščite Bled na dveh kolesih",
     "subTitle": "Najbolša kolesa za izposojo in strokoven servis poskrbi za vaše avanture",
     "description": "Odkrijte lepote Bleda v svojem ritmu. Če iščete nove avanture ali potrebujete hitro popravilo, smo tukaj za vas.",
     "rentButton": "Izposoja koles",
@@ -66,6 +66,7 @@
   },
   "BikeService": {
     "bikeService": "Kolesarski servis",
+    "bikeRepairs": "Strokovno popravilo koles na Bledu!",
     "service": "Storitev",
     "price": "Cena (DDV vključen)",
     "pricelist": "Cenik servisnih storitev",
