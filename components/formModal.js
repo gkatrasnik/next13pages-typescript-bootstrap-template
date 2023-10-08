@@ -3,7 +3,7 @@ import {Button, Modal, Form} from 'react-bootstrap';
 import {useTranslations} from 'next-intl';
 import { ArrowRepeat } from 'react-bootstrap-icons';
 
-function FormModal({formIsForRent, formIsForTransform, handleClose}) {
+function FormModal({formIsForRent, formIsForUpgrade, handleClose}) {
     const t = useTranslations('FormModal');
     const [isSending, setIsSending] = useState(false);
 
@@ -43,7 +43,7 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
 
     const createEmail = () => 
     {
-        const requestedService = formIsForRent ? "izposoja" : formIsForTransform ? "predelava kolesa" : "drugo";
+        const requestedService = formIsForRent ? "izposoja" : formIsForUpgrade ? "predelava kolesa" : "drugo";
         const emailData = {
             subject: "",
             text: ""
@@ -66,7 +66,7 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
 - Trajanje izposoje: ${rentLength.current.value},
 - Željeni artikli: ${getSelectedArticles()}\n`           
 
-        } else if (formIsForTransform) {
+        } else if (formIsForUpgrade) {
             emailData.text += `- Željena kapaciteta baterije: ${batteryCapacity.current.value}\n`
         } 
 
@@ -200,7 +200,7 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
                     </>
                     }
 
-                    {formIsForTransform && 
+                    {formIsForUpgrade && 
                     <>
                         <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
                             <Form.Label>{t('labelBatteryCapacity')}</Form.Label>                                           
@@ -227,7 +227,7 @@ function FormModal({formIsForRent, formIsForTransform, handleClose}) {
 
 
                     <div className='d-flex flex-column'>                        
-                        <Button className="mt-2" variant="secondary" type="submit">
+                        <Button className="mt-2" variant="secondary" type="submit" disabled={isSending}>
                         {isSending ?
                             <ArrowRepeat size={20} className='icon-spin'/>:
                             t('sendInquiry')                                

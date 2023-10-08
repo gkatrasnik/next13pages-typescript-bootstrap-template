@@ -11,11 +11,11 @@ export default function CyclingTrips() {
 
     const closeFormModal = () => {
       setFormModalShowed(false);
-      }
+    }
   
-      const showFormModal = () => {
-      setFormModalShowed(true);
-      }
+    const showFormModal = () => {
+    setFormModalShowed(true);
+    }
 
     return (
     <>
@@ -51,7 +51,7 @@ export default function CyclingTrips() {
               
             </div>
             
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center mt-4'>
               <Button className='text-white' onClick={showFormModal}>{t("sendInquiry")}</Button>
             </div>
           </Col>

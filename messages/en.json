@@ -175,6 +175,7 @@
     "youCanPick": "You can choose between different types of displays (on the side or in the middle of the handlebars) and different battery capacities, which determine the range of the electric bike's assistance.",
     "upgradePrice": "Price of the upgrade according to the offer.",
     "preUpgrade": "Before upgrade",
-    "postUpgrade": "After upgrade"
+    "postUpgrade": "After upgrade",
+    "sendInquiry": "Send inquiry"
   }
 }

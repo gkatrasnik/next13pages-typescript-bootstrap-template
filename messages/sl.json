@@ -176,6 +176,7 @@
     "youCanPick": "Izbirate lahko med različnimi tipi zaslona (stranki ali na sredini krmila) in med različnimi kapacitetami baterij, od katerih je odvisen doseg električne pomoči kolesa.",
     "upgradePrice":"Cena električne predelave kolesa po ponudbi",
     "preUpgrade": "Pred nadgradnjo",
-    "postUpgrade": "Po nadgradnji"
+    "postUpgrade": "Po nadgradnji",
+    "sendInquiry": "Pošlji povpraševanje"
   }
 }

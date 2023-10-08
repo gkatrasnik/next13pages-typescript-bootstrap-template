@@ -1,13 +1,26 @@
+import { useState } from 'react';
 import Head from 'next/head'
 import {useTranslations} from 'next-intl';
 import {Container, Button, Row, Col} from 'react-bootstrap'
 import Image from 'next/image';
+import FormModal from '../components/formModal';
 
 export default function About() {
+    const [formModalShowed, setFormModalShowed] = useState(false);
     const t = useTranslations('EbikeUpgrade');
+
+    const closeFormModal = () => {
+      setFormModalShowed(false);
+    }
+  
+    const showFormModal = () => {
+    setFormModalShowed(true);
+    }
 
     return (
     <>
+      {formModalShowed && <FormModal formIsForUpgrade handleClose={closeFormModal}/>}
+
       <Head>
         <title>{t("ebikeUpgrade")}</title>
       </Head>
@@ -90,6 +103,10 @@ export default function About() {
           </Col>        
           <Col className='mt-5'>
             <h4 className='text-center fw-bold'>{t("upgradePrice")}</h4>
+            <div className='d-flex justify-content-center mt-4'>
+              <Button className='text-white' onClick={showFormModal}>{t("sendInquiry")}</Button>
+            </div>
+
           </Col>
         </Row>
 
