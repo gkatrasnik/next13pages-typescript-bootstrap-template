@@ -49,28 +49,28 @@ export default function MyNavbar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
           <Link  className='nav-link navbar-nav custom-nav-link' href="/" passHref onClick={collapseNavbar}>            
-            <div className={'custom-nav-link-text' + getSelectedCls("/")}>{t('home')}</div>
+            <div className={'text-uppercase custom-nav-link-text' + getSelectedCls("/")}>{t('home')}</div>
           </Link>
           <Link  className='nav-link navbar-nav custom-nav-link' href="/rent-a-bike" passHref onClick={collapseNavbar}>
-            <div className={'custom-nav-link-text' + getSelectedCls("/rent-a-bike")}>{t('rentABike')}</div>
+            <div className={'text-uppercase custom-nav-link-text' + getSelectedCls("/rent-a-bike")}>{t('rentABike')}</div>
           </Link>
           <Link  className='nav-link navbar-nav custom-nav-link' href="/rent-a-sup" passHref onClick={collapseNavbar}>
-            <div className={'custom-nav-link-text' + getSelectedCls("/rent-a-sup")}>{t('rentASup')}</div>
+            <div className={'text-uppercase custom-nav-link-text' + getSelectedCls("/rent-a-sup")}>{t('rentASup')}</div>
           </Link>
           <Link  className='nav-link navbar-nav custom-nav-link' href="/cycling-trips" passHref onClick={collapseNavbar}>
-            <div className={'custom-nav-link-text' + getSelectedCls("/cycling-trips")}>{t('cyclingTrips')}</div>
+            <div className={'text-uppercase custom-nav-link-text' + getSelectedCls("/cycling-trips")}>{t('cyclingTrips')}</div>
           </Link>
           <Link  className='nav-link navbar-nav custom-nav-link' href="/bike-service" passHref onClick={collapseNavbar}>
-            <div className={'custom-nav-link-text' + getSelectedCls("/bike-service")}>{t('bikeService')}</div>
+            <div className={'text-uppercase custom-nav-link-text' + getSelectedCls("/bike-service")}>{t('bikeService')}</div>
           </Link>
           <Link  className='nav-link navbar-nav custom-nav-link' href="/ebike-upgrade" passHref onClick={collapseNavbar}>
-            <div className={'custom-nav-link-text' + getSelectedCls("/ebike-upgrade")}>{t('eBikeUpgrade')}</div>
+            <div className={'text-uppercase custom-nav-link-text' + getSelectedCls("/ebike-upgrade")}>{t('eBikeUpgrade')}</div>
           </Link>
           <Link  className='nav-link navbar-nav custom-nav-link' href="/about-us" passHref onClick={collapseNavbar}>
-            <div className= {'custom-nav-link-text' + getSelectedCls("/about-us")}>{t('aboutUs')}</div>
+            <div className={'text-uppercase custom-nav-link-text' + getSelectedCls("/about-us")}>{t('aboutUs')}</div>
           </Link>
           <Link  className='nav-link navbar-nav custom-nav-link' href="/contact" passHref onClick={collapseNavbar}>
-            <div className={'custom-nav-link-text' + getSelectedCls("/contact")}>{t('contact')}</div>
+            <div className={'text-uppercase custom-nav-link-text' + getSelectedCls("/contact")}>{t('contact')}</div>
           </Link>
         </Nav>
       </Navbar.Collapse>

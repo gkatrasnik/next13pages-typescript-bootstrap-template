@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {useTranslations} from 'next-intl';
-import {Container, Button, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 import RentCard from '../components/rentCard';
 
 export default function RentASup(props) {

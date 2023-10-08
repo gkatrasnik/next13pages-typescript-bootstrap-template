@@ -35,7 +35,7 @@ export default function About() {
                 <h3 className='fw-bold'>{t("weAre")}</h3>
                 <h3 className='fw-bold '>{t("partners")}</h3>
               </div>
-              <p className='mb-4'>{t("partnersText")}</p>
+              <p className='mb-5'>{t("partnersText")}</p>
               <h4 className='fw-bold text-primary'>{t("quote1")}</h4>
             </Col>
           </Row>   

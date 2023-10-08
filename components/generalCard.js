@@ -42,7 +42,7 @@ export default function GeneralCard({title, subtitle, mainText, bullets, bottomT
 }
         {buttonText && 
             <div className='d-flex flex-column'>
-                <Button variant="primary">{buttonText}</Button>
+                <Button className="text-uppercase" variant="primary">{buttonText}</Button>
             </div>
         }
         

@@ -8,13 +8,13 @@ const openSans = Open_Sans({ subsets: ['latin'], weight: '400' })
 
 function MyApp({ Component, pageProps }) {
   return (
+    
     <main className={openSans.className}>
-        <NextIntlClientProvider messages={pageProps.messages}>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </NextIntlClientProvider>
-
+      <NextIntlClientProvider messages={pageProps.messages}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </NextIntlClientProvider>
     </main>
   )
 }

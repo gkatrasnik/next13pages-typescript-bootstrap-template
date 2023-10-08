@@ -30,8 +30,8 @@ function HeroSection({heroImageSrc}) {
                                     <p className='text-white mb-4'>{t('description')}</p>
                                 </div>                                
                                 <div className='d-flex justify-content-center'>
-                                    <Button size="lg" variant="secondary" className='m-2' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    
-                                    <Button size="lg" variant="secondary" className='m-2' onClick={() => router.push('/bike-service')}>{t('serviceButton')}</Button>  
+                                    <Button size="lg" variant="secondary" className='m-2 text-uppercase' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    
+                                    <Button size="lg" variant="secondary" className='m-2 text-uppercase' onClick={() => router.push('/bike-service')}>{t('serviceButton')}</Button>  
                                 </div>            
                             </div>
                         </Col>

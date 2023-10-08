@@ -33,7 +33,7 @@ function RentCard({title, bullets, price, imageSrc}) {
             {formModalShowed && <FormModal  formIsForRent handleClose={closeFormModal}/>}
             {imageModalShowed && <ImageModal imageSrc={imageSrc} title={title} handleClose={closeImageModal}/>}
 
-            <Card className='rent-card'>
+            <Card className='rent-card shadow'>
                 <Image
                     alt={title}
                     src={imageSrc}      
