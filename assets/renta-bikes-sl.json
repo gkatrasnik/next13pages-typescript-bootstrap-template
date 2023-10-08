@@ -12,7 +12,7 @@
           "PREDNJE VZMETENJE: SR Suntour NVX30 Coil, 100mm",
           "ZAVORE: Shimano BR-MT200 (180/180)"
         ],
-        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 day - 50€"
+        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 dan - 50€"
       },
       {
         "title": "CUBE Reaction Hybrid EX",
@@ -26,7 +26,7 @@
           "PREDNJE VZMETENJE: SR Suntour XCM34, 120mm",
           "ZAVORE: hidravlične Shimano MT420/MT400 203/180)"
         ],
-        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 day - 50€"
+        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 dan - 50€"
       },
       {
         "title": "CUBE Reaction Hybrid PRO",
@@ -40,7 +40,7 @@
           "PREDNJE VZMETENJE: SR Suntour XCM34, 120mm",
           "ZAVORE: hidravlične Shimano BR-MT200 (180/180)"
         ],
-        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 day - 50€"
+        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 dan - 50€"
       },
       {
         "title": "HAIBIKE Hardnine 2.0",
@@ -54,7 +54,7 @@
           "PREDNJE VZMETENJE: SR Suntour XCR Air Lockout, 100mm",
           "ZAVORE: Tektro M275 (180/180)"
         ],
-        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 day - 50€"
+        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 dan - 50€"
       },
       {
         "title": "HAIBIKE Hardnine 7",
@@ -68,7 +68,7 @@
           "PREDNJE VZMETENJE: RockShox 35 Silver, 120mm",
           "ZAVORE: Shimano BR-MT420/MT410 (203/180)"
         ],
-        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 day - 50€"
+        "price": "Cena: 2h - 25€ | 4h - 35€ | 1 dan - 50€"
       }
     ],
     "regularBikes": [
@@ -84,7 +84,7 @@
           "ZADNJI VERIŽNIK: SunRace, CSM40, 12-32T",
           "ZAVORE: Shimano BR-MT200 (160/160)"
         ],
-        "price": "Cena: 2h - 15€ | 4h - 20€ | 1 day - 25€"
+        "price": "Cena: 2h - 15€ | 4h - 20€ | 1 dan - 25€"
       },
       {
         "title": "TORPADO Mercury 29",
@@ -98,7 +98,7 @@
           "ZADNJI VERIŽNIK: Shimano CS-HG200-9",
           "ZAVORE: Shimano BR-MT200 (160/160)"
         ],
-        "price": "Cena: 2h - 15€ | 4h - 20€ | 1 day - 25€"
+        "price": "Cena: 2h - 15€ | 4h - 20€ | 1 dan - 25€"
       },
       {
         "title": "TORPADO Navigator Lux",
@@ -112,7 +112,7 @@
           "ZADNJI VERIŽNIK: Shimano CS-HG31-8",
           "ZAVORE: Shimano V-Brake"
         ],
-        "price": "Cena: 2h - 15€ | 4h - 20€ | 1 day - 25€"
+        "price": "Cena: 2h - 15€ | 4h - 20€ | 1 dan - 25€"
       },
       {
         "title": "TORPADO Viper 24",
@@ -125,7 +125,7 @@
           "ZAVORE: V-Brake",
           "VELIKOST KOLES: 24″"
         ],
-        "price": "Cena: 2h - 13€ | 4h - 17€ | 1 day - 20€"
+        "price": "Cena: 2h - 13€ | 4h - 17€ | 1 dan - 20€"
       },
       {
         "title": "TORPADO Puma 20",
@@ -137,7 +137,7 @@
           "ZAVORE: V-Brake",
           "VELIKOST KOLES: 20″"
         ],
-        "price": "Cena: 2h - 13€ | 4h - 17€ | 1 day - 20€"
+        "price": "Cena: 2h - 13€ | 4h - 17€ | 1 dan - 20€"
       }
     ],
     "other": [

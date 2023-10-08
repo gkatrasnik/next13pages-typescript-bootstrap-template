@@ -14,11 +14,11 @@ export default function RentABike(props) {
       <Container className="my-5">
         <h1 className=' text-center mb-5'>{t("rentABike")}</h1>
         <div className='mb-5'>
-          <h5>{t("exploreBled")}</h5>
+          <h2 className='fw-bold'>{t("exploreBled")}</h2>
           <p>{t("exploreBledText")}</p>
         </div>
         <div className='mb-5'>
-          <h5>{t("priceIncludes")}</h5>
+          <h5 className='fw-bold text-primary'>{t("priceIncludes")}</h5>
           <ul>
             <li>{t("parking")}</li>
             <li>{t("helmet")}</li>
@@ -30,7 +30,7 @@ export default function RentABike(props) {
 
         <Row className='mb-5'>
           <h2 className='text-center'>{t("eBikes")}</h2>
-            {props?.rentItems?.eBikes?.map((rentItem, index) => {
+            {props?.rentaBikes?.eBikes?.map((rentItem, index) => {
                 return (
                   <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
                     <RentCard 
@@ -46,7 +46,7 @@ export default function RentABike(props) {
         </Row>
         <Row className='mb-5'>
           <h2 className='text-center'>{t("regularBikes")}</h2>
-          {props?.rentItems?.regularBikes?.map((rentItem, index) => {
+          {props?.rentaBikes?.regularBikes?.map((rentItem, index) => {
               return (
                 <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
                   <RentCard 
@@ -62,7 +62,7 @@ export default function RentABike(props) {
         </Row>
         <Row className='mb-5'>
           <h2 className='text-center'>{t("accessories")}</h2>
-            {props?.rentItems?.other?.map((rentItem, index) => {
+            {props?.rentaBikes?.other?.map((rentItem, index) => {
                 return (
                   <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
                       <RentCard 
@@ -85,7 +85,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default,
-      rentItems: (await import(`../assets/rent-items-${context.locale}.json`)).default
+      rentaBikes: (await import(`../assets/renta-bikes-${context.locale}.json`)).default
     }
   };
 }

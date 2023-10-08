@@ -50,12 +50,15 @@ function RentCard({title, bullets, price, imageSrc}) {
                     onClick={showImageModal}          
                 />   
                 <Card.Body>
-                    <Card.Title>{title}</Card.Title>            
-                    <ul className="list-unstyled">
-                        {bullets.map(bullet => {
-                            return <li key={bullet}>{bullet}</li>
-                        })}
-                    </ul>
+                    <Card.Title>{title}</Card.Title>    
+                    {bullets &&
+                        <ul className="list-unstyled">
+                            {bullets.map(bullet => {
+                                return <li key={bullet}>{bullet}</li>
+                            })}
+                        </ul>
+                    }       
+                    
                     <Card.Text>
                         {price}
                     </Card.Text>

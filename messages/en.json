@@ -118,6 +118,17 @@
     "suggestions": "Suggestions for choosing a bike trip",
     "delivery": "Delivery and pick-up of bikes at a location of your choice (free delivery in case of renting at least 2 bikes)"    
   },
+  "RentASup": {
+    "rentASup": "SUP Rental",
+    "priceIncludes": "Price includes:",
+    "freeParking": "Free parking during the SUP rental period",
+    "lifeVest": "Life vest",
+    "Accessories": "Accessories:",
+    "waterproofBag": "Waterproof bag",
+    "waterproofPhoneCase": "Waterproof phone case",
+    "exploreBledSup": "Explore Bled with SUP!",
+    "exploreBledSupText": "Discover the enchanting beauty of Lake Bled, Slovenia from the water's perspective. We offer premium stand-up paddleboard (SUP) rentals, ensuring both novices and seasoned paddlers an unforgettable experience. Dive into tranquility and make your visit truly memorable with us."
+  },
   "Contact": {
     "contact": "Contact",
     "address": "Address",
@@ -152,8 +163,5 @@
   },
   "EbikeUpgrade" : {
     "ebikeUpgrade" : "E-Bike upgrade"
-  },
-  "RentASup" : {
-    "rentASup" : "SUP Rental"
   }
 }

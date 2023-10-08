@@ -110,7 +110,7 @@
     "eBikes": "E-kolesa",
     "regularBikes": "Navadna kolesa",
     "accessories": "Dodatki",
-    "exploreBled": "Raziskujte Bled s kolesom!",
+    "exploreBled": "Raziščite Bled s kolesom!",
     "exploreBledText":"Kolo vam omogoča hitrejše in lažje gibanje, predvsem v poletnem času, ko so ceste v okolici Bleda prometno zelo obremenjene. S kolesom lahko v enem dnevu obiščete vse pomembnejše znamenitosti ali pa naredite pošten kolesarski izlet in se zapeljete tudi kam dlje (Bohinjsko jezero, Triglavski narodni park, slap Peričnik,…) Smo edini ponudnik izposoje koles na ožjem območju Bleda, ki vam zagotovi brezplačno parkiranje vašega vozila v neposredni bližini izposojevalnice. Vabimo vas na obisk naše poslovalnice, kjer vam bomo z lokalnim poznavanjem z veseljem svetovali pri izbiri najboljših kolesarskih poti.",
     "priceIncludes": "Cena vključuje:",
     "parking":"Brezplačno parkiranje za čas izposoje kolesa",
@@ -118,6 +118,17 @@
     "lock":"Ključavnica",
     "suggestions": "Predlogi za izbiro kolesarskega izleta",
     "delivery": "Dostava in prevzem koles na lokacijo po vaši izbiri (brezplačna dostava v primeru izposoje vsaj 2 koles)"
+  },
+  "RentASup": {
+    "rentASup": "Izposoja supa",
+    "priceIncludes":"Cena vključuje:",
+    "freeParking": "brezplačna parkirnina v času izposoje SUP-a",
+    "lifeVest": "rešilni jopič",
+    "Accessories": "Dodatki:",
+    "waterproofBag": "vodoodporna torba",
+    "waterproofPhoneCase": "vodoodporna vrečka za telefon",
+    "exploreBledSup": "Raziščite Bled s SUP-om!",
+    "exploreBledSupText": "Odkrijte čarobno lepoto Blejskega jezera tudi iz vode. Ponujamo najem kakovostnih SUP-ov, ki zagotavljajo nepozabno izkušnjo tako za začetnike kot izkušene veslače. Potopite se v mir in naredite vaš obisk resnično nepozaben."
   },
   "Contact": {
     "contact": "Kontakt",
@@ -153,9 +164,5 @@
   },
   "EbikeUpgrade" : {
     "ebikeUpgrade" : "Električna predelava koles"
-  },
-  "RentASup" : {
-    "rentASup" : "Izposoja Supa"
-  }
-
+  } 
 }
