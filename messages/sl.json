@@ -164,6 +164,18 @@
     "sendInquiry": "Pošlji povpraševanje"
   },
   "EbikeUpgrade" : {
-    "ebikeUpgrade" : "Električna predelava koles"
-  } 
+    "ebikeUpgrade" : "Električna predelava koles",
+    "upgradeYourOldBike" : "Nadgradite svoje stare kolo v E-Kolo!",
+    "upgradeYourOldBikeText" : "Nadgradnja običajnega kolesa z elektromotorjem je idealna rešitev, če si želite imeti električno kolo in ne zapostaviti vašega kolesa. Z električno nadgradnjo skoraj vsako navadno kolo lahko postane električno.",
+    "upgradeDetailsTitle": "Prednosti predelave",
+    "upgradeDetails1": "Ceneje kot nakup novega električnega kolesa",
+    "upgradeDetails2": "Kompatibilnost s skoraj vsemi kolesi",
+    "upgradeDetails3": "Predelano kolo pridobi novo uporabnost",
+    "upgradeDetails4": "Kolesarjenje po terenih, kjer do danes niste zmogli",
+    "econoPackageIncludes": "V ponudbi imamo ECONO komplet za predelavo klasičnih koles v električno kolo, ki vsebuje vse potrebne komponente za nadgradnjo. Sredinski motor, ki v celoti nadomesti gonilni ležaj in gonilke, nosilec za baterijo, ki ga montiramo na luknje za namestitev nosilca bidona in LCD zaslon, ki se ga namesti na krmilo, kjer nam je v dosegu rok in v vidnem polju.",
+    "youCanPick": "Izbirate lahko med različnimi tipi zaslona (stranki ali na sredini krmila) in med različnimi kapacitetami baterij, od katerih je odvisen doseg električne pomoči kolesa.",
+    "upgradePrice":"Cena električne predelave kolesa po ponudbi",
+    "preUpgrade": "Pred nadgradnjo",
+    "postUpgrade": "Po nadgradnji"
+  }
 }

@@ -163,6 +163,18 @@
     "sendInquiry": "Send inquiry"
   },
   "EbikeUpgrade" : {
-    "ebikeUpgrade" : "E-Bike upgrade"
+    "ebikeUpgrade" : "E-Bike upgrade",
+    "upgradeYourOldBike" : "Upgrade your old bike to an E-Bike!",
+    "upgradeYourOldBikeText" : "Upgrading your old regular bicycle with an electric motor is the ideal solution if you want to have an electric bike without neglecting your own bicycle. With an electric upgrade, almost any ordinary bike can become electric.",
+    "upgradeDetailsTitle": "Upgrade benefits",
+    "upgradeDetails1": "Cheaper than buying a new electric bike",
+    "upgradeDetails2": "Compatibility with almost all bicycles",
+    "upgradeDetails3": "The modified bike gains new functionality",
+    "upgradeDetails4": "Cycling on terrains where you couldn't before",
+    "econoPackageIncludes": "We offer the ECONO kit for converting classic bicycles into electric bikes, which includes all the necessary components for the upgrade. A mid-drive motor that completely replaces the bottom bracket and cranks, a battery holder that is mounted on the holes intended for the bottle cage, and an LCD display that is mounted on the handlebars, within arm's reach and in the field of vision.",
+    "youCanPick": "You can choose between different types of displays (on the side or in the middle of the handlebars) and different battery capacities, which determine the range of the electric bike's assistance.",
+    "upgradePrice": "Price of the upgrade according to the offer.",
+    "preUpgrade": "Before upgrade",
+    "postUpgrade": "After upgrade"
   }
 }

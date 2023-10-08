@@ -27,7 +27,7 @@ export default function CyclingTrips() {
       <Container className="my-5 d-flex flex-column cycling-trips">
         <h1 className='text-center mb-5'>{t("cyclingTrips")}</h1>
           <Row >
-            <Col xs={12} md={6} className=" d-flex justify-content-center mb-4"> 
+            <Col md={6} className=" d-flex justify-content-center mb-4"> 
               <div className='overflow-hidden image-border-radius'>           
                 <Image 
                     src="/cycling-trips-images/cycling-trips.jpg"
@@ -42,7 +42,7 @@ export default function CyclingTrips() {
                 />
               </div>
              </Col>
-             <Col xs={12} md={6} className="d-flex flex-column justify-content-center align-items-center mb-4">
+             <Col md={6} className="d-flex flex-column justify-content-center align-items-center mb-4">
               <div className='d-flex flex-column justify-content-center align-items-center'>
                 <div className='text-wrapper mb-4'>
                   <h5>{t("weOffer")}</h5>
