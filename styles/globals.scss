@@ -56,6 +56,18 @@ main {
   flex-direction: column;
 }
 
+.loading-component {
+  position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
 .error-page {
   display: flex;
   flex-direction: column;

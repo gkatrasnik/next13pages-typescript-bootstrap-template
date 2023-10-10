@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Router from "next/router";
+import { Spinner } from "react-bootstrap";
 
 const Loading = () => {
   const [loading, setLoading] = useState(false);
@@ -17,8 +18,14 @@ const Loading = () => {
     };
   }, []);
 
-  //TODO add spinner
-  return loading ? <div></div> : null;
+  return loading ? 
+  <div className="loading-component">
+    <Spinner size="lg" animation="border" variant="secondary" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>
+  </div> 
+  :
+   null;
 };
 
 export default Loading;
