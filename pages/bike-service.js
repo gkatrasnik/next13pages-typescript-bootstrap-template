@@ -1,17 +1,26 @@
+import { useState } from 'react';
 import Head from 'next/head'
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Button} from 'react-bootstrap'
 import ServicePriceList from '../components/servicePriceList';
 import {useTranslations} from 'next-intl';
 import GeneralCard from '../components/generalCard';
+import FormModal from '../components/formModal';
 
 export default function BikeService(props) {
+  const [formModalShowed, setFormModalShowed] = useState(false);
   const t = useTranslations('BikeService');
+
+  const closeFormModal = () => {
+    setFormModalShowed(false);
+  }
+
+  const showFormModal = () => {
+  setFormModalShowed(true);
+  }
 
   return (
   <>
-    <Head>
-      
-    </Head>
+    {formModalShowed && <FormModal formIsForService handleClose={closeFormModal}/>}
 
     <Head>
         <title>{t("bikeRepairs")}</title>
@@ -55,8 +64,11 @@ export default function BikeService(props) {
             />
           </Col>
       </Row>
-      <Row className='h-100'>
+      <Row>
         <Col className="mb-4">
+          <div className='d-flex justify-content-center mb-5'>
+            <Button variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
+          </div>
           <h3 className='text-center mb-3'>{t("pricelist")}</h3>
           <ServicePriceList pricelistJson={props.pricelist}/>
           <div className='mt-5'>

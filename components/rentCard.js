@@ -4,6 +4,7 @@ import {useTranslations} from 'next-intl';
 import Image from 'next/image'
 import FormModal from '../components/formModal'
 import ImageModal from '../components/imageModal'
+import { AspectRatio } from 'react-bootstrap-icons';
 
 function RentCard({title, bullets, price, imageSrc}) {
     const [formModalShowed, setFormModalShowed] = useState(false);
@@ -34,21 +35,23 @@ function RentCard({title, bullets, price, imageSrc}) {
             {imageModalShowed && <ImageModal imageSrc={imageSrc} title={title} handleClose={closeImageModal}/>}
 
             <Card className='rent-card shadow'>
-                <Image
-                    alt={title}
-                    src={imageSrc}      
-                    height={200}
-                    width={250}        
-                    placeholder="blur"
-                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
-                    style={{
-                        margin: "auto",
-                        borderRadius: "inherit",   
-                        objectFit: "contain",    
-                        cursor: "pointer"         
-                    }}      
-                    onClick={showImageModal}          
-                />   
+                <div className='rent-image-container' onClick={showImageModal} >
+                    <Image
+                        alt={title}
+                        src={imageSrc}      
+                        height={200}
+                        width={250}        
+                        placeholder="blur"
+                        blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+                        style={{
+                            margin: "auto",
+                            borderRadius: "inherit",   
+                            objectFit: "contain",    
+                        }}      
+                    />   
+                    <AspectRatio size={20} className="rent-image-zoom-in"/>
+                </div>
+                
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>    
                     {bullets &&

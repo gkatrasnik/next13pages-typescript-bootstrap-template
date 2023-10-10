@@ -3,7 +3,7 @@ import {Button, Modal, Form} from 'react-bootstrap';
 import {useTranslations} from 'next-intl';
 import { ArrowRepeat } from 'react-bootstrap-icons';
 
-function FormModal({formIsForRent, formIsForUpgrade, handleClose}) {
+function FormModal({formIsForRent, formIsForUpgrade, formIsForService, handleClose}) {
     const t = useTranslations('FormModal');
     const [isSending, setIsSending] = useState(false);
 
@@ -43,7 +43,7 @@ function FormModal({formIsForRent, formIsForUpgrade, handleClose}) {
 
     const createEmail = () => 
     {
-        const requestedService = formIsForRent ? "izposoja" : formIsForUpgrade ? "predelava kolesa" : "drugo";
+        const requestedService = formIsForRent ? "izposoja" : formIsForUpgrade ? "predelava kolesa" : formIsForService ? "servis kolesa" : "drugo";
         const emailData = {
             subject: "",
             text: ""
@@ -89,6 +89,7 @@ function FormModal({formIsForRent, formIsForUpgrade, handleClose}) {
 
             setIsSending(false);
             console.log("Success:", result.statusText);
+
         } catch (error) {
             setIsSending(false);
             console.error("Error:", error);
@@ -96,7 +97,7 @@ function FormModal({formIsForRent, formIsForUpgrade, handleClose}) {
     }
     
     return (
-       <>  
+       <>          
             <Modal centered show={true} onHide={handleClose}>
                 <Modal.Header className="py-3" closeButton>
                 <Modal.Title as="h5">{t('title')}</Modal.Title>
