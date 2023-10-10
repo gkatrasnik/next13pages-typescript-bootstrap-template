@@ -9,7 +9,7 @@ function IndexPageBasicCards() {
 
     return (
     <Container>
-        <Row className="index-page-cards my-5" >
+        <Row className="index-page-cards mb-5" >
             <Col className="d-flex mb-4 justify-content-center">            
                 <GeneralCard
                 title={t("rentaBike")} 

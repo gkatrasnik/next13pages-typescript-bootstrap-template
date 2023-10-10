@@ -40,11 +40,7 @@ export default function Home() {
                         ]}
             />        
           </Col>
-        </Row>
-        <Row className='my-5'>
-          <Col className="mb-4">
-          </Col>
-        </Row>        
+        </Row>           
       </Container>
     </>
   )
