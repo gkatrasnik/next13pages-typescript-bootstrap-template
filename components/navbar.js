@@ -62,8 +62,8 @@ export default function MyNavbar() {
               src="/logo-big.png"  
               placeholder="blur"
               blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
-              height={80}
-              width={80}   
+              height={50}
+              width={50}   
               style={{                 
                 objectFit:"cover"                
               }}        

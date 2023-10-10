@@ -15,10 +15,12 @@ function HeroSection({heroImageSrc}) {
                 src={heroImageSrc}
                 alt="Hero Image"
                 layout="fill"  
-                objectFit="cover"                                                                  
                 placeholder="blur"
                 blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
-                priority        
+                style={{                 
+                    objectFit:"cover"                
+                }}       
+                priority         
             />
             <div className="hero-content">
                 <Container className="h-100 d-flex">

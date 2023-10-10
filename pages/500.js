@@ -4,15 +4,17 @@ export default function Custom500() {
   return (
     <div className="error-page">
         <Image 
-                  src="/logo-small.png"
-                  alt="AB Bike"
-                  width={160} 
-                  height={150}                   
-                  objectFit="cover"                                                                  
-                  placeholder="blur"
-                  blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
-                  priority    
-                  className='mb-3'                        
+          src="/logo-small.png"
+          alt="AB Bike"
+          width={160} 
+          height={150}                   
+          placeholder="blur"
+          blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+          priority    
+          className='mb-3'  
+          style={{                 
+            objectFit:"cover"                
+          }}                             
         />
         <h1>500 - Server-side error occurred</h1>
     </div>

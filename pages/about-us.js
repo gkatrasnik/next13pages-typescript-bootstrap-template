@@ -19,12 +19,14 @@ export default function About() {
                 <Image 
                     src="/about-us-images/about-us-1.jpg"
                     alt="Ana in Blaž"
-                    layout="fill"  
-                    objectFit="cover"                                                                  
+                    layout="fill"                                                                                       
                     placeholder="blur"
                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                     priority      
                     className='image-border-radius'  
+                    style={{                 
+                      objectFit:"cover"                
+                    }}       
                 />
               </div>              
             </Col>
@@ -42,19 +44,18 @@ export default function About() {
 
           <Row className='mb-5'>
             <Col md={6} className='d-flex justify-content-center align-items-center '>
-              <div className='about-us-image-conainer'>
-                <Image 
-                    src="/about-us-images/about-us-2.jpg"
-                    alt="Ana in Blaž na kolesih"
-                    height={300}
-                    width={400}
-                    objectFit="contain"                                                                  
-                    placeholder="blur"
-                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
-                    className='image-border-radius'
-                />
-              </div>
-              
+              <Image 
+                  src="/about-us-images/about-us-2.jpg"
+                  alt="Ana in Blaž na kolesih"
+                  height={300}
+                  width={400}
+                  placeholder="blur"
+                  blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
+                  className='image-border-radius'
+                  style={{                 
+                    objectFit:"cover"                
+                  }}       
+              />              
             </Col>
             <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
               <div>

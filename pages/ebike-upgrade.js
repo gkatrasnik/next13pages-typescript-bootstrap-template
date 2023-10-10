@@ -36,7 +36,7 @@ export default function About() {
         </Row>
               
         <Row >
-          <Col md={6} className="d-flex flex-column justify-content-center align-items-center mb-4">
+          <Col md={6} className="d-flex flex-column justify-content-center align-items-center mb-4 overflow-hidden">
             <h5 className='mb-3 text-primary fw-bold'>{t("upgradeDetailsTitle")}</h5>
             <ul className='mb-5'>
                 <li>{t("upgradeDetails1")}</li>
@@ -45,20 +45,20 @@ export default function About() {
                 <li>{t("upgradeDetails4")}</li>
               </ul>
           </Col>
-          <Col md={6} className="d-flex justify-content-center mb-4"> 
-            <div className='overflow-hidden image-border-radius'>           
+          <Col md={6} className="d-flex justify-content-center mb-4 overflow-hidden"> 
               <Image 
                   src="/ebike-upgrade-images/upgrade-kit.jpg"
                   alt="cycling trips"
                   height={300}
-                  width={400}  
-                  objectFit="contain"                                                                  
+                  width={400}                                                                                     
                   placeholder="blur"
                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                   priority    
-                  className='image-border-radius'                        
+                  className='image-border-radius'   
+                  style={{                 
+                    objectFit:"cover"                
+                  }}                            
               />
-            </div>
           </Col>          
         </Row>      
         <Row >
@@ -70,35 +70,35 @@ export default function About() {
         </Row> 
         <Row >
           <Col md={6} className="d-flex flex-column justify-content-center align-items-center overflow-hidden mb-4"> 
-            <div className='overflow-hidden image-border-radius'>           
               <Image 
                   src="/ebike-upgrade-images/pre-upgrade.jpg"
                   alt="cycling trips"
                   height={300}
                   width={400}  
-                  objectFit="contain"                                                                  
                   placeholder="blur"
                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                   priority    
-                  className='image-border-radius'                        
+                  className='image-border-radius'    
+                  style={{                 
+                    objectFit:"cover"                
+                  }}                           
               />
-            </div>
             <p>{t("preUpgrade")}</p>
           </Col>    
           <Col md={6} className="d-flex flex-column justify-content-center align-items-center overflow-hidden mb-4"> 
-            <div className='overflow-hidden image-border-radius'>           
               <Image 
                   src="/ebike-upgrade-images/post-upgrade.jpg"
                   alt="cycling trips"
                   height={300}
                   width={400}  
-                  objectFit="contain"                                                                  
                   placeholder="blur"
                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                   priority    
-                  className='image-border-radius'                        
+                  className='image-border-radius'
+                  style={{                 
+                    objectFit:"cover"                
+                  }}                               
               />
-            </div>
             <p>{t("postUpgrade")}</p>
           </Col>        
           <Col className='mt-5'>
