@@ -14,7 +14,7 @@ export default function About() {
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column contact-cards">
-        <h1 className='text-center mb-5'>{t("contact")}</h1>
+        <h1 className='text-center fw-bold mb-5'>{t("contact")}</h1>
         <Row >            
           <Col s={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>

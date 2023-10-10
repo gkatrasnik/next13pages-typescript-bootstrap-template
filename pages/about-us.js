@@ -13,7 +13,7 @@ export default function About() {
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column ">
-        <h1 className='text-center mb-5'>{t("aboutUs")}</h1>
+        <h1 className='text-center fw-bold mb-5'>{t("aboutUs")}</h1>
           <Row>
             <Col className="mb-5">
               <div className="about-us-hero-container">

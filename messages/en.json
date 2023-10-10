@@ -104,7 +104,9 @@
 
     "bottomText1": "* Materials used in servicing are not included in the price (unless stated otherwise)",
     "bottomText2": "* All prices include VAT",
-    "bottomText3": "The price list is valid from 15.04.2023"
+    "bottomText3": "The price list is valid from 15.04.2023",
+
+    "sendInquiry": "Send inquiry"
   },
   "RentABike": {
     "rentABikeBled": "Izposoja koles in e-koles na Bledu",

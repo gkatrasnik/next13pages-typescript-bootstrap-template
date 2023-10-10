@@ -26,7 +26,7 @@ export default function CyclingTrips() {
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column cycling-trips">
-        <h1 className='text-center mb-5'>{t("cyclingTrips")}</h1>
+        <h1 className='text-center fw-bold mb-5'>{t("cyclingTrips")}</h1>
         <Row >
           <Col md={6} className=" d-flex justify-content-center mb-4 overflow-hidden"> 
               <Image 
@@ -53,7 +53,7 @@ export default function CyclingTrips() {
             </div>
             
             <div className='d-flex justify-content-center'>
-              <Button variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
+              <Button size="lg" variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
             </div>
           </Col>
         </Row>               

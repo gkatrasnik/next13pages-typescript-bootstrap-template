@@ -26,7 +26,7 @@ export default function About() {
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column ">
-        <h1 className='text-center mb-5'>{t("ebikeUpgrade")}</h1>
+        <h1 className='text-center fw-bold mb-5'>{t("ebikeUpgrade")}</h1>
         <Row>
           <Col>
             <div className='mb-3'>
@@ -70,6 +70,12 @@ export default function About() {
           </Col>
         </Row> 
         <Row >
+          <Col className='mb-5'>
+            <p className='text-center fw-bold h4'>{t("upgradePrice")}</p>
+            <div className='d-flex justify-content-center mt-4'>
+              <Button size="lg" variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
+            </div>
+          </Col>
           <Col md={6} className="d-flex flex-column justify-content-center align-items-center overflow-hidden mb-4"> 
               <Image 
                   src="/ebike-upgrade-images/pre-upgrade.jpg"
@@ -101,13 +107,7 @@ export default function About() {
                   }}                               
               />
             <p>{t("postUpgrade")}</p>
-          </Col>        
-          <Col className='mt-5'>
-            <p className='text-center fw-bold h4'>{t("upgradePrice")}</p>
-            <div className='d-flex justify-content-center mt-4'>
-              <Button variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
-            </div>
-          </Col>
+          </Col>       
         </Row>
 
       </Container>

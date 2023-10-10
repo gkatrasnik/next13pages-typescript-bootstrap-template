@@ -27,7 +27,7 @@ export default function BikeService(props) {
         <meta name="description" content={t('description')} />
     </Head> 
     <Container className="my-5 d-flex flex-column ">
-      <h1 className='text-center mb-5'>{t("bikeService")}</h1>
+      <h1 className='text-center fw-bold mb-5'>{t("bikeService")}</h1>
       <Row>
         <Col>
           <div className='mb-3'>
@@ -67,7 +67,7 @@ export default function BikeService(props) {
       <Row>
         <Col className="mb-4">
           <div className='d-flex justify-content-center mb-5'>
-            <Button variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
+            <Button size="lg" variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
           </div>
           <h3 className='text-center mb-3'>{t("pricelist")}</h3>
           <ServicePriceList pricelistJson={props.pricelist}/>

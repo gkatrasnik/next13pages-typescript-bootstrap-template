@@ -27,9 +27,9 @@ function HeroSection({heroImageSrc}) {
                     <Row className='d-flex flex-grow-1'>
                         <Col md={true} className="mb-4 d-flex flex-column alling-items-center justify-content-center">
                             <div className="h-100 my-4 d-flex flex-column alling-items-center justify-content-center">
-                                <div>
+                                <div className='mb-4'>
                                     <h1 className=' text-center text-white mb-4 fw-bold display-4'>{t('title')}</h1>                                
-                                    <p className='text-white mb-4'>{t('description')}</p>
+                                    <p className='text-white h5'>{t('description')}</p>
                                 </div>                                
                                 <div className='d-flex justify-content-center'>
                                     <Button variant="secondary" className='m-2 text-uppercase' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    

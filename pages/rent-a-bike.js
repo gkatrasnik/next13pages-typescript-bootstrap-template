@@ -13,7 +13,7 @@ export default function RentABike(props) {
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5">
-        <h1 className=' text-center mb-5'>{t("rentABike")}</h1>
+        <h1 className=' text-center fw-bold mb-5'>{t("rentABike")}</h1>
         <Row>
           <Col>
             <div className='mb-5'>
