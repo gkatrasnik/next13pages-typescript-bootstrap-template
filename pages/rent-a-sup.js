@@ -9,8 +9,9 @@ export default function RentASup(props) {
     return (
     <>
       <Head>
-        <title>{t("rentASup")}</title>
-      </Head>
+        <title>{t('rentASupBled')}</title>
+        <meta name="description" content={t('description')} />
+      </Head> 
       <Container className="my-5 d-flex flex-column ">
         <h1 className=' text-center mb-5'>{t("rentASup")}</h1>
         <Row>

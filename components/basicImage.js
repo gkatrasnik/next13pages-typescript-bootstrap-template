@@ -1,4 +1,3 @@
-// components/layout.js
 import { useState } from "react";
 import ImageModal from "./imageModal";
 import Image from "next/image";

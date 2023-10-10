@@ -3,18 +3,22 @@ import {Container, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
 import ImageGallery from '../components/imageGallery';
 import HeroSection from '../components/heroSection';
-import { useRouter } from 'next/router';
 import IndexPageBasicCards from '../components/indexPageBasicCards';
+
+export const metadata = {
+  title: 'Home',
+  description: 'Welcome to Next.js',
+}
 
 
 export default function Home() {
     const t = useTranslations('Index');
-    const router = useRouter();
 
     return (
     <>
       <Head>
         <title>AB Bike</title>
+        <meta name="description" content={t('description')} />
       </Head>           
       <HeroSection heroImageSrc="/hero.jpg"/>
       <IndexPageBasicCards/>

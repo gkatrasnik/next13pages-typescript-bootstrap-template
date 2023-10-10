@@ -22,8 +22,9 @@ export default function About() {
       {formModalShowed && <FormModal formIsForUpgrade handleClose={closeFormModal}/>}
 
       <Head>
-        <title>{t("ebikeUpgrade")}</title>
-      </Head>
+        <title>{t('eBikeUpgradeTitle')}</title>
+        <meta name="description" content={t('description')} />
+      </Head> 
       <Container className="my-5 d-flex flex-column ">
         <h1 className='text-center mb-5'>{t("ebikeUpgrade")}</h1>
         <Row>

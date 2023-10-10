@@ -20,10 +20,11 @@ export default function CyclingTrips() {
     return (
     <>
       {formModalShowed && <FormModal handleClose={closeFormModal}/>}
-
+      
       <Head>
-        <title>{t("cyclingTrips")}</title>
-      </Head>
+        <title>{t("cyclingTripsBled")}</title>
+        <meta name="description" content={t('description')} />
+      </Head> 
       <Container className="my-5 d-flex flex-column cycling-trips">
         <h1 className='text-center mb-5'>{t("cyclingTrips")}</h1>
         <Row >

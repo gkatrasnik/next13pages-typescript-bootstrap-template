@@ -10,8 +10,13 @@ export default function BikeService(props) {
   return (
   <>
     <Head>
-      <title>{t("bikeService")}</title>
+      
     </Head>
+
+    <Head>
+        <title>{t("bikeRepairs")}</title>
+        <meta name="description" content={t('description')} />
+    </Head> 
     <Container className="my-5 d-flex flex-column ">
       <h1 className='text-center mb-5'>{t("bikeService")}</h1>
       <Row>

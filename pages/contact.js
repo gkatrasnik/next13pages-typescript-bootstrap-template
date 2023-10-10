@@ -10,8 +10,9 @@ export default function About() {
     return (
     <>
       <Head>
-        <title>{t("contact")}</title>
-      </Head>
+        <title>{t("contactUs")}</title>
+        <meta name="description" content={t('description')} />
+      </Head> 
       <Container className="my-5 d-flex flex-column contact-cards">
         <h1 className='text-center mb-5'>{t("contact")}</h1>
         <Row >            

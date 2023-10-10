@@ -9,8 +9,9 @@ export default function RentABike(props) {
   return (
     <>
       <Head>
-        <title>{t("rentABike")}</title>
-      </Head>
+        <title>{t('rentABikeBled')}</title>
+        <meta name="description" content={t('description')} />
+      </Head> 
       <Container className="my-5">
         <h1 className=' text-center mb-5'>{t("rentABike")}</h1>
         <Row>

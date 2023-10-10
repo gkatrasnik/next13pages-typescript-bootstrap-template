@@ -2,7 +2,7 @@
   "Index": {
     "title": "Raziščite Bled na dveh kolesih",
     "subTitle": "Najbolša kolesa za izposojo in strokoven servis poskrbi za vaše avanture",
-    "description": "Odkrijte lepote Bleda v svojem ritmu. Če iščete nove avanture ali potrebujete hitro popravilo, smo tukaj za vas.",
+    "description": "Odkrijte užitke kolesarjenja z izposojo naših koles in e-koles. Potrbujete popravilo? Naša ekipa strokovnjakov bo poskrbela za vaše kolo.",
     "rentButton": "Izposoja koles",
     "serviceButton": "Servis koles",
     "whatsapp": "Whatsapp",
@@ -67,6 +67,7 @@
   "BikeService": {
     "bikeService": "Kolesarski servis",
     "bikeRepairs": "Strokovno popravilo koles na Bledu!",
+    "description": "Strokovno popravilo koles vseh znamk in vrst na Bledu. Naša ekipa strokovnjakov bo poskrbela za vaše kolo. Vabljeni v našo poslovalnico na Pristavi na Bledu.",
     "service": "Storitev",
     "price": "Cena (DDV vključen)",
     "pricelist": "Cenik servisnih storitev",
@@ -107,6 +108,8 @@
 
   },
   "RentABike": {
+    "rentABikeBled": "Izposoja koles in e-koles na Bledu",
+    "description": "Odkrijte Bled na dveh kolesih z najemom koles pri AB Bike. Izberite med široko paleto kakovostnih koles in e-koles, primernih za vsak teren in kolesarja. Enostavna rezervacija preko spleta, konkurenčne cene. Začnite svojo kolesarsko avanturo v Bledu z nami danes!", 
     "rentABike": "Izposoja koles",
     "eBikes": "E-kolesa",
     "regularBikes": "Navadna kolesa",
@@ -121,6 +124,8 @@
     "delivery": "Dostava in prevzem koles na lokacijo po vaši izbiri (brezplačna dostava v primeru izposoje vsaj 2 koles)"
   },
   "RentASup": {
+    "rentASupBled": "Izposoja SUP-a Bled",
+    "description": "Doživite Blejsko jezero z najemom SUP-ov pri AB Bike. Najemite vrhunske deske za stoječe veslanje in se podajte po kristalno čistem jezeru. Popolno za začetnike in izkušene veslače. Potopite se v svojo naslednjo Blejsko avanturo z našimi SUP-i danes!",
     "rentASup": "Izposoja supa",
     "priceIncludes":"Cena vključuje:",
     "freeParking": "brezplačna parkirnina v času izposoje SUP-a",
@@ -132,6 +137,8 @@
     "exploreBledSupText": "Odkrijte čarobno lepoto Blejskega jezera tudi iz vode. Ponujamo najem kakovostnih SUP-ov, ki zagotavljajo nepozabno izkušnjo tako za začetnike kot izkušene veslače. Potopite se v mir in naredite vaš obisk resnično nepozaben."
   },
   "Contact": {
+    "contactUs":"Kontaktirajte nas",
+    "description":"Kontaktirajte nas v poslovalnici AB Bike na Bledu. Če imate vprašanja o naših storitvah koles, najemih ali če nas želite samo pozdraviti, je naša ekipa tukaj, da vam pomaga. Obiščite nas v Pristavi ali nas kontaktirajte preko spletne strani.",
     "contact": "Kontakt",
     "address": "Naslov",
     "phone": "Telefon",
@@ -143,6 +150,7 @@
   },
   "AboutUs": {
     "aboutUs": "O nas",
+    "description": "AB Bike je podjetje Ane Lipovec in Blaža Klemenčiča, ki se ukvarja z izposojo koles, servisom koles in prodajo kolesarske opreme. V naši ponudbi imamo tudi izposojo supov. Naša poslovalnica se nahaja na Pristavi na Bledu, kjer vam nudimo brezplačno parkiranje za čas izposoje kolesa. Vabljeni na obisk!", 
     "weAre":"Sva Ana in Blaž,",
     "partners": "partnerja na osebni in poslovni poti.",
     "partnersText": "Združila naju je strast do kolesarstva, spoznavanja novih ljudi in njihovih zgodb. Svojo vizijo širiva in uresničujeva s podjetjem A&B KOLO, d.o.o., kjer se potrudimo za najboljšo in nepozabno kolesarsko izkušnjo na Bledu..",
@@ -158,12 +166,16 @@
     "comeToOurShop": "Vljudno vas vabimo v našo poslovalnico na Bledu na Pristavi (Cesta svobode 22, Bled), kjer vam ob koriščenju naših storitev zagotovimo tudi brezplačno parkirno mesto."
   },
   "CyclingTrips": {
+    "cyclingTripsBled": "Kolesarski izleti Bled",
+    "description": "Raziščite osupljive kolesarske izlete z AB Bike v Bledu. Potujte po slikovitih poteh, odkrijte skrite dragulje in doživite lepoto narave na dveh kolesih. Izleti prilagojeni vsakemu kolesarju. Začnite svojo naslednjo avanturo z nami!",
     "cyclingTrips": "Kolesarski izleti",
     "weOffer": "Ponujamo vam tudi kolesarske izlete",
     "sendInquiryMsg": "Če ste zainteresirani, nam pošljite povpraševanje",
     "sendInquiry": "Pošlji povpraševanje"
   },
   "EbikeUpgrade" : {
+    "eBikeUpgradeTitle" : "Nadgradite svoje staro kolo v E-kolo",
+    "description": "Nadgradite svoje staro kolo v e-kolo. Električna predelava vam bo pomagala do večjih hitrosti, udobjo in novih poti. Nadgradite svoje kolesarsko doživetje še danes",
     "ebikeUpgrade" : "Električna predelava koles",
     "upgradeYourOldBike" : "Nadgradite svoje stare kolo v E-Kolo!",
     "upgradeYourOldBikeText" : "Nadgradnja običajnega kolesa z elektromotorjem je idealna rešitev, če si želite imeti električno kolo in ne zapostaviti vašega kolesa. Z električno nadgradnjo skoraj vsako navadno kolo lahko postane električno.",
