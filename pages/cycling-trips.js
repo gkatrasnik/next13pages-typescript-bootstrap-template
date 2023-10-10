@@ -52,7 +52,7 @@ export default function CyclingTrips() {
             </div>
             
             <div className='d-flex justify-content-center'>
-              <Button variant="secondary" size="lg" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
+              <Button variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
             </div>
           </Col>
         </Row>               

@@ -104,7 +104,7 @@ export default function About() {
           <Col className='mt-5'>
             <h4 className='text-center fw-bold'>{t("upgradePrice")}</h4>
             <div className='d-flex justify-content-center mt-4'>
-              <Button variant="secondary" size="lg" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
+              <Button variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
             </div>
 
           </Col>
