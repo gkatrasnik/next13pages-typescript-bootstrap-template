@@ -22,7 +22,7 @@ export default function About() {
                 <PinMap size={48} className='mb-3'/>     
                 <Card.Title className='text-center'>{t("address")}</Card.Title>     
                 <div>
-                  <h6>Cesta Svobode 22, 4260</h6>              
+                  <p className='h6'>Cesta Svobode 22, 4260</p>              
                   <p>Bled, Slovenija</p>  
                 </div> 
               </Card.Body>
@@ -60,14 +60,13 @@ export default function About() {
                 <Clock size={48} className='mb-3'/>
                 <Card.Title className='text-center'>{t("schedule")}</Card.Title>  
                 <div>
-                  <h6 className='fw-bold'>{t("weekdays")}</h6> 
-                    <p className='mb-0'>- 9.00-12-00</p> 
-                    <p>- 14-00-18.00   </p>
+                  <p className='fw-bold h6'>{t("weekdays")}</p> 
+                  <p className='mb-0'>- 9.00-12-00</p> 
+                  <p>- 14-00-18.00   </p>
 
-                    <h6 className='fw-bold'>{t("weekends")}</h6> 
-                    <p>- {t("byAppointment")}</p>  
-                </div>      
-                      
+                  <p className='fw-bold h6'>{t("weekends")}</p> 
+                  <p>- {t("byAppointment")}</p>  
+                </div>     
               </Card.Body>
             </Card>
           </Col>

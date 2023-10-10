@@ -35,11 +35,11 @@ export default function About() {
           <Row >
             <Col className="mb-5">
               <div className='mb-3'>
-                <h3 className='fw-bold'>{t("weAre")}</h3>
-                <h3 className='fw-bold '>{t("partners")}</h3>
+                <p className='fw-bold h3'>{t("weAre")}</p>
+                <p className='fw-bold h3'>{t("partners")}</p>
               </div>
               <p className='mb-5'>{t("partnersText")}</p>
-              <h4 className='fw-bold text-primary'>{t("quote1")}</h4>
+              <p className='fw-bold text-primary h4'>{t("quote1")}</p>
             </Col>
           </Row>   
 
@@ -60,14 +60,14 @@ export default function About() {
             </Col>
             <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
               <div>
-                <h5 className='text-muted fw-bold fst-italic mb-3'>{t("quote2")}</h5>
+                <p className='text-muted fw-bold fst-italic mb-3 h5'>{t("quote2")}</p>
                 <p className='text-muted'>{t("paragraph2")}</p>  
               </div>          
             </Col>
           </Row>  
           <Row className='mb-5'>
             <Col>
-              <h5 className='text-primary fw-bold mb-3'>{t("weOffer")}</h5>
+              <p className='text-primary fw-bold mb-3 h5'>{t("weOffer")}</p>
               <ul className='mb-5'>
                 <li>{t("weOfferBullet1")}</li>
                 <li>{t("weOfferBullet2")}</li>

@@ -46,8 +46,8 @@ export default function CyclingTrips() {
             <Col md={6} className="d-flex flex-column justify-content-center align-items-center mb-4 overflow-hidden">
             <div className='d-flex flex-column justify-content-center align-items-center'>
               <div className='text-wrapper mb-4'>
-                <h5>{t("weOffer")}</h5>
-                <h5>{t("sendInquiryMsg")}</h5>
+                <p className="h5">{t("weOffer")}</p>
+                <p className="h5">{t("sendInquiryMsg")}</p>
               </div>
               
             </div>

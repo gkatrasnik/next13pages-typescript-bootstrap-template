@@ -11,7 +11,7 @@ export default function MyFooter() {
       <Container  className='px-4'>
         <Row className='h-100'>         
           <Col md={{span:6, order:2}} className='py-4'>
-            <h5 className="fw-bold pb-1">{t("contact")}</h5>
+            <p className="fw-bold pb-1 h5">{t("contact")}</p>
             <div className='d-flex flex-column'>              
               <div className="fw-bold pb-1">
                 {t("tel")}

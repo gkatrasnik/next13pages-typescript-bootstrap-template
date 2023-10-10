@@ -38,7 +38,7 @@ export default function About() {
               
         <Row >
           <Col md={6} className="d-flex flex-column justify-content-center align-items-center mb-4 overflow-hidden">
-            <h5 className='mb-3 text-primary fw-bold'>{t("upgradeDetailsTitle")}</h5>
+            <p className='mb-3 text-primary fw-bold h5'>{t("upgradeDetailsTitle")}</p>
             <ul className='mb-5'>
                 <li>{t("upgradeDetails1")}</li>
                 <li>{t("upgradeDetails2")}</li>
@@ -103,11 +103,10 @@ export default function About() {
             <p>{t("postUpgrade")}</p>
           </Col>        
           <Col className='mt-5'>
-            <h4 className='text-center fw-bold'>{t("upgradePrice")}</h4>
+            <p className='text-center fw-bold h4'>{t("upgradePrice")}</p>
             <div className='d-flex justify-content-center mt-4'>
               <Button variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
             </div>
-
           </Col>
         </Row>
 

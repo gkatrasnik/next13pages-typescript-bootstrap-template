@@ -21,13 +21,13 @@ export default function RentASup(props) {
                 <h2 className='fw-bold mb-4'>{t("exploreBledSup")}</h2>
                 <p>{t("exploreBledSupText")}</p>
               </div>
-              <h5 className='fw-bold text-primary'>{t("priceIncludes")}</h5>
+              <p className='fw-bold text-primary h5'>{t("priceIncludes")}</p>
               <ul>
                 <li>{t("freeParking")}</li>
                 <li>{t("lifeVest")}</li>           
               </ul>  
               <div>
-                <h5 className='fw-bold text-primary'>{t("Accessories")}</h5>
+                <p className='fw-bold text-primary h5'>{t("Accessories")}</p>
                 <ul>
                   <li>{t("waterproofBag")}</li>
                   <li>{t("waterproofPhoneCase")}</li>

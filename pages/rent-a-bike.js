@@ -21,7 +21,7 @@ export default function RentABike(props) {
               <p>{t("exploreBledText")}</p>
             </div>
             <div className='mb-5'>
-              <h5 className='fw-bold text-primary'>{t("priceIncludes")}</h5>
+              <p className='fw-bold text-primary h5'>{t("priceIncludes")}</p>
               <ul>
                 <li>{t("parking")}</li>
                 <li>{t("helmet")}</li>
