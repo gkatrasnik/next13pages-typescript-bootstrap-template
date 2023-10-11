@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://scaling-engine-vw94rv66rjgfwv6q-3000.app.github.dev
+
+# Sitemaps
+Sitemap: https://scaling-engine-vw94rv66rjgfwv6q-3000.app.github.dev/sitemap.xml
