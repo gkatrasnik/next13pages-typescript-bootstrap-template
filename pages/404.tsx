@@ -5,7 +5,7 @@ const Custom404 = () => {
   return (
     <div className="error-page">
         <Image 
-          src="/logo-big.png"
+          src="/logo/logo-small.png"
           alt="AB Bike"
           height={150}
           width={200}  
@@ -14,7 +14,7 @@ const Custom404 = () => {
           priority    
           className='mb-3'      
           style={{                 
-            objectFit:"cover"                
+            objectFit:"contain"                
           }}                         
         />
         <h1>404 - Page Not Found</h1>

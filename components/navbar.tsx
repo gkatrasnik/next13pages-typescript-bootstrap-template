@@ -26,7 +26,7 @@ const MyNavbar: React.FC = () => {
           <Link href="/" passHref onClick={() => setExpanded(false)} >
             <Image
               alt="logo"
-              src="/logo-big.png"  
+              src="/logo/logo-big.png"  
               placeholder="blur"
               blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
               height={50}
@@ -55,7 +55,7 @@ const MyNavbar: React.FC = () => {
           <Link href="/" passHref onClick={() => setExpanded(false)} >
             <Image
               alt="logo"
-              src="/logo-big.png"  
+              src="/logo/logo-big.png"  
               placeholder="blur"
               blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
               height={50}

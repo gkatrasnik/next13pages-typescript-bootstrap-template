@@ -5,7 +5,7 @@ const Custom500 = ()  => {
   return (
     <div className="error-page">
         <Image 
-          src="/logo-small.png"
+          src="/logo/logo-small.png"
           alt="AB Bike"
           width={160} 
           height={150}                   
@@ -14,7 +14,7 @@ const Custom500 = ()  => {
           priority    
           className='mb-3'  
           style={{                 
-            objectFit:"cover"                
+            objectFit:"contain"                
           }}                             
         />
         <h1>500 - Server-side error occurred</h1>

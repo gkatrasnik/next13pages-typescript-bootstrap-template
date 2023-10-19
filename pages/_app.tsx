@@ -10,8 +10,7 @@ import Loading from '../components/loading';
 const openSans = Open_Sans({ subsets: ['latin'], weight: '400' })
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  return (
-    
+  return (    
     <main className={openSans.className}>
       <Loading/>
       <NextIntlClientProvider messages={pageProps.messages}>

@@ -29,7 +29,7 @@ const MyFooter = (): JSX.Element => {
           <Col md={{span:6, order:1}} className='py-4 d-flex justify-content-center align-items-center'>
             <div className='d-flex flex-column justify-content-center align-items-center gap-2'>
               <SocialMediaLinks iconSize={48} />
-              <PartnerLogos imageSrcs={["/alpina.png", "/ziener.png", "/asa.png"]}/>
+              <PartnerLogos imageSrcs={["/logo/alpina.png", "/logo/ziener.png", "/logo/asa.png"]}/>
             </div>                     
           </Col>
         </Row>      
