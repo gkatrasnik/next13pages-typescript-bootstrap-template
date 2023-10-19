@@ -2,8 +2,15 @@ import Head from 'next/head'
 import {useTranslations} from 'next-intl';
 import { Container, Row, Col } from 'react-bootstrap'
 import RentCard from '../components/rentCard'
+import { GetStaticProps } from 'next';
+import {FC} from 'react';
 
-export default function RentABike(props) {
+interface RentABikeProps {
+  messages: Record<string, string>;
+  rentaBikes: RentItems;
+} 
+
+const RentABike: FC<RentABikeProps> = (props) => {
   const t = useTranslations('RentABike');
 
   return (
@@ -31,8 +38,7 @@ export default function RentABike(props) {
               </ul>        
             </div>
           </Col>
-        </Row>
-        
+        </Row>       
 
         <Row className='mb-5'>
           <h2 className='text-center'>{t("eBikes")}</h2>
@@ -87,7 +93,7 @@ export default function RentABike(props) {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default,
@@ -96,3 +102,4 @@ export async function getStaticProps(context) {
   };
 }
 
+export default RentABike;

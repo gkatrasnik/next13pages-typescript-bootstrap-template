@@ -4,16 +4,17 @@ import {Container, Button, Row, Col} from 'react-bootstrap';
 import {useTranslations} from 'next-intl';
 import FormModal from '../components/formModal';
 import Image from 'next/image';
+import { GetStaticProps } from 'next';
 
-export default function CyclingTrips() {
-    const [formModalShowed, setFormModalShowed] = useState(false);
+const CyclingTrips = (): JSX.Element => {
+    const [formModalShowed, setFormModalShowed] = useState<boolean>(false);
     const t = useTranslations('CyclingTrips');
 
-    const closeFormModal = () => {
+    const closeFormModal = (): void => {
       setFormModalShowed(false);
     }
   
-    const showFormModal = () => {
+    const showFormModal = (): void => {
     setFormModalShowed(true);
     }
 
@@ -62,7 +63,7 @@ export default function CyclingTrips() {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default
@@ -70,3 +71,4 @@ export async function getStaticProps(context) {
   };
 }
 
+export default CyclingTrips;

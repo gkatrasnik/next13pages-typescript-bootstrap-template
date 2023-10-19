@@ -4,20 +4,21 @@ import {useTranslations} from 'next-intl';
 import {Container, Button, Row, Col} from 'react-bootstrap'
 import Image from 'next/image';
 import FormModal from '../components/formModal';
+import { GetStaticProps } from 'next';
 
-export default function About() {
-    const [formModalShowed, setFormModalShowed] = useState(false);
+const EbikeUpgrade = (): JSX.Element => {
+    const [formModalShowed, setFormModalShowed] = useState<boolean>(false);
     const t = useTranslations('EbikeUpgrade');
 
-    const closeFormModal = () => {
+    const closeFormModal = ():void => {
       setFormModalShowed(false);
     }
   
-    const showFormModal = () => {
+    const showFormModal = ():void => {
     setFormModalShowed(true);
     }
 
-    return (
+  return (
     <>
       {formModalShowed && <FormModal formIsForUpgrade handleClose={closeFormModal}/>}
 
@@ -109,17 +110,18 @@ export default function About() {
             <p>{t("postUpgrade")}</p>
           </Col>       
         </Row>
-
       </Container>
     </>
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default
     }
   };
 }
+
+export default EbikeUpgrade;
 

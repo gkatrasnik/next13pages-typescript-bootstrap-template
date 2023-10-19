@@ -4,17 +4,12 @@ import {useTranslations} from 'next-intl';
 import ImageGallery from '../components/imageGallery';
 import HeroSection from '../components/heroSection';
 import IndexPageBasicCards from '../components/indexPageBasicCards';
+import { GetStaticProps } from 'next';
 
-export const metadata = {
-  title: 'Home',
-  description: 'Welcome to Next.js',
-}
+const Home = (): JSX.Element => {
+  const t = useTranslations('Index');
 
-
-export default function Home() {
-    const t = useTranslations('Index');
-
-    return (
+  return (
     <>
       <Head>
         <title>AB Bike</title>
@@ -46,10 +41,12 @@ export default function Home() {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default
     }
   };
 }
+
+export default Home;

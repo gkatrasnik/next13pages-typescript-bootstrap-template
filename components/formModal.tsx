@@ -111,138 +111,138 @@ const FormModal = ({ formIsForRent = false, formIsForUpgrade = false, formIsForS
                 </Modal.Header>
                 <Modal.Body className="py-3">
                 
-                <Form onSubmit={handleSubmit}>
-                    <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                        <Form.Label>{t('labelName')} *</Form.Label>
-                        <Form.Control     
-                            required               
-                            type="text"
-                            ref={name}
-                        />                
-                    </Form.Group>
-
-                    <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                        <Form.Label>{t('labelPhone')} *</Form.Label>
-                        <Form.Control 
-                            required                   
-                            type="tel"
-                            ref={phone}
-                        />                
-                    </Form.Group>
-
-                    <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                        <Form.Label>{t('labelEmail')} *</Form.Label>
-                        <Form.Control    
-                            required   
-                            type="email"
-                            ref={email}
-                        />                
-                    </Form.Group>
-
-                    {formIsForRent &&
-                    <>
+                    <Form onSubmit={handleSubmit}>
                         <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                            <Form.Label>{t('labelAddress')}</Form.Label>
-                            <Form.Control                    
+                            <Form.Label>{t('labelName')} *</Form.Label>
+                            <Form.Control     
+                                required               
                                 type="text"
-                                ref={address}
-                            />                
-                        </Form.Group>
-
-                        <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
-                            <Form.Label>{t('labelDateTime')} *</Form.Label>
-                            <Form.Control                    
-                                required
-                                type="datetime-local"  
-                                ref={dateTime}             
+                                ref={name}
                             />                
                         </Form.Group>
 
                         <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                            <Form.Label>{t('labelRentLength')} *</Form.Label>
-                            <Form.Control       
-                                required             
-                                type="text"
-                                ref={rentLength}
+                            <Form.Label>{t('labelPhone')} *</Form.Label>
+                            <Form.Control 
+                                required                   
+                                type="tel"
+                                ref={phone}
                             />                
                         </Form.Group>
 
-                        <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
-                            <Form.Label>{t('labelArticle')}</Form.Label> 
-                            <Form.Check                                
-                                label={t('articleEbike')}
-                                name="E Bike"
-                                type="checkbox"
-                                ref={articleEbike}
-                                id="1"                                
-                            />
-                            <Form.Check
-                                label={t('articleRegularbike')}
-                                name="Navadno kolo"
-                                type="checkbox"
-                                ref={articleRegularBike}
-                                id="2"
-                            />
-                            <Form.Check                                
-                                label={t('articleChildTrailer')}
-                                name="Otroška prikolica"
-                                type="checkbox"
-                                ref={articleChildTrailer}
-                                id="3"
-                            />
-                            <Form.Check                                
-                                label={t('articleDogTrailer')}
-                                name="Prikolica za psa"
-                                type="checkbox"
-                                ref={articleDogTrailer}
-                                id="4"                                
-                            />
-                            <Form.Check                                
-                                label={t('articleSup')}
-                                name="Sup"
-                                type="checkbox"
-                                ref={articleSup}
-                                id="5"
-                            />                                                  
-                        </Form.Group>                    
-                    </>
-                    }
-
-                    props.{formIsForUpgrade && 
-                    <>
-                        <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
-                            <Form.Label>{t('labelBatteryCapacity')}</Form.Label>                                           
-                            <Form.Select 
-                                aria-label="Default select example"
-                                ref={batteryCapacity}
-                            >                                
-                                <option value="522Wh">{t('batteryCapacity522')}</option>
-                                <option value="630Wh">{t('batteryCapacity630')}</option>
-                                <option value="700Wh">{t('batteryCapacity700')}</option>
-                            </Form.Select>
-                        </Form.Group>                        
-                    </>
-                    }
-
-                    <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
-                            <Form.Label>{t('labelMessage')}</Form.Label>
-                            <Form.Control                    
-                                type="text"
-                                as="textarea" rows={6}  
-                                ref={message}
+                        <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
+                            <Form.Label>{t('labelEmail')} *</Form.Label>
+                            <Form.Control    
+                                required   
+                                type="email"
+                                ref={email}
                             />                
                         </Form.Group>
 
+                        {formIsForRent &&
+                        <>
+                            <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
+                                <Form.Label>{t('labelAddress')}</Form.Label>
+                                <Form.Control                    
+                                    type="text"
+                                    ref={address}
+                                />                
+                            </Form.Group>
 
-                    <div className='d-flex flex-column'>                        
-                        <Button className="mt-2 text-uppercase" variant="secondary" type="submit" disabled={isSending}>
-                        {isSending ?
-                            <ArrowRepeat size={20} className='icon-spin'/>:
-                            t('sendInquiry')                                
-                        }                  
-                        </Button>
-                    </div>
-                </Form>
+                            <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
+                                <Form.Label>{t('labelDateTime')} *</Form.Label>
+                                <Form.Control                    
+                                    required
+                                    type="datetime-local"  
+                                    ref={dateTime}             
+                                />                
+                            </Form.Group>
+
+                            <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
+                                <Form.Label>{t('labelRentLength')} *</Form.Label>
+                                <Form.Control       
+                                    required             
+                                    type="text"
+                                    ref={rentLength}
+                                />                
+                            </Form.Group>
+
+                            <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
+                                <Form.Label>{t('labelArticle')}</Form.Label> 
+                                <Form.Check                                
+                                    label={t('articleEbike')}
+                                    name="E Bike"
+                                    type="checkbox"
+                                    ref={articleEbike}
+                                    id="1"                                
+                                />
+                                <Form.Check
+                                    label={t('articleRegularbike')}
+                                    name="Navadno kolo"
+                                    type="checkbox"
+                                    ref={articleRegularBike}
+                                    id="2"
+                                />
+                                <Form.Check                                
+                                    label={t('articleChildTrailer')}
+                                    name="Otroška prikolica"
+                                    type="checkbox"
+                                    ref={articleChildTrailer}
+                                    id="3"
+                                />
+                                <Form.Check                                
+                                    label={t('articleDogTrailer')}
+                                    name="Prikolica za psa"
+                                    type="checkbox"
+                                    ref={articleDogTrailer}
+                                    id="4"                                
+                                />
+                                <Form.Check                                
+                                    label={t('articleSup')}
+                                    name="Sup"
+                                    type="checkbox"
+                                    ref={articleSup}
+                                    id="5"
+                                />                                                  
+                            </Form.Group>                    
+                        </>
+                        }
+
+                        {formIsForUpgrade && 
+                        <>
+                            <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
+                                <Form.Label>{t('labelBatteryCapacity')}</Form.Label>                                           
+                                <Form.Select 
+                                    aria-label="Default select example"
+                                    ref={batteryCapacity}
+                                >                                
+                                    <option value="522Wh">{t('batteryCapacity522')}</option>
+                                    <option value="630Wh">{t('batteryCapacity630')}</option>
+                                    <option value="700Wh">{t('batteryCapacity700')}</option>
+                                </Form.Select>
+                            </Form.Group>                        
+                        </>
+                        }
+
+                        <Form.Group className="mb-2" controlId="exampleForm.ControlInput5">
+                                <Form.Label>{t('labelMessage')}</Form.Label>
+                                <Form.Control                    
+                                    type="text"
+                                    as="textarea" rows={6}  
+                                    ref={message}
+                                />                
+                            </Form.Group>
+
+
+                        <div className='d-flex flex-column'>                        
+                            <Button className="mt-2 text-uppercase" variant="secondary" type="submit" disabled={isSending}>
+                            {isSending ?
+                                <ArrowRepeat size={20} className='icon-spin'/>:
+                                t('sendInquiry')                                
+                            }                  
+                            </Button>
+                        </div>
+                    </Form>
                 </Modal.Body>
             </Modal>
         </>

@@ -2,8 +2,15 @@ import Head from 'next/head'
 import {useTranslations} from 'next-intl';
 import {Container, Row, Col} from 'react-bootstrap'
 import RentCard from '../components/rentCard';
+import { GetStaticProps } from 'next';
+import {FC} from 'react';
 
-export default function RentASup(props) {
+interface RentASupProps {
+  messages: Record<string, string>;
+  rentaSups: RentSups;
+}
+
+const RentASup: FC<RentASupProps> = (props) => {
     const t = useTranslations('RentASup');
 
     return (
@@ -44,7 +51,6 @@ export default function RentASup(props) {
                   <Col key={index} className='d-flex justify-content-center my-3'>
                     <RentCard 
                       title={sup.title}
-                      bullets={sup.bullets}
                       price={sup.price}
                       imageSrc={sup.imageSrc}
                     />
@@ -58,7 +64,7 @@ export default function RentASup(props) {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default,
@@ -67,3 +73,4 @@ export async function getStaticProps(context) {
   };
 }
 
+export default RentASup;
