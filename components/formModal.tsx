@@ -1,47 +1,54 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, RefObject } from 'react';
 import {Button, Modal, Form} from 'react-bootstrap';
 import {useTranslations} from 'next-intl';
 import { ArrowRepeat } from 'react-bootstrap-icons';
 
-function FormModal({formIsForRent, formIsForUpgrade, formIsForService, handleClose}) {
+type FormModalProps = {
+    formIsForRent?: boolean;
+    formIsForUpgrade?: boolean;
+    formIsForService?: boolean;
+    handleClose: () => void;
+  };
+
+function FormModal({ formIsForRent = false, formIsForUpgrade = false, formIsForService = false, handleClose}: FormModalProps ): JSX.Element {
     const t = useTranslations('FormModal');
     const [isSending, setIsSending] = useState(false);
 
-    const name = useRef();
-    const phone = useRef();
-    const email = useRef();
-    const address = useRef();
-    const dateTime = useRef();
-    const message = useRef();
+    const name = useRef<HTMLInputElement>(null);
+    const phone = useRef<HTMLInputElement>(null);
+    const email = useRef<HTMLInputElement>(null);
+    const address = useRef<HTMLInputElement>(null);
+    const dateTime = useRef<HTMLInputElement>(null);
+    const message = useRef<HTMLTextAreaElement>(null);
 
-    const rentLength = useRef();
-    const articleEbike = useRef();
-    const articleRegularBike = useRef();
-    const articleChildTrailer = useRef();
-    const articleDogTrailer = useRef();
-    const articleSup = useRef();
+    const rentLength = useRef<HTMLInputElement>(null);
+    const articleEbike = useRef<HTMLInputElement>(null);
+    const articleRegularBike = useRef<HTMLInputElement>(null);
+    const articleChildTrailer = useRef<HTMLInputElement>(null);
+    const articleDogTrailer = useRef<HTMLInputElement>(null);
+    const articleSup = useRef<HTMLInputElement>(null);
     
-    const batteryCapacity = useRef();
+    const batteryCapacity = useRef<HTMLSelectElement>(null);
 
-    const getSelectedArticles = () => {
+    const getSelectedArticles= (): string => {
         // loop over select articles and return string of names
-        const options = [articleEbike, articleRegularBike, articleChildTrailer, articleDogTrailer, articleSup];
-        const selectedArticles = [];
+        const options: RefObject<HTMLInputElement>[] = [articleEbike, articleRegularBike, articleChildTrailer, articleDogTrailer, articleSup];
+        const selectedArticles: string[] = [];
         options.forEach(option => {
-            if (option.current.checked) {
+            if (option.current?.checked) {
                 selectedArticles.push(option.current.name)
             }
         });
         return selectedArticles.toString();
     }
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
         await postSendEmail();
         handleClose();
     }
 
-    const createEmail = () => 
+    const createEmail = (): {subject: string; text: string;} => 
     {
         const requestedService = formIsForRent ? "izposoja" : formIsForUpgrade ? "predelava kolesa" : formIsForService ? "servis kolesa" : "drugo";
         const emailData = {
@@ -54,26 +61,26 @@ function FormModal({formIsForRent, formIsForUpgrade, formIsForService, handleClo
         emailData.text = 
 `Novo povpraševanje za storitev: ${requestedService},
 
-- Ime: ${name.current.value}, 
-- Telefon: ${phone.current.value}, 
-- Email: ${email.current.value}, 
+- Ime: ${name.current?.value}, 
+- Telefon: ${phone.current?.value}, 
+- Email: ${email.current?.value}, 
 - Naslov: ${address.current?.value || "/"}, 
-- Dodatno sporočilo: ${message.current.value}\n`
+- Dodatno sporočilo: ${message.current?.value}\n`
 
         if (formIsForRent) {
             emailData.text +=  
-`- Željen datum izposoje: ${dateTime.current.value},
-- Trajanje izposoje: ${rentLength.current.value},
+`- Željen datum izposoje: ${dateTime.current?.value},
+- Trajanje izposoje: ${rentLength.current?.value},
 - Željeni artikli: ${getSelectedArticles()}\n`           
 
         } else if (formIsForUpgrade) {
-            emailData.text += `- Željena kapaciteta baterije: ${batteryCapacity.current.value}\n`
+            emailData.text += `- Željena kapaciteta baterije: ${batteryCapacity.current?.value}\n`
         } 
 
         return emailData
     }
 
-    const postSendEmail = async () => {
+    const postSendEmail = async (): Promise<void> => {
         try {
             setIsSending(true);
 
@@ -201,7 +208,7 @@ function FormModal({formIsForRent, formIsForUpgrade, formIsForService, handleClo
                     </>
                     }
 
-                    {formIsForUpgrade && 
+                    props.{formIsForUpgrade && 
                     <>
                         <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
                             <Form.Label>{t('labelBatteryCapacity')}</Form.Label>                                           

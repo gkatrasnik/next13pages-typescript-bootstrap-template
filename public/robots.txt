@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://localhost:3000
+Host: https://scaling-engine-vw94rv66rjgfwv6q-3000.app.github.dev
 
 # Sitemaps
-Sitemap: http://localhost:3000/sitemap.xml
+Sitemap: https://scaling-engine-vw94rv66rjgfwv6q-3000.app.github.dev/sitemap.xml

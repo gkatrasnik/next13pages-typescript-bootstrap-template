@@ -1,7 +1,19 @@
 import { Card, Button} from 'react-bootstrap';
 import Image from 'next/image';
+import { FC } from 'react';
 
-export default function GeneralCard({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick, imageSrc}) {
+interface GeneralCardProps {
+    title: string;
+    subtitle?: string;
+    mainText?: string;
+    bullets?: string[];
+    bottomText?: string;
+    buttonText?: string;
+    onCardClick?: () => void;
+    imageSrc?: string;
+}
+
+function GeneralCard({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick, imageSrc}: GeneralCardProps): JSX.Element {
   return (
     <Card className="h-100 general-card shadow" onClick={onCardClick}>
         {imageSrc &&
@@ -39,7 +51,8 @@ export default function GeneralCard({title, subtitle, mainText, bullets, bottomT
         <div className='d-flex flex-column'>
             <div className='h5 mb-2 text-center'>{bottomText}</div>
         </div>
-}
+        }
+
         {buttonText && 
             <div className='d-flex flex-column'>
                 <Button className="text-uppercase" variant="primary">{buttonText}</Button>
@@ -50,3 +63,5 @@ export default function GeneralCard({title, subtitle, mainText, bullets, bottomT
     </Card>
   )
 }
+
+export default GeneralCard;

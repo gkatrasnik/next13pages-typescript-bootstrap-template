@@ -1,12 +1,27 @@
-import { useState } from 'react';
+import { useState, FC } from 'react';
 import Head from 'next/head'
 import {Container, Row, Col, Button} from 'react-bootstrap'
 import ServicePriceList from '../components/servicePriceList';
 import {useTranslations} from 'next-intl';
 import GeneralCard from '../components/generalCard';
 import FormModal from '../components/formModal';
+import { GetStaticProps } from 'next';
 
-export default function BikeService(props) {
+type Service = {
+  name: string;
+  price: string | null;
+};
+
+type ServicesObject = {
+  services: Service[];
+};
+
+interface BikeServiceProps {
+  pricelist: ServicesObject;
+  messages: Record<string, string>;
+}
+
+const BikeService: FC<BikeServiceProps> = (props) => {
   const [formModalShowed, setFormModalShowed] = useState(false);
   const t = useTranslations('BikeService');
 
@@ -20,7 +35,7 @@ export default function BikeService(props) {
 
   return (
   <>
-    {formModalShowed && <FormModal formIsForService handleClose={closeFormModal}/>}
+    {formModalShowed && <FormModal formIsForService={true} handleClose={closeFormModal}/>}
 
     <Head>
         <title>{t("bikeRepairs")}</title>
@@ -83,7 +98,7 @@ export default function BikeService(props) {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default,
@@ -91,4 +106,6 @@ export async function getStaticProps(context) {
     }
   };
 }
+
+export default BikeService;
 

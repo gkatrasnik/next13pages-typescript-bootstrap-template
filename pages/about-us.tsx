@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {Container, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
 import Image from 'next/image';
+import { GetStaticProps } from 'next';
 
 export default function About() {
     const t = useTranslations('AboutUs');
@@ -83,7 +84,7 @@ export default function About() {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default

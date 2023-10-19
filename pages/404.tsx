@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { GetStaticProps } from 'next';
+
 
 export default function Custom404() {
   return (
@@ -22,7 +24,7 @@ export default function Custom404() {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default
