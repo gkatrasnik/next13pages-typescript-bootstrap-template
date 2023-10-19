@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
 
-export default function Custom500() {
+const Custom500 = ()  => {
   return (
     <div className="error-page">
         <Image 
@@ -18,8 +18,7 @@ export default function Custom500() {
           }}                             
         />
         <h1>500 - Server-side error occurred</h1>
-    </div>
-        
+    </div>        
   )
 }
 
@@ -30,3 +29,5 @@ export const getStaticProps: GetStaticProps = async (context)  => {
     }
   };
 }
+
+export default Custom500;

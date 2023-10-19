@@ -1,8 +1,13 @@
-
 import {Modal} from 'react-bootstrap';
 import Image from 'next/image'
 
-function ImageModal({imageSrc, title, handleClose}) {  
+interface ImageModalProps {
+    imageSrc: string,
+    title?: string,
+    handleClose: () => void
+}
+
+const ImageModal = ({imageSrc, title, handleClose}: ImageModalProps) => {  
     
     return (
        <>  
@@ -12,7 +17,7 @@ function ImageModal({imageSrc, title, handleClose}) {
                 </Modal.Header>
                 <Modal.Body className="d-flex align-items-center justify-content-center">
                 <Image
-                    alt={title}
+                    alt={title || imageSrc}
                     src={imageSrc}  
                     placeholder="blur"
                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   

@@ -3,22 +3,27 @@ import {Stack, Button} from 'react-bootstrap';
 import { ChevronRight, ChevronLeft } from 'react-bootstrap-icons';
 import BasicImage from './basicImage';
 
-function ImageGallery({imageSrcs}) {
-  const [isScrollable, setIsScrollable] = useState(false);
-  const gallery = useRef()
+interface ImageGalleryProps {
+    imageSrcs: string[]
+}
+
+const ImageGallery = ({imageSrcs}: ImageGalleryProps) => {
+  const [isScrollable, setIsScrollable] = useState<boolean>(false);
+  const gallery = useRef<HTMLSpanElement>(null)
   const scrollLeft = () => {
-    gallery.current.scrollLeft -= 300;
+    if (gallery.current) {
+      gallery.current.scrollLeft -= 300;
+    }
   }
 
   const scrollRight = () => {
-    gallery.current.scrollLeft += 300;
+    if (gallery.current) {
+      gallery.current.scrollLeft += 300;
+    }
   }
 
-     
-
-
   useEffect(()=>{
-    setIsScrollable(gallery?.current?.scrollWidth > gallery?.current?.clientWidth);
+    setIsScrollable(!!(gallery.current && (gallery.current.scrollWidth > gallery.current.clientWidth)));
   }, [])
 
   return (

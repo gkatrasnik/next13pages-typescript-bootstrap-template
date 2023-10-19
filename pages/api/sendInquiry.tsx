@@ -1,13 +1,14 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { sendMail } from "../../service/mailService";
+import { NextApiRequest, NextApiResponse } from 'next';
 
-const handler = async (req, res) => {
+
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const { method } = req;
     switch (method) {
       case "POST": {
         await sendMail(
-          process.env.NODEMAILER_EMAIL,
+          process.env.NODEMAILER_EMAIL!,
           req.body.subject,
           req.body.text
         );
@@ -16,7 +17,7 @@ const handler = async (req, res) => {
       }
       case "GET": {
         //Do some thing
-        res.status(200).send(req.auth_data);
+        res.status(200).send((req as any).auth_data);
         break;
       }
       default:
@@ -24,7 +25,7 @@ const handler = async (req, res) => {
         res.status(405).end(`Method ${method} Not Allowed`);
         break;
     }
-  } catch (err) {
+  } catch (err: any) {
     res.status(400).json({
       error_code: "api_one",
       message: err.message,

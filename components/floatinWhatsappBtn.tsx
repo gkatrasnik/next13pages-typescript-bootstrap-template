@@ -2,7 +2,11 @@ import Button from 'react-bootstrap/Button';
 import { Whatsapp } from 'react-bootstrap-icons';
 import { useTranslations } from 'next-intl';
 
-function FloatingWhatsappBtn({size}) {
+interface FloatingWhatsappBtnProps {
+    size: "sm" | "lg" | undefined
+}
+
+const FloatingWhatsappBtn = ({size}: FloatingWhatsappBtnProps) => {
     const t = useTranslations("Index");
     return (
         <div className='floating-whatsapp-btn'>

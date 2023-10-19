@@ -6,22 +6,18 @@ import {useTranslations} from 'next-intl';
 import {useRouter} from 'next/router';
 import Image from 'next/image';
 
-export default function MyNavbar() {
+const MyNavbar: React.FC = () => {
   const router = useRouter()
   const t = useTranslations('Navbar');
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState<boolean>(false);
 
-  const collapseNavbar = () => {
+  const collapseNavbar = (): void => {
     setExpanded(false);
   }
 
-  const getSelectedCls = (path) => {
+  const getSelectedCls = (path: string): string => {
     return router.pathname === path ? " active" : ""; 
   }
-
-  useEffect(()=>{
-
-  }, [router.pathname]);
 
   return (
     <Navbar sticky="top" bg="white" expand="lg" className="px-2" expanded={expanded}>
@@ -103,3 +99,5 @@ export default function MyNavbar() {
     </Navbar>
   )
 }
+
+export default MyNavbar;

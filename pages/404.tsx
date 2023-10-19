@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import { GetStaticProps } from 'next';
 
-
-export default function Custom404() {
+const Custom404 = () => {
   return (
     <div className="error-page">
         <Image 
@@ -19,8 +18,7 @@ export default function Custom404() {
           }}                         
         />
         <h1>404 - Page Not Found</h1>
-    </div>
-        
+    </div>        
   )
 }
 
@@ -31,3 +29,5 @@ export const getStaticProps: GetStaticProps = async (context)  => {
     }
   };
 }
+
+export default Custom404;

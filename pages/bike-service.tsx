@@ -7,17 +7,8 @@ import GeneralCard from '../components/generalCard';
 import FormModal from '../components/formModal';
 import { GetStaticProps } from 'next';
 
-type Service = {
-  name: string;
-  price: string | null;
-};
-
-type ServicesObject = {
-  services: Service[];
-};
-
 interface BikeServiceProps {
-  pricelist: ServicesObject;
+  pricelist: BikeServicesObject;
   messages: Record<string, string>;
 }
 

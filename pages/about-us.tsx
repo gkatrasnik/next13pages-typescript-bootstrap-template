@@ -4,10 +4,10 @@ import {useTranslations} from 'next-intl';
 import Image from 'next/image';
 import { GetStaticProps } from 'next';
 
-export default function About() {
-    const t = useTranslations('AboutUs');
+const About = (): JSX.Element => {
+  const t = useTranslations('AboutUs');
 
-    return (
+  return (
     <>      
       <Head>
         <title>{t("aboutUs")}</title>
@@ -92,3 +92,4 @@ export const getStaticProps: GetStaticProps = async (context)  => {
   };
 }
 
+export default About;

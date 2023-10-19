@@ -1,3 +1,5 @@
+
+import { AppProps } from 'next/app';
 import {NextIntlClientProvider} from 'next-intl';
 import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -7,7 +9,7 @@ import Loading from '../components/loading';
 
 const openSans = Open_Sans({ subsets: ['latin'], weight: '400' })
 
-function MyApp({ Component, pageProps }) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     
     <main className={openSans.className}>

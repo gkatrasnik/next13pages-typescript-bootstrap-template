@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-function PartnerLogos({imageSrcs}) {   
+interface PartnerLogosProps {
+    imageSrcs: string[]
+}
+
+const PartnerLogos = ({imageSrcs}: PartnerLogosProps) => {   
     return (
         <div className="d-flex flex-column justify-content-center align-items-center">
             {imageSrcs.map(imageSrc => {

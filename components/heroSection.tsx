@@ -3,13 +3,15 @@ import {Container, Row, Col, Button} from 'react-bootstrap'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 
+interface HeroSectionProps {
+    heroImageSrc: string
+}
 
-function HeroSection({heroImageSrc}) {
+const HeroSection = ({heroImageSrc}: HeroSectionProps) => {
     const t = useTranslations('Index');
     const router = useRouter();
 
-    return (
-     
+    return (     
         <div className="hero mb-5">
             <Image 
                 src={heroImageSrc}
@@ -43,7 +45,6 @@ function HeroSection({heroImageSrc}) {
                 </Container>                
             </div>            
         </div>
-
     );
 }
 

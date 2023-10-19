@@ -3,11 +3,12 @@ import {Card, Container, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
 import GoogleMap from '../components/googleMap';
 import { PinMap, Telephone, Envelope, Clock } from 'react-bootstrap-icons';
+import { GetStaticProps } from 'next';
 
-export default function About() {
-    const t = useTranslations('Contact');
-    
-    return (
+const About = (): JSX.Element => {
+  const t = useTranslations('Contact');
+  
+  return (
     <>
       <Head>
         <title>{t("contactUs")}</title>
@@ -81,7 +82,7 @@ export default function About() {
   )
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context)  => {
   return {
     props: {
       messages: (await import(`../messages/${context.locale}.json`)).default
@@ -89,3 +90,4 @@ export async function getStaticProps(context) {
   };
 }
 
+export default About; 

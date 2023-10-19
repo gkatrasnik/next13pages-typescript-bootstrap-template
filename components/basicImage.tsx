@@ -3,14 +3,19 @@ import ImageModal from "./imageModal";
 import Image from "next/image";
 import { AspectRatio } from "react-bootstrap-icons";
 
-function BasicImage({imageSrc, objectFit}) {
+interface BasicImageProps {
+    imageSrc: string,
+    objectFit: "contain" | "cover" | "fill" | "none" | "scale-down"
+}   
+
+const BasicImage = ({imageSrc, objectFit}: BasicImageProps) => {
     const [imageModalShowed, setImageModalShowed] = useState(false);
 
-    const closeImageModal = () => {
+    const closeImageModal = (): void => {
         setImageModalShowed(false);
     }
     
-    const showImageModal = () => {
+    const showImageModal = (): void => {
         setImageModalShowed(true);
     }
 

@@ -1,6 +1,5 @@
 import { Card, Button} from 'react-bootstrap';
 import Image from 'next/image';
-import { FC } from 'react';
 
 interface GeneralCardProps {
     title: string;
@@ -13,7 +12,7 @@ interface GeneralCardProps {
     imageSrc?: string;
 }
 
-function GeneralCard({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick, imageSrc}: GeneralCardProps): JSX.Element {
+const GeneralCard = ({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick, imageSrc}: GeneralCardProps): JSX.Element => {
   return (
     <Card className="h-100 general-card shadow" onClick={onCardClick}>
         {imageSrc &&

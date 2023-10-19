@@ -6,26 +6,33 @@ import FormModal from '../components/formModal'
 import ImageModal from '../components/imageModal'
 import { AspectRatio } from 'react-bootstrap-icons';
 
-function RentCard({title, bullets, price, imageSrc}) {
+type RentCardProps = {
+    title: string;
+    bullets?: string[];
+    price: string;
+    imageSrc: string;
+};
+
+const RentCard = ({title, bullets, price, imageSrc}: RentCardProps): JSX.Element => {
     const [formModalShowed, setFormModalShowed] = useState(false);
     const [imageModalShowed, setImageModalShowed] = useState(false);
     
     const t = useTranslations('RentCard');
 
 
-    const closeFormModal = () => {
+    const closeFormModal = (): void => {
     setFormModalShowed(false);
     }
 
-    const showFormModal = () => {
+    const showFormModal = (): void => {
     setFormModalShowed(true);
     }
 
-    const closeImageModal = () => {
+    const closeImageModal = (): void => {
         setImageModalShowed(false);
     }
     
-    const showImageModal = () => {
+    const showImageModal = (): void => {
         setImageModalShowed(true);
     }
 

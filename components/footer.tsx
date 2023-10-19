@@ -3,7 +3,7 @@ import {useTranslations} from 'next-intl';
 import SocialMediaLinks from './socialMediaLinks';
 import PartnerLogos from './partnerLogos';
 
-export default function MyFooter() {
+const MyFooter = (): JSX.Element => {
   const t = useTranslations('Footer');
 
   return (    
@@ -37,3 +37,5 @@ export default function MyFooter() {
   </footer>
   )
 }
+
+export default MyFooter;

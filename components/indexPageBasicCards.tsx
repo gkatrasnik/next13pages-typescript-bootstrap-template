@@ -3,7 +3,7 @@ import GeneralCard from "./generalCard";
 import { useTranslations } from "next-intl";
 import { useRouter } from 'next/navigation'
 
-function IndexPageBasicCards() {
+const IndexPageBasicCards = (): JSX.Element => {
     const t = useTranslations("Index");
     const router = useRouter();
 

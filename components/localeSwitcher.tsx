@@ -4,12 +4,12 @@ import {useTranslations} from 'next-intl';
 import { Dropdown } from 'react-bootstrap';
 import { useState } from 'react';
 
-export default function LocaleSwitcher() {
+const LocaleSwitcher = (): JSX.Element => {
   const t = useTranslations('Locales');
   const {locale, locales, route} = useRouter();
   const [dropdownShowed, setDropdownShowed] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleDropdown = (): void => {
     setDropdownShowed(!dropdownShowed);
   }
   
@@ -20,7 +20,7 @@ export default function LocaleSwitcher() {
       </Dropdown.Toggle>      
 
       <Dropdown.Menu  align='start'>
-        {locales.map(locale => {
+        {locales?.map(locale => {
             return (   
                 <Dropdown.ItemText key={locale} onClick={toggleDropdown}>
                     <Link  href={route} locale={locale}>
@@ -34,3 +34,5 @@ export default function LocaleSwitcher() {
     </Dropdown>
   );
 }
+
+export default LocaleSwitcher;

@@ -1,7 +1,11 @@
 import Stack from 'react-bootstrap/Stack';
 import { Facebook, Instagram } from 'react-bootstrap-icons';
 
-function SocialMediaLinks({iconSize}) {
+interface SocialMediaLinksProps {
+    iconSize: number
+}
+
+function SocialMediaLinks({iconSize}: SocialMediaLinksProps) {
   return (
     <Stack direction="horizontal" gap={2} className='justify-content-center'>
         <a href={process.env.NEXT_PUBLIC_FACEBOOK_URL} aria-label="facebook">

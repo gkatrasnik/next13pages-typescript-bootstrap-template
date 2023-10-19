@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Router from "next/router";
 import { Spinner } from "react-bootstrap";
 
-const Loading = () => {
+const Loading = (): JSX.Element | null => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Loading = () => {
 
   return loading ? 
   <div className="loading-component">
-    <Spinner size="lg" animation="border" variant="secondary" role="status">
+    <Spinner animation="border" variant="secondary" role="status">
       <span className="visually-hidden">Loading...</span>
     </Spinner>
   </div> 
