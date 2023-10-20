@@ -69,12 +69,9 @@ const About: FC<AboutProps> = (props) => {
                 <Clock size={48} className='mb-3'/>
                 <Card.Title className='text-center'>{t("schedule")}</Card.Title>  
                 <div>
-                  <p className='fw-bold h6'>{t("weekdays")}</p> 
-                  <p className='mb-0'>- 9.00-12-00</p> 
-                  <p>- 14-00-18.00   </p>
-
-                  <p className='fw-bold h6'>{t("weekends")}</p> 
-                  <p>- {t("byAppointment")}</p>  
+                  {props.placesData.opening_hours.weekday_text.map((day, index) => ( 
+                    <p key={index}>{day}</p> 
+                  ))}
                 </div>     
               </Card.Body>
             </Card>
@@ -98,7 +95,7 @@ export const getStaticProps: GetStaticProps = async (context)  => {
       messages: (await import(`../messages/${context.locale}.json`)).default,
       placesData: placesData
     },
-    revalidate: 86400 // Re-fetch the data every 24 hours (24 hours x 60 minutes x 60 seconds = 86400 seconds)
+    revalidate: parseInt(process.env.GOOGLE_PLACES_DATA_REVALIDATE!) // Re-fetch the data every 24 hours (86400 seconds)
   };
 }
 
