@@ -57,7 +57,8 @@ export const getStaticProps: GetStaticProps = async (context)  => {
     props: {
       messages: (await import(`../messages/${context.locale || "sl"}.json`)).default,
       placesData: placesData
-    }
+    },
+    revalidate: parseInt(process.env.GOOGLE_PLACES_DATA_REVALIDATE!) // Re-fetch the data every 24 hours (86400 seconds)
   };
 }
 
