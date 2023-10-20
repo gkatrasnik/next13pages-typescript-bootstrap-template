@@ -19,7 +19,7 @@ declare type AddressComponent = {
     };
   };
   
-  declare type OpeningHours = {
+  declare type GooglePlaceOpeningHours = {
     open_now: boolean;
     periods: Period[];
     weekday_text: string[];
@@ -42,14 +42,14 @@ declare type AddressComponent = {
     };
   };
   
-  declare type Photo = {
+  declare type GooglePlacePhoto = {
     height: number;
     html_attributions: string[];
     photo_reference: string;
     width: number;
   };
   
-  declare type Review = {
+  declare type GooglePlaceReview = {
     author_name: string;
     author_url: string;
     language: string;
@@ -71,7 +71,7 @@ declare type AddressComponent = {
     address_components: AddressComponent[];
     adr_address: string;
     business_status: string;
-    current_opening_hours?: OpeningHours; // This seems optional since another 'opening_hours' key also exists
+    current_opening_hours?: GooglePlaceOpeningHours; // This seems optional since another 'opening_hours' key also exists
     formatted_address: string;
     formatted_phone_number: string;
     geometry: Geometry;
@@ -80,13 +80,13 @@ declare type AddressComponent = {
     icon_mask_base_uri: string;
     international_phone_number: string;
     name: string;
-    opening_hours: OpeningHours;
-    photos: Photo[];
+    opening_hours: GooglePlaceOpeningHours;
+    photos: GooglePlacePhoto[];
     place_id: string;
     plus_code: PlusCode;
     rating: number;
     reference: string;
-    reviews: Review[];
+    reviews: GooglePlaceReview[];
     types: string[];
     url: string;
     user_ratings_total: number;

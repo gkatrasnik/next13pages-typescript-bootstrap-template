@@ -9,7 +9,7 @@ interface ImageGalleryProps {
 
 const ImageGallery = ({imageSrcs}: ImageGalleryProps) => {
   const [isScrollable, setIsScrollable] = useState<boolean>(false);
-  const gallery = useRef<HTMLSpanElement>(null)
+  const gallery = useRef<HTMLSpanElement>(null);
   const scrollLeft = () => {
     if (gallery.current) {
       gallery.current.scrollLeft -= 300;
@@ -29,7 +29,7 @@ const ImageGallery = ({imageSrcs}: ImageGalleryProps) => {
   return (
     <div className="image-gallery">
       {isScrollable && 
-        <Button aria-label="previous image" className='image-galery-nav-button left text-white' variant="secondary" onClick={scrollLeft}><ChevronLeft size={28}/></Button>      
+        <Button aria-label="previous image" className='image-gallery-nav-button left text-white' variant="secondary" onClick={scrollLeft}><ChevronLeft size={28}/></Button>      
       }
       <Stack direction="horizontal" ref={gallery} className="image-gallery-content">          
         {imageSrcs.map((imageSrc,  index) => { 
@@ -37,9 +37,9 @@ const ImageGallery = ({imageSrcs}: ImageGalleryProps) => {
         })}    
       </Stack>
       {isScrollable && 
-        <Button aria-label="next image" className='image-galery-nav-button right text-white' variant="secondary" onClick={scrollRight}><ChevronRight size={28}/></Button>
+        <Button aria-label="next image" className='image-gallery-nav-button right text-white' variant="secondary" onClick={scrollRight}><ChevronRight size={28}/></Button>
       }
-      </div>
+    </div>
   );
 }
 

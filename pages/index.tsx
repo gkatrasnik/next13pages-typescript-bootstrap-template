@@ -7,6 +7,7 @@ import IndexPageBasicCards from '../components/indexPageBasicCards';
 import { GetStaticProps } from 'next';
 import { fetchGooglePlacesData } from '../service/googlePlacesService';
 import { FC } from 'react';
+import GooglePlacesReviews from '../components/googlePlacesReviews';
 
 interface HomeProps {
   messages: Record<string, string>;
@@ -23,6 +24,7 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
         <meta name="description" content={t('description')} />
       </Head>           
       <HeroSection rating={props.placesData.rating} heroImageSrc="/hero.jpg"/>
+      <GooglePlacesReviews reviews={props.placesData.reviews}/>
       <IndexPageBasicCards/>
       <Container >    
         <Row className='mb-5'>
