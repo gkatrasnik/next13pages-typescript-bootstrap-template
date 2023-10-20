@@ -4,9 +4,17 @@ import {useTranslations} from 'next-intl';
 import GoogleMap from '../components/googleMap';
 import { PinMap, Telephone, Envelope, Clock } from 'react-bootstrap-icons';
 import { GetStaticProps } from 'next';
+import { fetchGooglePlacesData } from '../service/googlePlacesService';
+import { FC } from 'react';
 
-const About = (): JSX.Element => {
+interface AboutProps {
+  messages: Record<string, string>;
+  placesData: GooglePlaceDetails;
+}
+
+const About: FC<AboutProps> = (props) => {
   const t = useTranslations('Contact');
+  console.log("WORKING HOURS: ", props.placesData.opening_hours.weekday_text) //TODO REMOVE, JUST FOR TESTING
   
   return (
     <>
@@ -83,10 +91,14 @@ const About = (): JSX.Element => {
 }
 
 export const getStaticProps: GetStaticProps = async (context)  => {
+  const placesData = await fetchGooglePlacesData(); // You'd have to define the fetchData function
+
   return {
     props: {
-      messages: (await import(`../messages/${context.locale}.json`)).default
-    }
+      messages: (await import(`../messages/${context.locale}.json`)).default,
+      placesData: placesData
+    },
+    revalidate: 86400 // Re-fetch the data every 24 hours (24 hours x 60 minutes x 60 seconds = 86400 seconds)
   };
 }
 

@@ -5,10 +5,17 @@ import ImageGallery from '../components/imageGallery';
 import HeroSection from '../components/heroSection';
 import IndexPageBasicCards from '../components/indexPageBasicCards';
 import { GetStaticProps } from 'next';
+import { fetchGooglePlacesData } from '../service/googlePlacesService';
+import { FC } from 'react';
 
-const Home = (): JSX.Element => {
+interface HomeProps {
+  messages: Record<string, string>;
+  placesData: GooglePlaceDetails;
+}
+
+const Home: FC<HomeProps> = (props): JSX.Element => {
   const t = useTranslations('Index');
-
+  console.log("REVIEWS: ", props.placesData.reviews) //TODO REMOVE, JUST FOR TESTING
   return (
     <>
       <Head>
@@ -42,10 +49,14 @@ const Home = (): JSX.Element => {
 }
 
 export const getStaticProps: GetStaticProps = async (context)  => {
+  const placesData = await fetchGooglePlacesData(); // You'd have to define the fetchData function
+
   return {
     props: {
-      messages: (await import(`../messages/${context.locale}.json`)).default
-    }
+      messages: (await import(`../messages/${context.locale}.json`)).default,
+      placesData: placesData
+    },
+    revalidate: 86400 // Re-fetch the data every 24 hours (24 hours x 60 minutes x 60 seconds = 86400 seconds)
   };
 }
 
