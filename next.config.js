@@ -17,8 +17,5 @@ module.exports = {
         pathname: "**",
       },
     ],
-  },
-  experimental: {
-    appDir: true,
-  },
+  }
 }
