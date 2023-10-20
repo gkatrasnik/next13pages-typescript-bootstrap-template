@@ -2,12 +2,14 @@ import {useTranslations} from 'next-intl';
 import {Container, Row, Col, Button} from 'react-bootstrap'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'
+import GooglePlacesRating from './googlePlacesRating';
 
 interface HeroSectionProps {
     heroImageSrc: string
+    rating: number
 }
 
-const HeroSection = ({heroImageSrc}: HeroSectionProps) => {
+const HeroSection = ({heroImageSrc, rating}: HeroSectionProps) => {
     const t = useTranslations('Index');
     const router = useRouter();
 
@@ -36,7 +38,10 @@ const HeroSection = ({heroImageSrc}: HeroSectionProps) => {
                                 <div className='d-flex justify-content-center'>
                                     <Button variant="secondary" className='m-2 text-uppercase' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    
                                     <Button variant="secondary" className='m-2 text-uppercase' onClick={() => router.push('/bike-service')}>{t('serviceButton')}</Button>  
-                                </div>            
+                                </div>
+                                <div className='mt-4'>
+                                    <GooglePlacesRating rating={rating}/>    
+                                </div>       
                             </div>
                         </Col>
                         <Col md={true} className="d-none d-md-flex mb-4 d-flex flex-column alling-items-center justify-content-center">                            

@@ -22,7 +22,7 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
         <title>AB Bike</title>
         <meta name="description" content={t('description')} />
       </Head>           
-      <HeroSection heroImageSrc="/hero.jpg"/>
+      <HeroSection rating={props.placesData.rating} heroImageSrc="/hero.jpg"/>
       <IndexPageBasicCards/>
       <Container >    
         <Row className='mb-5'>
