@@ -16,7 +16,7 @@ interface HomeProps {
 
 const Home: FC<HomeProps> = (props): JSX.Element => {
   const t = useTranslations('Index');
-  console.log("REVIEWS: ", props.placesData.reviews) //TODO REMOVE, JUST FOR TESTING
+
   return (
     <>
       <Head>
@@ -55,10 +55,10 @@ export const getStaticProps: GetStaticProps = async (context)  => {
 
   return {
     props: {
-      messages: (await import(`../messages/${context.locale}.json`)).default,
+      messages: (await import(`../messages/${context.locale || "sl"}.json`)).default,
       placesData: placesData
     },
-    revalidate: parseInt(process.env.GOOGLE_PLACES_DATA_REVALIDATE!) // Re-fetch the data every 24 hours (86400 seconds)
+    revalidate: 86400 //parseInt(process.env.GOOGLE_PLACES_DATA_REVALIDATE!) // Re-fetch the data every 24 hours (86400 seconds)
   };
 }
 

@@ -14,7 +14,6 @@ interface AboutProps {
 
 const About: FC<AboutProps> = (props) => {
   const t = useTranslations('Contact');
-  console.log("WORKING HOURS: ", props.placesData.opening_hours.weekday_text) //TODO REMOVE, JUST FOR TESTING
   
   return (
     <>
@@ -95,7 +94,7 @@ export const getStaticProps: GetStaticProps = async (context)  => {
       messages: (await import(`../messages/${context.locale}.json`)).default,
       placesData: placesData
     },
-    revalidate: parseInt(process.env.GOOGLE_PLACES_DATA_REVALIDATE!) // Re-fetch the data every 24 hours (86400 seconds)
+    revalidate: 86400 //parseInt(process.env.GOOGLE_PLACES_DATA_REVALIDATE!) // Re-fetch the data every 24 hours (86400 seconds)
   };
 }
 
