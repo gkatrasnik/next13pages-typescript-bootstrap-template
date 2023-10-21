@@ -18,7 +18,9 @@ const About: FC<AboutProps> = (props) => {
   const t = useTranslations('Contact');  
 
   const periodsToWeekdayText = (periods: GoogleOpeningHoursPeriod[]): string[] => {
-    const daysOfWeek: string[] = [ t("monday"), t("tuesday"), t("wednesday"), t("thursday"), t("friday"), t("saturday"), t("sunday")];
+    
+    //sunday must always be the first day of the week as per Google Places API
+    const daysOfWeek: string[] = [t("sunday"), t("monday"), t("tuesday"), t("wednesday"), t("thursday"), t("friday"), t("saturday")];
     
     // Initial empty array for all 7 days
     const result: string[] = new Array(7).fill("");
@@ -48,20 +50,26 @@ const About: FC<AboutProps> = (props) => {
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column contact-cards">
-        <h1 className='text-center fw-bold mb-5'>{t("contactUsH1")}</h1>
-        <Row >            
+        <Row>
+          <Col sm={12}>
+            <h1 className='fw-bold mb-4'>{t("contactUsH1")}</h1>
+            <p>{t("description")}</p>
+          </Col>
+        </Row>
+        <Row >  
           <Col s={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>
               <Card.Body className='d-flex flex-column align-items-center'>
-                <PinMap size={48} className='mb-3'/>     
-                <Card.Title className='text-center'>{t("address")}</Card.Title>     
+                <Clock size={48} className='mb-3'/>
+                <Card.Title className='text-center'>{t("schedule")}</Card.Title>  
                 <div>
-                  <p className='h6'>Cesta Svobode 22, 4260</p>              
-                  <p>Bled, Slovenija</p>  
-                </div> 
+                  {weekdayText.map((day, index) => ( 
+                    <p key={index}>{day}</p> 
+                  ))}                
+                </div>     
               </Card.Body>
             </Card>
-          </Col>
+          </Col>          
           <Col s={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>
               <Card.Body className='d-flex flex-column align-items-center'>
@@ -91,13 +99,12 @@ const About: FC<AboutProps> = (props) => {
           <Col s={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>
               <Card.Body className='d-flex flex-column align-items-center'>
-                <Clock size={48} className='mb-3'/>
-                <Card.Title className='text-center'>{t("schedule")}</Card.Title>  
+                <PinMap size={48} className='mb-3'/>     
+                <Card.Title className='text-center'>{t("address")}</Card.Title>     
                 <div>
-                  {weekdayText.map((day, index) => ( 
-                    <p key={index}>{day}</p> 
-                  ))}                
-                </div>     
+                  <p className='h6'>Cesta Svobode 22, 4260</p>              
+                  <p>Bled, Slovenija</p>  
+                </div> 
               </Card.Body>
             </Card>
           </Col>

@@ -19,7 +19,7 @@ const GeneralCard = ({title, subtitle, mainText, bullets, bottomText, buttonText
             <Image
                 alt={title}
                 src={imageSrc}      
-                width={200}
+                width={250}
                 height={150}   
                 placeholder="blur"
                 blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
