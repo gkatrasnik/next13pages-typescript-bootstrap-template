@@ -10,15 +10,24 @@ import Loading from '../components/loading';
 const openSans = Open_Sans({ subsets: ['latin'], weight: '400' })
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  return (    
-    <main className={openSans.className}>
-      <Loading/>
-      <NextIntlClientProvider messages={pageProps.messages}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </NextIntlClientProvider>
-    </main>
+  return (  
+    <>
+    {/*workaround for font to be used also on "presentation" components like drawer*/}
+      <style global jsx>
+          {`body {
+              font-family: ${openSans.style.fontFamily};
+          }`}
+      </style>
+      <main className={openSans.className}>
+        <Loading/>
+        <NextIntlClientProvider messages={pageProps.messages}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </NextIntlClientProvider>
+      </main>
+    </>  
+
   )
 }
 
