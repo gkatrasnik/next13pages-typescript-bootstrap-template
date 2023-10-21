@@ -73,7 +73,7 @@ const EbikeUpgrade = (): JSX.Element => {
           <Col className='mb-5' sm={12}>
             <p className='text-center fw-bold h4'>{t("upgradePrice")}</p>
             <div className='d-flex justify-content-center mt-4'>
-              <Button size="lg" variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
+              <Button size="lg" variant="secondary" onClick={showFormModal}>{t("sendInquiry")}</Button>
             </div>
           </Col>
           <Col md={6} className="d-flex flex-column justify-content-center align-items-center overflow-hidden mb-4"> 

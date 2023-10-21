@@ -4,8 +4,8 @@
     "indexH1": "Dobrodošli v AB Bike: Izposoja Koles, E-koles in SUP-ov!",
     "subTitle": "Najbolša kolesa za izposojo in strokoven servis poskrbi za vaše avanture",
     "description": "Odkrijte užitke kolesarjenja z izposojo naših koles in e-koles. Potrbujete popravilo? Naša ekipa strokovnjakov bo poskrbela za vaše kolo.",
-    "rentButton": "Izposoja koles",
-    "serviceButton": "Servis koles",
+    "rentButton": "Izposoja Koles",
+    "serviceButton": "Servis Koles",
     "whatsapp": "Whatsapp",
     "rentaBike": "Izposoja koles in supov",
     "bikeService": "Servis koles vseh vrst",
@@ -56,7 +56,7 @@
     "partners": "Partnerji"
   },  
   "RentCard": {
-    "sendInquiry": "Pošlji povpraševanje",
+    "sendInquiry": "Pošlji Povpraševanje",
     "motor": "Motor",
     "battery": "Baterija",
     "derailleur": "Zadjni menjalnik",
@@ -107,7 +107,7 @@
     "bottomText2": "* Vse cene vključujejo DDV",
     "bottomText3": "Cenik velja od 15.04.2023",
 
-    "sendInquiry": "Pošlji povpraševanje"
+    "sendInquiry": "Pošlji Povpraševanje"
   },
   "RentABike": {
     "rentABikeTitle": "Izposoja Koles - Široka Ponudba Vrhunskih Koles in E-koles | AB Bike",
@@ -180,7 +180,7 @@
     "cyclingTripsH1": "Odkrijte Čudovite Poti z Našimi Kolesarskimi Izleti!",
     "weOffer": "Ponujamo vam tudi kolesarske izlete",
     "sendInquiryMsg": "Če ste zainteresirani, nam pošljite povpraševanje",
-    "sendInquiry": "Pošlji povpraševanje"
+    "sendInquiry": "Pošlji Povpraševanje"
   },
   "EbikeUpgrade" : {
     "eBikeUpgradeTitle" : "Kompleti za Električno Predelavo Kolesa: Nadgradite svoje Kolo v E-Kolo | AB Bike",
@@ -197,7 +197,7 @@
     "upgradePrice":"Cena električne predelave kolesa po ponudbi",
     "preUpgrade": "Pred nadgradnjo",
     "postUpgrade": "Po nadgradnji",
-    "sendInquiry": "Pošlji povpraševanje"
+    "sendInquiry": "Pošlji Povpraševanje"
   },
   "404": {
     "title": "Stran ne obstaja",

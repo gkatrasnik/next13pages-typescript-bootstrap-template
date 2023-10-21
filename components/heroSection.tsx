@@ -36,8 +36,8 @@ const HeroSection = ({heroImageSrc, rating}: HeroSectionProps) => {
                                     <p className='text-white h5'>{t('description')}</p>
                                 </div>                                
                                 <div className='d-flex justify-content-center'>
-                                    <Button variant="secondary" className='m-2 text-uppercase' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    
-                                    <Button variant="secondary" className='m-2 text-uppercase' onClick={() => router.push('/bike-service')}>{t('serviceButton')}</Button>  
+                                    <Button variant="secondary" size="lg" className='m-2' onClick={() => router.push('/rent-a-bike')}>{t('rentButton')}</Button>    
+                                    <Button variant="secondary" size="lg" className='m-2' onClick={() => router.push('/bike-service')}>{t('serviceButton')}</Button>  
                                 </div>
                                 <div className='mt-4'>
                                     <GooglePlacesRating rating={rating}/>    

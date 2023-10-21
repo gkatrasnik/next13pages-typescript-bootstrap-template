@@ -75,7 +75,7 @@ const RentCard = ({title, bullets, price, imageSrc}: RentCardProps): JSX.Element
                     
                 </Card.Body>
                 <div className='d-flex flex-column m-3'>
-                    <Button variant="secondary" className="text-uppercase" onClick={showFormModal} >{t("sendInquiry")}</Button>
+                    <Button variant="secondary" onClick={showFormModal} >{t("sendInquiry")}</Button>
                 </div>
             </Card>
         </>

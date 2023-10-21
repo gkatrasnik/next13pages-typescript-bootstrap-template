@@ -4,8 +4,8 @@
     "indexH1": "Welcome to AB Bike: Premium Bike, E-bike and SUP Rentals!",
     "subTitle": "Quality bike rentals and expert repairs to keep your adventure moving",
     "description": "Discover the joy of cycling with our premium bike and e-bike rentals. Need a fix? Our expert bike repair service ensures you're always ready to ride.",
-    "rentButton": "Rent a bike",
-    "serviceButton": "Bike service",
+    "rentButton": "Rent a Bike",
+    "serviceButton": "Bike Service",
     "whatsapp": "Whatsapp",
     "rentaBike": "Rent a bike or SUP",
     "bikeService": "Bike service",
@@ -56,7 +56,7 @@
     "partners": "Partners"
   },
   "RentCard": {
-    "sendInquiry": "Send inquiry",
+    "sendInquiry": "Send Inquiry",
     "motor": "Motor",
     "battery": "Battery",
     "derailleur": "Derailleur",
@@ -107,7 +107,7 @@
     "bottomText2": "* All prices include VAT",
     "bottomText3": "The price list is valid from 15.04.2023",
 
-    "sendInquiry": "Send inquiry"
+    "sendInquiry": "Send Inquiry"
   },
   "RentABike": {
     "rentABikeTitle": "Bike Rentals - Diverse Range of Premium Bikes and E-bikes | AB Bike",
@@ -181,7 +181,7 @@
     "cyclingTripsH1": "Explore Scenic Routes with Our Cycling Trips!",
     "weOffer": "In our company, we also offer guided cycling excursions.",
     "sendInquiryMsg": "If you are interested, you can send an inquiry, and we will get back to you",
-    "sendInquiry": "Send inquiry"
+    "sendInquiry": "Send Inquiry"
   },
   "EbikeUpgrade" : {
     "eBikeUpgradeTitle" : "E-Bike Conversion Kits: Upgrade Your Bike to E-bike | AB Bike",
@@ -198,7 +198,7 @@
     "upgradePrice": "Price of the upgrade according to the offer.",
     "preUpgrade": "Before upgrade",
     "postUpgrade": "After upgrade",
-    "sendInquiry": "Send inquiry"
+    "sendInquiry": "Send Inquiry"
   },
   "404": {
     "title": "Page not found",

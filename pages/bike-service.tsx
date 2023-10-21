@@ -72,7 +72,7 @@ const BikeService: FC<BikeServiceProps> = (props) => {
       <Row>
         <Col className="mb-4">
           <div className='d-flex justify-content-center mb-5'>
-            <Button size="lg" variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>
+            <Button size="lg" variant="secondary" onClick={showFormModal}>{t("sendInquiry")}</Button>
           </div>
           <h3 className='text-center mb-3'>{t("pricelist")}</h3>
           <ServicePriceList pricelistJson={props.pricelist}/>

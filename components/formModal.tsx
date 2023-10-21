@@ -235,7 +235,7 @@ const FormModal = ({ formIsForRent = false, formIsForUpgrade = false, formIsForS
 
 
                         <div className='d-flex flex-column'>                        
-                            <Button className="mt-2 text-uppercase" variant="secondary" type="submit" disabled={isSending}>
+                            <Button className="mt-2" variant="secondary" type="submit" disabled={isSending}>
                             {isSending ?
                                 <ArrowRepeat size={20} className='icon-spin'/>:
                                 t('sendInquiry')                                

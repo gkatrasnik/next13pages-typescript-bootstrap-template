@@ -54,7 +54,7 @@ const GeneralCard = ({title, subtitle, mainText, bullets, bottomText, buttonText
 
         {buttonText && 
             <div className='d-flex flex-column'>
-                <Button className="text-uppercase" variant="primary">{buttonText}</Button>
+                <Button variant="primary">{buttonText}</Button>
             </div>
         }
         
