@@ -190,5 +190,13 @@
     "preUpgrade": "Pred nadgradnjo",
     "postUpgrade": "Po nadgradnji",
     "sendInquiry": "Pošlji povpraševanje"
+  },
+  "404": {
+    "title": "Stran ne obstaja",
+    "description": "404 - Stran ne obstaja"
+  },
+  "500": {
+    "title": "Napaka na strežniku",
+    "description": "500 - Napaka na strežniku"
   }
 }

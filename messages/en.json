@@ -191,5 +191,13 @@
     "preUpgrade": "Before upgrade",
     "postUpgrade": "After upgrade",
     "sendInquiry": "Send inquiry"
+  },
+  "404": {
+    "title": "Page not found",
+    "description": "404 - Page not found"
+  },
+  "500": {
+    "title": "Internal server error",
+    "description": "500 - Internal server error"
   }
 }
