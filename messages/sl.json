@@ -139,14 +139,22 @@
   "Contact": {
     "contactUsTitle":"Stopite v Stik z AB Bike: Tu Smo za Vas!",
     "description":"Kontaktirajte nas v poslovalnici AB Bike na Bledu. Če imate vprašanja o naših storitvah koles, najemih ali če nas želite samo pozdraviti, je naša ekipa tukaj, da vam pomaga. Obiščite nas v Pristavi ali nas kontaktirajte preko spletne strani.",
-    "contactUsH1": "Kontakt AB Bike - Lokacija & Kontaktni Podatki",
+    "contactUsH1": "Kontakt AB Bike - Lokacija in Kontaktni Podatki",
     "address": "Naslov",
     "phone": "Telefon",
     "email": "E-mail",
     "schedule": "Delovni čas",
     "weekdays": "Ponedeljek - Petek",
     "weekends": "Sobota - Nedelja, Prazniki",
-    "byAppointment": "Po dogovoru"
+    "byAppointment": "Po dogovoru",
+    "monday": "Ponedeljek",
+    "tuesday": "Torek",
+    "wednesday": "Sreda",
+    "thursday": "Četrtek",
+    "friday": "Petek",
+    "saturday": "Sobota",
+    "sunday": "Nedelja",
+    "closed": "Zaprto"
   },
   "AboutUs": {
     "aboutUsTitle": "O Nas - Naša zgodba in Strast do Avanture | AB Bike",

@@ -12,8 +12,34 @@ interface AboutProps {
   placesData: GooglePlaceDetails;
 }
 
+
+
 const About: FC<AboutProps> = (props) => {
-  const t = useTranslations('Contact');
+  const t = useTranslations('Contact');  
+
+  const periodsToWeekdayText = (periods: GoogleOpeningHoursPeriod[]): string[] => {
+    const daysOfWeek: string[] = [ t("monday"), t("tuesday"), t("wednesday"), t("thursday"), t("friday"), t("saturday"), t("sunday")];
+    
+    // Initial empty array for all 7 days
+    const result: string[] = new Array(7).fill("");
+  
+    // Loop through the periods and fill in the result array
+    periods.forEach(period => {
+      const day = period.open.day;
+      const openTime = `${period.open.time.substring(0, 2)}:${period.open.time.substring(2)}`;
+      const closeTime = `${period.close.time.substring(0, 2)}:${period.close.time.substring(2)}`;
+      result[day] = `${daysOfWeek[day]}: ${openTime} – ${closeTime}`;
+    });
+  
+    // Fill in "Closed" for days with no open/close time
+    for (let i = 0; i < 7; i++) {
+      if (!result[i]) result[i] = `${daysOfWeek[i]}: ${t("closed")}`;
+    }
+  
+    return result;
+  }
+
+  const weekdayText = periodsToWeekdayText(props.placesData.opening_hours.periods);
   
   return (
     <>
@@ -68,9 +94,9 @@ const About: FC<AboutProps> = (props) => {
                 <Clock size={48} className='mb-3'/>
                 <Card.Title className='text-center'>{t("schedule")}</Card.Title>  
                 <div>
-                  {props.placesData.opening_hours.weekday_text.map((day, index) => ( 
+                  {weekdayText.map((day, index) => ( 
                     <p key={index}>{day}</p> 
-                  ))}
+                  ))}                
                 </div>     
               </Card.Body>
             </Card>

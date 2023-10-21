@@ -6,7 +6,7 @@ declare type AddressComponent = {
     types: string[];
   };
   
-  declare type Period = {
+  declare type GoogleOpeningHoursPeriod = {
     close: {
       date?: string;  // This field appears optional as it's not present in all the entries
       day: number;

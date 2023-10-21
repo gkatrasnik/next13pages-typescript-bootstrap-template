@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "AB Bike - Your First Choice for Bike, E-bike and SUP Rentals",
-    "indexH1": "Welcome to AB Bike: Premium Bike, E-bike & SUP Rentals!",
+    "indexH1": "Welcome to AB Bike: Premium Bike, E-bike and SUP Rentals!",
     "subTitle": "Quality bike rentals and expert repairs to keep your adventure moving",
     "description": "Discover the joy of cycling with our premium bike and e-bike rentals. Need a fix? Our expert bike repair service ensures you're always ready to ride.",
     "rentButton": "Rent a bike",
@@ -66,9 +66,9 @@
     "maxWeight": "Maximum weight"
   },
   "BikeService": {
-    "bikeServiceTitle": "Bike Service - Expert Maintenance & Repairs | AB Bike",
+    "bikeServiceTitle": "Bike Service - Expert Maintenance and Repairs | AB Bike",
     "description": "Professional repair of bikes of all brands and types in Bled. Our team of experts will take care of your bike. You're welcome to visit our store at Pristava in Bled.",
-    "bikeServiceH1": "Professional Bike Service & Repairs at AB Bike",
+    "bikeServiceH1": "Professional Bike Service and Repairs at AB Bike",
     "service": "Service",
     "price": "Price (tax included)",
     "pricelist": "Service price list",
@@ -140,17 +140,25 @@
   "Contact": {
     "contactUsTitle":"Get in Touch with AB Bike: We're Here for You!",
     "description":"Get in touch with AB Bike in Bled. Whether you have questions about our bike services, rentals, or just want to say hello, our team is here to assist. Visit our Pristava location or reach out online.",
-    "contactUsH1": "Contact AB Bike - Location & Contact Details",
+    "contactUsH1": "Contact AB Bike - Location and Contact Details",
     "address": "Address",
     "phone": "Phone",
     "email": "E-mail",
     "schedule": "Working hours",
     "weekdays": "Monday - Friday",
     "weekends": "Saturday - Sunday, Holidays",
-    "byAppointment": "By appointment"
+    "byAppointment": "By appointment",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed"
   },
   "AboutUs": {
-    "aboutUsTitle": "About Us - Our Story & Passion for Adventure | AB Bike",
+    "aboutUsTitle": "About Us - Our Story and Passion for Adventure | AB Bike",
     "description": "AB Bike is a company run by Ana Lipovec and Blaž Klemenčič, specializing in bike rentals, bike servicing, and the sale of cycling equipment. We also offer stand-up paddleboard rentals in our range. Our store is located at Pristava in Bled, where we provide free parking during the time of your bike rental. You're welcome to visit!",
     "aboutUsH1": "Discover the Story Behind AB Bike",
     "weAre": "We are Ana and Blaž,",
@@ -168,7 +176,7 @@
     "comeToOurShop": "We invite you to our shop in Bled (Cesta svobode 22, Bled), where we also offer a free parking space when you use our services."
   }  ,
   "CyclingTrips": {
-    "cyclingTripsTitle": "Guided Cycling Trips & Tours | AB Bike",
+    "cyclingTripsTitle": "Guided Cycling Trips and Tours | AB Bike",
     "description": "Explore breathtaking cycling trips with AB Bike in Bled. Journey through scenic routes, discover hidden gems, and experience the beauty of nature on two wheels. Tailored trips for every rider. Embark on your next adventure with us!",
     "cyclingTripsH1": "Explore Scenic Routes with Our Cycling Trips!",
     "weOffer": "In our company, we also offer guided cycling excursions.",
