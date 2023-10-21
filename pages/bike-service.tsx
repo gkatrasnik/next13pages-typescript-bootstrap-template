@@ -29,15 +29,14 @@ const BikeService: FC<BikeServiceProps> = (props) => {
     {formModalShowed && <FormModal formIsForService={true} handleClose={closeFormModal}/>}
 
     <Head>
-        <title>{t("bikeRepairs")}</title>
+        <title>{t("bikeServiceTitle")}</title>
         <meta name="description" content={t('description')} />
     </Head> 
     <Container className="my-5 d-flex flex-column ">
-      <h1 className='text-center fw-bold mb-5'>{t("bikeService")}</h1>
       <Row>
         <Col>
           <div className='mb-3'>
-            <h2 className='fw-bold mb-4'>{t("bikeRepairs")}</h2>
+            <h1 className='fw-bold mb-4'>{t("bikeServiceH1")}</h1>
             <div className='mb-3'>
               <p>{t("paragraph1")}</p>
               <p>{t("paragraph2")}</p>

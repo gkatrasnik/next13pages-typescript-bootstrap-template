@@ -16,15 +16,14 @@ const RentABike: FC<RentABikeProps> = (props) => {
   return (
     <>
       <Head>
-        <title>{t('rentABikeBled')}</title>
+        <title>{t('rentABikeTitle')}</title>
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5">
-        <h1 className=' text-center fw-bold mb-5'>{t("rentABike")}</h1>
         <Row>
           <Col>
             <div className='mb-5'>
-              <h2 className='fw-bold mb-4'>{t("exploreBled")}</h2>
+              <h1 className='fw-bold mb-4'>{t("rentABikeH1")}</h1>
               <p>{t("exploreBledText")}</p>
             </div>
             <div className='mb-5'>

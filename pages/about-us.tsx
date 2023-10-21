@@ -10,13 +10,13 @@ const About = (): JSX.Element => {
   return (
     <>      
       <Head>
-        <title>{t("aboutUs")}</title>
+        <title>{t("aboutUsTitle")}</title>
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column ">
-        <h1 className='text-center fw-bold mb-5'>{t("aboutUs")}</h1>
           <Row>
             <Col className="mb-5">
+              <h1 className='fw-bold mb-4'>{t("aboutUsH1")}</h1>
               <div className="about-us-hero-container">
                 <Image 
                     src="/about-us-images/about-us-1.jpg"

@@ -32,7 +32,7 @@ const HeroSection = ({heroImageSrc, rating}: HeroSectionProps) => {
                         <Col md={true} className="mb-4 d-flex flex-column alling-items-center justify-content-center">
                             <div className="h-100 my-4 d-flex flex-column alling-items-center justify-content-center">
                                 <div className='mb-4'>
-                                    <h1 className=' text-center text-white mb-4 fw-bold display-4'>{t('title')}</h1>                                
+                                    <h1 className=' text-center text-white mb-4 display-5'>{t('indexH1')}</h1>                                
                                     <p className='text-white h5'>{t('description')}</p>
                                 </div>                                
                                 <div className='d-flex justify-content-center'>

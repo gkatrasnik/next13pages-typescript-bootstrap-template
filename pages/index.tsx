@@ -20,7 +20,7 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
   return (
     <>
       <Head>
-        <title>AB Bike</title>
+        <title>{t('title')}</title>
         <meta name="description" content={t('description')} />
       </Head>           
       <HeroSection rating={props.placesData.rating} heroImageSrc="/hero.jpg"/>

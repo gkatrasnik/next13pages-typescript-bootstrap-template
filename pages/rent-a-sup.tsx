@@ -16,16 +16,15 @@ const RentASup: FC<RentASupProps> = (props) => {
     return (
     <>
       <Head>
-        <title>{t('rentASupBled')}</title>
+        <title>{t('rentASupTitle')}</title>
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column ">
-        <h1 className=' text-center fw-bold mb-5'>{t("rentASup")}</h1>
         <Row>
           <Col>
             <div className='mb-3'>
               <div className='mb-5'>
-                <h2 className='fw-bold mb-4'>{t("exploreBledSup")}</h2>
+                <h1 className='fw-bold mb-4'>{t("rentASupH1")}</h1>
                 <p>{t("exploreBledSupText")}</p>
               </div>
               <p className='fw-bold text-primary h5'>{t("priceIncludes")}</p>

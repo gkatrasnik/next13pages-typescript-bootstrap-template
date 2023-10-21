@@ -27,11 +27,10 @@ const EbikeUpgrade = (): JSX.Element => {
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column ">
-        <h1 className='text-center fw-bold mb-5'>{t("ebikeUpgrade")}</h1>
         <Row>
           <Col>
             <div className='mb-3'>
-              <h2 className='fw-bold mb-4'>{t("upgradeYourOldBike")}</h2>
+              <h1 className='fw-bold mb-4'>{t("eBikeUpgradeH1")}</h1>
               <p>{t("upgradeYourOldBikeText")}</p>
             </div> 
           </Col>
@@ -71,7 +70,7 @@ const EbikeUpgrade = (): JSX.Element => {
           </Col>
         </Row> 
         <Row >
-          <Col className='mb-5'>
+          <Col className='mb-5' sm={12}>
             <p className='text-center fw-bold h4'>{t("upgradePrice")}</p>
             <div className='d-flex justify-content-center mt-4'>
               <Button size="lg" variant="secondary" className="text-uppercase" onClick={showFormModal}>{t("sendInquiry")}</Button>

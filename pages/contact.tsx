@@ -18,11 +18,11 @@ const About: FC<AboutProps> = (props) => {
   return (
     <>
       <Head>
-        <title>{t("contactUs")}</title>
+        <title>{t("contactUsTitle")}</title>
         <meta name="description" content={t('description')} />
       </Head> 
       <Container className="my-5 d-flex flex-column contact-cards">
-        <h1 className='text-center fw-bold mb-5'>{t("contact")}</h1>
+        <h1 className='text-center fw-bold mb-5'>{t("contactUsH1")}</h1>
         <Row >            
           <Col s={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>
