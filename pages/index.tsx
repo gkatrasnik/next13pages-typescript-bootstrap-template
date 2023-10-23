@@ -24,7 +24,19 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
         <meta name="description" content={t('description')} />
       </Head>           
       <HeroSection rating={props.placesData.rating} heroImageSrc="/hero.jpg"/>
-      <GooglePlacesReviews reviews={props.placesData.reviews}/>
+      <Container> 
+        <Row className='mb-5'>
+            <Col md={6}>
+              <div className='px-5 pb-4 pt-3'>
+                <h2 className='fw-bold'>{t("reviewsTitle")}</h2>
+                <p>{t("reviewsText")}</p>
+              </div>
+            </Col>                
+            <Col md={6}>
+              <GooglePlacesReviews reviews={props.placesData.reviews}/>
+            </Col>
+        </Row>
+      </Container>
       <IndexPageBasicCards/>
       <Container >    
         <Row className='mb-5'>
