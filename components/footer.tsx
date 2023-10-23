@@ -10,7 +10,7 @@ const MyFooter = (): JSX.Element => {
     <footer className='bg-light'>
       <Container  className='px-4'>
         <Row className='h-100'>         
-          <Col md={{span:6, order:2}} className='py-4'>
+          <Col md={{span:6, order:2}} className='py-3 mt-3'>
             <p className="fw-bold pb-1 h5">{t("contact")}</p>
             <div className='d-flex flex-column'>              
               <div className="fw-bold pb-1">
@@ -26,7 +26,7 @@ const MyFooter = (): JSX.Element => {
             </div>
           </Col>
 
-          <Col md={{span:6, order:1}} className='py-4 d-flex justify-content-center align-items-center'>
+          <Col md={{span:6, order:1}} className='py-3 mt-3 d-flex justify-content-center align-items-center'>
             <div className='d-flex flex-column justify-content-center align-items-center gap-2'>
               <SocialMediaLinks iconSize={48} />
               <PartnerLogos imageSrcs={["/logo/alpina.png", "/logo/ziener.png", "/logo/asa.png"]}/>

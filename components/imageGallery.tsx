@@ -12,13 +12,13 @@ const ImageGallery = ({imageSrcs}: ImageGalleryProps) => {
   const gallery = useRef<HTMLSpanElement>(null);
   const scrollLeft = () => {
     if (gallery.current) {
-      gallery.current.scrollLeft -= 300;
+      gallery.current.scrollLeft += 232;
     }
   }
 
   const scrollRight = () => {
     if (gallery.current) {
-      gallery.current.scrollLeft += 300;
+      gallery.current.scrollLeft -= 232;
     }
   }
 

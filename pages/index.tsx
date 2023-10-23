@@ -8,6 +8,7 @@ import { fetchGooglePlacesData } from '../service/googlePlacesService';
 import { FC } from 'react';
 import GooglePlacesReviews from '../components/googlePlacesReviews';
 import WhatWeOfferGrid from '../components/whatWeOfferGrid';
+import GooglePlacesRating from '../components/googlePlacesRating';
 
 interface HomeProps {
   messages: Record<string, string>;
@@ -23,11 +24,12 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
         <title>{t('title')}</title>
         <meta name="description" content={t('description')} />
       </Head>           
-      <HeroSection rating={props.placesData.rating} heroImageSrc="/hero.jpg"/>
+      <HeroSection heroImageSrc="/hero.jpg"/>
       <Container> 
-        <Row className='my-5'>
+        <Row className='mb-5'>
             <Col md={6}>
-              <div className='px-4 pb-4 pt-3'>
+              <div className='px-4 pb-4 pt-3 d-flex flex-column justify-content-md-center'>
+                <GooglePlacesRating rating={props.placesData.rating}/> 
                 <h2 className='fw-bold'>{t("reviewsTitle")}</h2>
                 <p>{t("reviewsText")}</p>
               </div>
@@ -43,8 +45,8 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
       {/*<IndexPageBasicCards/>*/}
       <Container >    
         <Row className='my-5'>
-          <Col sm={12} className="mb-4">
-            <div className='px-4'>
+          <Col sm={12} className="mb-4 px-4">
+            <div>
               <h2 className='fw-bold'>{t("galleryTitle")}</h2>
               <p>{t("galleryText")}</p>
             </div>
