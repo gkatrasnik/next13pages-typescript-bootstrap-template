@@ -7,7 +7,7 @@ const MyFooter = (): JSX.Element => {
   const t = useTranslations('Footer');
 
   return (    
-    <footer className='bg-light pb-5'>
+    <footer className='bg-light'>
       <Container  className='px-4'>
         <Row className='h-100'>         
           <Col md={{span:6, order:2}} className='py-4'>
@@ -33,6 +33,13 @@ const MyFooter = (): JSX.Element => {
             </div>                     
           </Col>
         </Row>      
+        <Row className='h-100'>
+          <Col>
+            <div>
+              <p className='text-muted text-center small mt-5'>&copy; 2023 GK</p>
+            </div>
+          </Col>
+        </Row>
     </Container>
   </footer>
   )
