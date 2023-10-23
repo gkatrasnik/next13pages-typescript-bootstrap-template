@@ -86,8 +86,8 @@ main {
 
 .hero {
   position: relative;
-  width: 100%;
-  height: calc(100vh - 76px);
+  height: calc(100vh - 76px); /* Fallback */
+  height: calc(100svh - 76px);
 }
 
 .hero-content {

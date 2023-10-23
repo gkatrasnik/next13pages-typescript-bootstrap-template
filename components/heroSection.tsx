@@ -14,18 +14,18 @@ const HeroSection = ({heroImageSrc, rating}: HeroSectionProps) => {
     const router = useRouter();
 
     return (     
-        <div className="hero mb-5">
+        <Container fluid className="hero mb-5">
             <Image 
                 src={heroImageSrc}
                 alt="Hero Image"
-                layout="fill"  
+                fill
                 placeholder="blur"
                 blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                 style={{                 
-                    objectFit:"cover"                
+                    objectFit:"cover"                                    
                 }}       
                 priority         
-            />
+            />             
             <div className="hero-content">
                 <Container className="h-100 d-flex">
                     <Row className='d-flex flex-grow-1'>
@@ -48,8 +48,8 @@ const HeroSection = ({heroImageSrc, rating}: HeroSectionProps) => {
                         </Col>
                     </Row>   
                 </Container>                
-            </div>            
-        </div>
+            </div>      
+        </Container>      
     );
 }
 
