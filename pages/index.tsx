@@ -7,7 +7,7 @@ import { GetStaticProps } from 'next';
 import { fetchGooglePlacesData } from '../service/googlePlacesService';
 import { FC } from 'react';
 import GooglePlacesReviews from '../components/googlePlacesReviews';
-import OurOfferingsGrid from '../components/ourOfferingsGrid';
+import WhatWeOfferGrid from '../components/whatWeOfferGrid';
 
 interface HomeProps {
   messages: Record<string, string>;
@@ -38,7 +38,7 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
         </Row>
       </Container>
       <Container fluid className='bg-light'>
-        <OurOfferingsGrid />
+        <WhatWeOfferGrid />
       </Container>
       {/*<IndexPageBasicCards/>*/}
       <Container >    
