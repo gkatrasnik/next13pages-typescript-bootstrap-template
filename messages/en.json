@@ -13,7 +13,17 @@
     "bikeService": "Bike service",
     "econoBikesSale": "ECONO bike shop",
     "eBikeUpgrade": "Upgrade your bike to E-Bike",
-    "priceFrom":"From {price} €"
+    "priceFrom":"From {price} €",
+    "offeringsRentalTitle":"Bikes & SUPs for Rent",
+    "offeringsRentalText":"Dive into adventure with our premium rentals on two weheels or water",
+    "offeringsBikeSeriveTitle":"Expert Bike Service",
+    "offeringsBikeSeriveText":"From regular maintenance to intricate repairs, we've got your bike covered",
+    "offeringsEBikeUpgradeTitle":"Elevate Your Ride",
+    "offeringsEBikeUpgradeText":"Transform your bike into an e-bike for an electrifying experience",
+    "offeringsShopTitle": "ECONO Electric Bikes Sale",
+    "offeringsShopText": "Premium ECONO electric bikes at affordable prices",
+    "galleryTitle": "Cycling Trips with Us",
+    "galleryText": "Did you know? We also offer cycling trips. These images showcase the unforgettable routes and breathtaking vistas our riders have experienced. Discover the world on two wheels with us."
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"

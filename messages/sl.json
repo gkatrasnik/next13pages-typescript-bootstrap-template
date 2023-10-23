@@ -13,7 +13,17 @@
     "bikeService": "Servis koles vseh vrst",
     "econoBikesSale": "Prodaja električnih koles ECONO",
     "eBikeUpgrade": "Električna predelava koelsa",
-    "priceFrom":"Od {price} €"
+    "priceFrom":"Od {price} €",
+    "offeringsRentalTitle":"Kolesain SUP-i za Izposojo",
+    "offeringsRentalText":"Potopite se v avanturo z našimi vrhunskimi kolesi in SUP-i",
+    "offeringsBikeSeriveTitle":"Strokoven Servis Koles",
+    "offeringsBikeSeriveText":"Od rednega vzdrževanja do zapletenih popravil, vaše kolo je pri nas v dobrih rokah",
+    "offeringsEBikeUpgradeTitle":"Nadgradite Svoje Kolo",
+    "offeringsEBikeUpgradeText":"Spremenite svoje kolo v e-kolo za elektrificirano izkušnjo",
+    "offeringsShopTitle":"Prodaja Električnih Koles ECONO",
+    "offeringsShopText":"Vrhunska lektrična kolesa ECONO po ugodnih cenah",
+    "galleryTitle": "Kolesarski Izleti z Nami",
+    "galleryText": "Ste vedeli? Ponujamo tudi kolesarske izlete. Te slike prikazujejo nepozabne poti in dih jemajoče razglede, ki so jih doživeli naši kolesarji. Odkrijte svet na dveh kolesih z nami."
   },
   "Locales": {
     "localeName": "{locale, select, sl {Slovenščina} en {English} other {Unknown}}"

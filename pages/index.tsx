@@ -3,11 +3,11 @@ import {Container, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
 import ImageGallery from '../components/imageGallery';
 import HeroSection from '../components/heroSection';
-import IndexPageBasicCards from '../components/indexPageBasicCards';
 import { GetStaticProps } from 'next';
 import { fetchGooglePlacesData } from '../service/googlePlacesService';
 import { FC } from 'react';
 import GooglePlacesReviews from '../components/googlePlacesReviews';
+import OurOfferingsGrid from '../components/ourOfferingsGrid';
 
 interface HomeProps {
   messages: Record<string, string>;
@@ -25,9 +25,9 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
       </Head>           
       <HeroSection rating={props.placesData.rating} heroImageSrc="/hero.jpg"/>
       <Container> 
-        <Row className='mb-5'>
+        <Row className='my-5'>
             <Col md={6}>
-              <div className='px-5 pb-4 pt-3'>
+              <div className='px-4 pb-4 pt-3'>
                 <h2 className='fw-bold'>{t("reviewsTitle")}</h2>
                 <p>{t("reviewsText")}</p>
               </div>
@@ -37,10 +37,17 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
             </Col>
         </Row>
       </Container>
-      <IndexPageBasicCards/>
+      <Container fluid className='bg-light'>
+        <OurOfferingsGrid />
+      </Container>
+      {/*<IndexPageBasicCards/>*/}
       <Container >    
-        <Row className='mb-5'>
-          <Col className="mb-4">
+        <Row className='my-5'>
+          <Col sm={12} className="mb-4">
+            <div className='px-4'>
+              <h2 className='fw-bold'>{t("galleryTitle")}</h2>
+              <p>{t("galleryText")}</p>
+            </div>
             <ImageGallery 
               imageSrcs={["/index-gallery-images/image1.jpg",
                           "/index-gallery-images/image2.jpg", 

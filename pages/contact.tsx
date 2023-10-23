@@ -57,7 +57,7 @@ const About: FC<AboutProps> = (props) => {
           </Col>
         </Row>
         <Row >  
-          <Col s={3} className="d-flex justify-content-center mb-4">
+          <Col md={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>
               <Card.Body className='d-flex flex-column align-items-center'>
                 <Clock size={48} className='mb-3'/>
@@ -70,7 +70,7 @@ const About: FC<AboutProps> = (props) => {
               </Card.Body>
             </Card>
           </Col>          
-          <Col s={3} className="d-flex justify-content-center mb-4">
+          <Col md={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>
               <Card.Body className='d-flex flex-column align-items-center'>
               <Telephone size={48} className='mb-3'/>               
@@ -83,7 +83,7 @@ const About: FC<AboutProps> = (props) => {
               </Card.Body>
             </Card>
           </Col>
-          <Col s={3} className="d-flex justify-content-center mb-4">
+          <Col md={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>
               <Card.Body className='d-flex flex-column align-items-center'>
               <Envelope size={48} className='mb-3'/>
@@ -96,7 +96,7 @@ const About: FC<AboutProps> = (props) => {
               </Card.Body>
             </Card>
           </Col>
-          <Col s={3} className="d-flex justify-content-center mb-4">
+          <Col md={3} className="d-flex justify-content-center mb-4">
             <Card style={{ width: '18rem' }}>
               <Card.Body className='d-flex flex-column align-items-center'>
                 <PinMap size={48} className='mb-3'/>     
