@@ -36,8 +36,8 @@ const ImageGallery = ({imageSrcs}: ImageGalleryProps) => {
       <Stack direction="horizontal" ref={gallery} className="image-gallery-content">          
         {imageSrcs.map((imageSrc,  index) => { 
           return (
-            <div className="image-gallery-image">
-              <BasicImage imageSrc={imageSrc} objectFit="cover" key={index}/> 
+            <div className="image-gallery-image" key={index}>
+              <BasicImage imageSrc={imageSrc} objectFit="cover"/> 
             </div>
           )        
         })}    
