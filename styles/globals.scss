@@ -136,7 +136,6 @@ a {
 }
 
 .image-gallery-content {
-  padding-inline: 50px;
   position: relative;
   overflow-x: scroll;  
   scroll-behavior: smooth;
@@ -144,19 +143,23 @@ a {
 }
 
 .image-gallery-nav-button {
-  background-color: rgb(0, 0, 0, .2);
+  background-color: rgb(0, 0, 0, 0);
   position: absolute;
-  height:50px;
-  width: 50px;
+  height: 100%;
+  width: 70px;
   border: none;
-  border-radius: 50%;
+  border-radius: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .image-gallery-nav-button:hover {
-  background-color: rgb(0, 0, 0, .2);
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.image-gallery-nav-button:active {
+  background-color: rgb(0, 0, 0, 0) !important;
 }
 
 .image-gallery-nav-button.left {
@@ -178,6 +181,18 @@ a {
   scrollbar-width: none;  /* Firefox */
   width: fit-content;
   margin: auto;
+}
+
+.image-gallery-image {
+  margin-inline: 1rem;
+}
+
+.image-gallery-image:first-child {
+  margin-left: 0;
+}
+
+.image-gallery-image:last-child {
+  margin-right: 0;
 }
 
 .floating-whatsapp-btn {
@@ -211,7 +226,6 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-inline: 1rem;
 }
 
 .basic-image-zoom-in {
@@ -227,6 +241,7 @@ a {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 .rent-image-zoom-in {

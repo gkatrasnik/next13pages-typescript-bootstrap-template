@@ -43,7 +43,7 @@ const RentABike: FC<RentABikeProps> = (props) => {
           <h2 className='text-center'>{t("eBikes")}</h2>
             {props?.rentaBikes?.eBikes?.map((rentItem, index) => {
                 return (
-                  <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
+                  <Col key={index} md={6} lg={4} className='d-flex justify-content-center my-3'>
                     <RentCard 
                       title={rentItem.title}
                       bullets={rentItem.bullets}
@@ -59,7 +59,7 @@ const RentABike: FC<RentABikeProps> = (props) => {
           <h2 className='text-center'>{t("regularBikes")}</h2>
           {props?.rentaBikes?.regularBikes?.map((rentItem, index) => {
               return (
-                <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
+                <Col key={index} md={6} lg={4}  className='d-flex justify-content-center my-3'>
                   <RentCard 
                     title={rentItem.title}
                     bullets={rentItem.bullets}
@@ -75,7 +75,7 @@ const RentABike: FC<RentABikeProps> = (props) => {
           <h2 className='text-center'>{t("accessories")}</h2>
             {props?.rentaBikes?.other?.map((rentItem, index) => {
                 return (
-                  <Col key={index} sm={4} className='d-flex justify-content-center my-3'>
+                  <Col key={index} md={6} lg={4} className='d-flex justify-content-center my-3'>
                       <RentCard 
                         title={rentItem.title}
                         bullets={rentItem.bullets}
