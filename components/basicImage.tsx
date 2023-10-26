@@ -6,9 +6,11 @@ import { AspectRatio } from "react-bootstrap-icons";
 interface BasicImageProps {
     imageSrc: string,
     objectFit: "contain" | "cover" | "fill" | "none" | "scale-down"
+    width?: number,
+    height?: number
 }   
 
-const BasicImage = ({imageSrc, objectFit}: BasicImageProps) => {
+const BasicImage = ({imageSrc, objectFit, width = 200, height = 200}: BasicImageProps) => {
     const [imageModalShowed, setImageModalShowed] = useState(false);
 
     const closeImageModal = (): void => {
@@ -25,9 +27,9 @@ const BasicImage = ({imageSrc, objectFit}: BasicImageProps) => {
             <div className="basic-image-container">
                 <Image
                     alt={imageSrc}
-                    src={imageSrc}      
-                    height={200}
-                    width={200}        
+                    src={imageSrc}  
+                    width={width}       
+                    height={height}
                     placeholder="blur"
                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOsrwcAAYMBABbFvRQAAAAASUVORK5CYII="   
                     style={{                        

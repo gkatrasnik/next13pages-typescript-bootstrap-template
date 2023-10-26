@@ -195,6 +195,24 @@ a {
   margin-right: 0;
 }
 
+.image-gallery-carousel {
+  height: 20rem;
+}
+
+.image-gallery-carousel-item {  
+  height: 20rem;
+
+}
+
+.image-gallery-carousel-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+
 .floating-whatsapp-btn {
   position: fixed;
   bottom: 1.2rem;

@@ -2,10 +2,11 @@ import Head from 'next/head'
 import {Container, Row, Col} from 'react-bootstrap'
 import {useTranslations} from 'next-intl';
 import ImageGallery from '../components/imageGallery';
+import ImageGalleryCarousel from '../components/imageGalleryCarousel';
 import HeroSection from '../components/heroSection';
 import { GetStaticProps } from 'next';
 import { fetchGooglePlacesData } from '../service/googlePlacesService';
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import GooglePlacesReviews from '../components/googlePlacesReviews';
 import WhatWeOfferGrid from '../components/whatWeOfferGrid';
 import GooglePlacesRating from '../components/googlePlacesRating';
@@ -17,6 +18,24 @@ interface HomeProps {
 
 const Home: FC<HomeProps> = (props): JSX.Element => {
   const t = useTranslations('Index');
+
+  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false); // Initialize with a default value
+
+  useEffect(() => {
+        // Update the state once the component has mounted and we have access to `window`
+        setIsSmallScreen(window.innerWidth <= 768);
+
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Clean up the event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+  }, []);
 
   return (
     <>
@@ -49,9 +68,10 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
             <div>
               <h2 className='fw-bold'>{t("galleryTitle")}</h2>
               <p>{t("galleryText")}</p>
-            </div>
-            <ImageGallery 
-              imageSrcs={["/index-gallery-images/image1.jpg",
+            </div>            
+            {isSmallScreen ? 
+              <ImageGalleryCarousel 
+                imageSrcs={["/index-gallery-images/image1.jpg",
                           "/index-gallery-images/image2.jpg", 
                           "/index-gallery-images/image3.jpg", 
                           "/index-gallery-images/image4.jpg", 
@@ -63,7 +83,23 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
                           "/index-gallery-images/image10.jpg",
                           "/index-gallery-images/image11.jpg"
                         ]}
-            />        
+              />
+              :               
+              <ImageGallery 
+                imageSrcs={["/index-gallery-images/image1.jpg",
+                          "/index-gallery-images/image2.jpg", 
+                          "/index-gallery-images/image3.jpg", 
+                          "/index-gallery-images/image4.jpg", 
+                          "/index-gallery-images/image5.jpg",
+                          "/index-gallery-images/image6.jpg",
+                          "/index-gallery-images/image7.jpg",
+                          "/index-gallery-images/image8.jpg",
+                          "/index-gallery-images/image9.jpg",
+                          "/index-gallery-images/image10.jpg",
+                          "/index-gallery-images/image11.jpg"
+                        ]}
+                />     
+            }           
           </Col>
         </Row>           
       </Container>
