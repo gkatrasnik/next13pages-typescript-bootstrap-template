@@ -16,8 +16,8 @@ interface HomeProps {
 }
 
 const Home: FC<HomeProps> = (props): JSX.Element => {
-  const t = useTranslations('Index');  
-
+  const t = useTranslations('Index');   
+  
   return (
     <>
       <Head>
