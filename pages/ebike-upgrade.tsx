@@ -6,7 +6,7 @@ import Image from 'next/image';
 import FormModal from '../components/formModal';
 import { GetStaticProps } from 'next';
 
-const EbikeUpgrade = (): JSX.Element => {
+const EbikeUpgrade = () => {
     const [formModalShowed, setFormModalShowed] = useState<boolean>(false);
     const t = useTranslations('EbikeUpgrade');
 

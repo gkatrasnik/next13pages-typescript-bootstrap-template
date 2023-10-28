@@ -1,4 +1,4 @@
-import { useState, FC } from 'react';
+import { useState } from 'react';
 import Head from 'next/head'
 import {Container, Row, Col, Button} from 'react-bootstrap'
 import ServicePriceList from '../components/servicePriceList';
@@ -12,7 +12,7 @@ interface BikeServiceProps {
   messages: Record<string, string>;
 }
 
-const BikeService: FC<BikeServiceProps> = (props) => {
+const BikeService = (props: BikeServiceProps) => {
   const [formModalShowed, setFormModalShowed] = useState(false);
   const t = useTranslations('BikeService');
 

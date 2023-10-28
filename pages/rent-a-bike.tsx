@@ -3,14 +3,13 @@ import {useTranslations} from 'next-intl';
 import { Container, Row, Col } from 'react-bootstrap'
 import RentCard from '../components/rentCard'
 import { GetStaticProps } from 'next';
-import {FC} from 'react';
 
 interface RentABikeProps {
   messages: Record<string, string>;
   rentaBikes: RentItems;
 } 
 
-const RentABike: FC<RentABikeProps> = (props) => {
+const RentABike = (props: RentABikeProps) => {
   const t = useTranslations('RentABike');
 
   return (

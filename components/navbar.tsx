@@ -6,7 +6,7 @@ import {useTranslations} from 'next-intl';
 import {useRouter} from 'next/router';
 import Image from 'next/image';
 
-const MyNavbar: React.FC = () => {
+const MyNavbar = () => {
   const router = useRouter()
   const t = useTranslations('Navbar');
   const [expanded, setExpanded] = useState<boolean>(false);

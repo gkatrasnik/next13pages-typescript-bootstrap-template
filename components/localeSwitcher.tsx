@@ -4,7 +4,7 @@ import {useTranslations} from 'next-intl';
 import { Dropdown } from 'react-bootstrap';
 import { useState } from 'react';
 
-const LocaleSwitcher = (): JSX.Element => {
+const LocaleSwitcher = () => {
   const t = useTranslations('Locales');
   const {locale, locales, route} = useRouter();
   const [dropdownShowed, setDropdownShowed] = useState(false);

@@ -13,7 +13,7 @@ type RentCardProps = {
     imageSrc: string;
 };
 
-const RentCard = ({title, bullets, price, imageSrc}: RentCardProps): JSX.Element => {
+const RentCard = ({title, bullets, price, imageSrc}: RentCardProps) => {
     const [formModalShowed, setFormModalShowed] = useState(false);
     const [imageModalShowed, setImageModalShowed] = useState(false);
     

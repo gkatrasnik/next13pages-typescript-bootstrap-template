@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { Bicycle, Wrench, Shop, Lightning } from "react-bootstrap-icons"
 import Link from "next/link"
 
-const WhatWeOfferGrid = (): JSX.Element => {
+const WhatWeOfferGrid = () => {
     const t = useTranslations("Index");
 
     return (        

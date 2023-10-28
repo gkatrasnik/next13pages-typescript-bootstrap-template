@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card';
-import { FC } from 'react';
 import DisplayRatingStars from './displayRatingStars';
 import Image from 'next/image';
 
@@ -7,7 +6,7 @@ interface GoogleReviewCardProps {
     review: GooglePlaceReview
     }
 
-const GoogleReviewCard: FC<GoogleReviewCardProps> = (props) => {
+const GoogleReviewCard = (props: GoogleReviewCardProps) => {
   return (
     <Card className='google-review-card border-0'>      
       <Card.Body>

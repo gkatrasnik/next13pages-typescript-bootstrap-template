@@ -4,7 +4,6 @@ import {useTranslations} from 'next-intl';
 import HeroSection from '../components/heroSection';
 import { GetStaticProps } from 'next';
 import { fetchGooglePlacesData } from '../service/googlePlacesService';
-import { FC } from 'react';
 import GooglePlacesReviews from '../components/googlePlacesReviews';
 import WhatWeOfferGrid from '../components/whatWeOfferGrid';
 import GooglePlacesRating from '../components/googlePlacesRating';
@@ -15,7 +14,7 @@ interface HomeProps {
   placesData: GooglePlaceDetails;
 }
 
-const Home: FC<HomeProps> = (props): JSX.Element => {
+const Home = (props: HomeProps) => {
   const t = useTranslations('Index');   
   
   return (
@@ -28,7 +27,7 @@ const Home: FC<HomeProps> = (props): JSX.Element => {
       <Container> 
         <Row className='mb-5'>
             <Col md={6}>
-              <div className='px-4 pb-4 pt-3 d-flex flex-column justify-content-md-center'>
+              <div className='px-4 pb-4 pt-3 d-flex flex-column'>
                 <GooglePlacesRating rating={props.placesData.rating}/> 
                 <h2 className='fw-bold'>{t("reviewsTitle")}</h2>
                 <p>{t("reviewsText")}</p>

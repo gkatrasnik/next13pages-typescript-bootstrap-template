@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Router from "next/router";
 import { Spinner } from "react-bootstrap";
 
-const Loading = (): JSX.Element | null => {
+const Loading = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

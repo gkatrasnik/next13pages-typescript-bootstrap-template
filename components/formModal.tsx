@@ -10,7 +10,7 @@ type FormModalProps = {
     handleClose: () => void;
   };
 
-const FormModal = ({ formIsForRent = false, formIsForUpgrade = false, formIsForService = false, handleClose}: FormModalProps ): JSX.Element => {
+const FormModal = ({ formIsForRent = false, formIsForUpgrade = false, formIsForService = false, handleClose}: FormModalProps ) => {
     const t = useTranslations('FormModal');
     const [isSending, setIsSending] = useState(false);
 

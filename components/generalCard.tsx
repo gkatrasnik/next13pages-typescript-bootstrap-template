@@ -12,7 +12,7 @@ interface GeneralCardProps {
     imageSrc?: string;
 }
 
-const GeneralCard = ({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick, imageSrc}: GeneralCardProps): JSX.Element => {
+const GeneralCard = ({title, subtitle, mainText, bullets, bottomText, buttonText, onCardClick, imageSrc}: GeneralCardProps) => {
   return (
     <Card className="h-100 general-card shadow" onClick={onCardClick}>
         {imageSrc &&

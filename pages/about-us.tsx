@@ -4,7 +4,7 @@ import {useTranslations} from 'next-intl';
 import Image from 'next/image';
 import { GetStaticProps } from 'next';
 
-const About = (): JSX.Element => {
+const About = () => {
   const t = useTranslations('AboutUs');
 
   return (

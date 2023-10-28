@@ -1,4 +1,3 @@
-import { FC } from "react"
 import BasicImage from "./basicImage"
 import { useState, } from 'react'
 import {Carousel} from 'react-bootstrap';
@@ -6,7 +5,7 @@ interface ImageGalleryCarouselProps {
     imageSrcs: string[]    
 }
 
-const ImageGalleryCarousel: FC<ImageGalleryCarouselProps> = (props) => {
+const ImageGalleryCarousel = (props: ImageGalleryCarouselProps) => {
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex: number) => {

@@ -1,4 +1,3 @@
-import { FC } from "react"
 import GoogleReviewCard from "./googleReviewCard"
 import { useState, } from 'react'
 import {Carousel} from 'react-bootstrap';
@@ -7,7 +6,7 @@ interface GooglePlacesReviewsProps {
     reviews: GooglePlaceReview[]
 }
 
-const GooglePlacesReviews: FC<GooglePlacesReviewsProps> = (props) => {
+const GooglePlacesReviews = (props: GooglePlacesReviewsProps) => {
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex: number) => {

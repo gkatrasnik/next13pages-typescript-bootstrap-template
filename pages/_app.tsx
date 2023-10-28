@@ -11,7 +11,7 @@ import Head from 'next/head'
 
 const openSans = Open_Sans({ subsets: ['latin'], weight: '400' })
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   const site = process.env.NEXT_PUBLIC_BASE_URL;
   const {locales, locale, asPath} = useRouter();
   const canonicalURL = site + (locale === 'sl' ? '' : `/${locale}`) + asPath;

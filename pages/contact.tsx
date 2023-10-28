@@ -5,7 +5,6 @@ import GoogleMap from '../components/googleMap';
 import { PinMap, Telephone, Envelope, Clock } from 'react-bootstrap-icons';
 import { GetStaticProps } from 'next';
 import { fetchGooglePlacesData } from '../service/googlePlacesService';
-import { FC } from 'react';
 
 interface AboutProps {
   messages: Record<string, string>;
@@ -14,7 +13,7 @@ interface AboutProps {
 
 
 
-const About: FC<AboutProps> = (props) => {
+const About = (props : AboutProps) => {
   const t = useTranslations('Contact');  
 
   const periodsToWeekdayText = (periods: GoogleOpeningHoursPeriod[]): string[] => {

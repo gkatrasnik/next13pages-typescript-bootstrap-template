@@ -1,12 +1,11 @@
 import Image from "next/image";
 import DisplayRatingStars from "./displayRatingStars";
-import { FC } from 'react';
 
 interface GooglePlacesRatingProps {
     rating: number;
 }
 
-const GooglePlacesRating: FC<GooglePlacesRatingProps> = (props) => {
+const GooglePlacesRating = (props: GooglePlacesRatingProps) => {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center p-3">
         <Image 

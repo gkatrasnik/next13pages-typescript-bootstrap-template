@@ -1,5 +1,4 @@
 import { Star, StarHalf, StarFill } from 'react-bootstrap-icons';
-import { FC } from 'react';
 
 interface DisplayRatingStarsProps {
     rating: number;
@@ -7,7 +6,7 @@ interface DisplayRatingStarsProps {
     size?: number;
 }
 
-const DisplayRatingStars: FC<DisplayRatingStarsProps> = (props) => {
+const DisplayRatingStars = (props: DisplayRatingStarsProps) => {
   return (
     <div className="d-inline-flex justify-content-center align-items-center">
       {[...Array(5)].map((star, index) => {

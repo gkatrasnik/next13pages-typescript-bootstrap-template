@@ -3,7 +3,7 @@ import {useTranslations} from 'next-intl';
 import SocialMediaLinks from './socialMediaLinks';
 import PartnerLogos from './partnerLogos';
 
-const MyFooter = (): JSX.Element => {
+const MyFooter = () => {
   const t = useTranslations('Footer');
 
   return (    

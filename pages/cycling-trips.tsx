@@ -6,7 +6,7 @@ import FormModal from '../components/formModal';
 import Image from 'next/image';
 import { GetStaticProps } from 'next';
 
-const CyclingTrips = (): JSX.Element => {
+const CyclingTrips = () => {
     const [formModalShowed, setFormModalShowed] = useState<boolean>(false);
     const t = useTranslations('CyclingTrips');
 
